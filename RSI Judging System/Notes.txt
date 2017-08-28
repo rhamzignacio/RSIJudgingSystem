@@ -1,0 +1,25 @@
+﻿8/28/2017
+- Top 10 already determined by panel interview
+- Top 10 scores will be inputted on the day of event
+
+- From Top 10 to Top 5
+	- 50% from panel interview (1 - 100 points)
+	- 25% Beauty - (1 - 25 points)
+	- 15% Intelligence (1 - 15 points)
+	- 10% Delivery, Diction, Grammar, Confidence (1 - 10 points)
+
+- Monitor if judges haven't gave score (real time)
+
+TOP 5 (scores back to zero)
+- will be rank from 5 - 1
+- no.1 will be mutya ng pasig
+- 60% personaliy (1 - 60 points)
+- 40% Wit (1 - 40 points)
+
+Top 1 - Mutya ng Pasig 
+Top 2 - Lakambini ng Pasig
+Top 3 - Diwata ng Pasig
+Top 4 - Mutya ng Kalikasan
+Top 5 - Mutya ng Kalinga
+
+- No need for big screen
