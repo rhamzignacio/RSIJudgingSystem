@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="RSIJudgingSystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ContestantProfile">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="400" />
+          <Property Name="Location" Type="varchar" MaxLength="150" />
+          <Property Name="PanelInterview" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="JudgeProfile">
+          <Key>
+            <PropertyRef Name="JudgeNo" />
+          </Key>
+          <Property Name="JudgeNo" Type="varchar" MaxLength="3" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="400" />
+          <Property Name="Username" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Top10Judge1">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Beauty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Intelligence" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Delivery" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top10Judge2">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Beauty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Intelligence" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Delivery" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top10Judge3">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Beauty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Intelligence" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Delivery" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top10Judge4">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Beauty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Intelligence" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Delivery" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top10Judge5">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Beauty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Intelligence" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Delivery" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top10Judge6">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Beauty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Intelligence" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Delivery" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top10Judge7">
+          <Key>
+            <PropertyRef Name="ContestanceNo" />
+          </Key>
+          <Property Name="ContestanceNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Beauty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Intelligence" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Delivery" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top5Judge1">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top5Judge2">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top5Judge3">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top5Judge4">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top5Judge5">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top5Judge6">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top5Judge7">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityContainer Name="RSIJudgingSystemModelStoreContainer">
+          <EntitySet Name="ContestantProfile" EntityType="Self.ContestantProfile" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="JudgeProfile" EntityType="Self.JudgeProfile" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Top10Judge1" EntityType="Self.Top10Judge1" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Top10Judge2" EntityType="Self.Top10Judge2" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Top10Judge3" EntityType="Self.Top10Judge3" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Top10Judge4" EntityType="Self.Top10Judge4" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Top10Judge5" EntityType="Self.Top10Judge5" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Top10Judge6" EntityType="Self.Top10Judge6" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Top10Judge7" EntityType="Self.Top10Judge7" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Top5Judge1" EntityType="Self.Top5Judge1" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Top5Judge2" EntityType="Self.Top5Judge2" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Top5Judge3" EntityType="Self.Top5Judge3" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Top5Judge4" EntityType="Self.Top5Judge4" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Top5Judge5" EntityType="Self.Top5Judge5" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Top5Judge6" EntityType="Self.Top5Judge6" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Top5Judge7" EntityType="Self.Top5Judge7" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="RSIJudgingSystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="RSIJudgingSystemEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ContestantProfile" EntityType="RSIJudgingSystemModel.ContestantProfile" />
+          <EntitySet Name="JudgeProfile" EntityType="RSIJudgingSystemModel.JudgeProfile" />
+          <EntitySet Name="Top10Judge1" EntityType="RSIJudgingSystemModel.Top10Judge1" />
+          <EntitySet Name="Top10Judge2" EntityType="RSIJudgingSystemModel.Top10Judge2" />
+          <EntitySet Name="Top10Judge3" EntityType="RSIJudgingSystemModel.Top10Judge3" />
+          <EntitySet Name="Top10Judge4" EntityType="RSIJudgingSystemModel.Top10Judge4" />
+          <EntitySet Name="Top10Judge5" EntityType="RSIJudgingSystemModel.Top10Judge5" />
+          <EntitySet Name="Top10Judge6" EntityType="RSIJudgingSystemModel.Top10Judge6" />
+          <EntitySet Name="Top10Judge7" EntityType="RSIJudgingSystemModel.Top10Judge7" />
+          <EntitySet Name="Top5Judge1" EntityType="RSIJudgingSystemModel.Top5Judge1" />
+          <EntitySet Name="Top5Judge2" EntityType="RSIJudgingSystemModel.Top5Judge2" />
+          <EntitySet Name="Top5Judge3" EntityType="RSIJudgingSystemModel.Top5Judge3" />
+          <EntitySet Name="Top5Judge4" EntityType="RSIJudgingSystemModel.Top5Judge4" />
+          <EntitySet Name="Top5Judge5" EntityType="RSIJudgingSystemModel.Top5Judge5" />
+          <EntitySet Name="Top5Judge6" EntityType="RSIJudgingSystemModel.Top5Judge6" />
+          <EntitySet Name="Top5Judge7" EntityType="RSIJudgingSystemModel.Top5Judge7" />
+        </EntityContainer>
+        <EntityType Name="ContestantProfile">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Name" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="Location" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="PanelInterview" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="JudgeProfile">
+          <Key>
+            <PropertyRef Name="JudgeNo" />
+          </Key>
+          <Property Name="JudgeNo" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Name="Name" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="Username" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="Top10Judge1">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Beauty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Intelligence" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Delivery" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top10Judge2">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Beauty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Intelligence" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Delivery" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top10Judge3">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Beauty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Intelligence" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Delivery" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top10Judge4">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Beauty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Intelligence" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Delivery" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top10Judge5">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Beauty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Intelligence" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Delivery" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top10Judge6">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Beauty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Intelligence" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Delivery" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top10Judge7">
+          <Key>
+            <PropertyRef Name="ContestanceNo" />
+          </Key>
+          <Property Name="ContestanceNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Beauty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Intelligence" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Delivery" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top5Judge1">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top5Judge2">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top5Judge3">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top5Judge4">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top5Judge5">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top5Judge6">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="Top5Judge7">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="RSIJudgingSystemModelStoreContainer" CdmEntityContainer="RSIJudgingSystemEntities">
+          <EntitySetMapping Name="ContestantProfile">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.ContestantProfile">
+              <MappingFragment StoreEntitySet="ContestantProfile">
+                <ScalarProperty Name="PanelInterview" ColumnName="PanelInterview" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JudgeProfile">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.JudgeProfile">
+              <MappingFragment StoreEntitySet="JudgeProfile">
+                <ScalarProperty Name="Username" ColumnName="Username" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="JudgeNo" ColumnName="JudgeNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Top10Judge1">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top10Judge1">
+              <MappingFragment StoreEntitySet="Top10Judge1">
+                <ScalarProperty Name="Delivery" ColumnName="Delivery" />
+                <ScalarProperty Name="Intelligence" ColumnName="Intelligence" />
+                <ScalarProperty Name="Beauty" ColumnName="Beauty" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Top10Judge2">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top10Judge2">
+              <MappingFragment StoreEntitySet="Top10Judge2">
+                <ScalarProperty Name="Delivery" ColumnName="Delivery" />
+                <ScalarProperty Name="Intelligence" ColumnName="Intelligence" />
+                <ScalarProperty Name="Beauty" ColumnName="Beauty" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Top10Judge3">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top10Judge3">
+              <MappingFragment StoreEntitySet="Top10Judge3">
+                <ScalarProperty Name="Delivery" ColumnName="Delivery" />
+                <ScalarProperty Name="Intelligence" ColumnName="Intelligence" />
+                <ScalarProperty Name="Beauty" ColumnName="Beauty" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Top10Judge4">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top10Judge4">
+              <MappingFragment StoreEntitySet="Top10Judge4">
+                <ScalarProperty Name="Delivery" ColumnName="Delivery" />
+                <ScalarProperty Name="Intelligence" ColumnName="Intelligence" />
+                <ScalarProperty Name="Beauty" ColumnName="Beauty" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Top10Judge5">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top10Judge5">
+              <MappingFragment StoreEntitySet="Top10Judge5">
+                <ScalarProperty Name="Delivery" ColumnName="Delivery" />
+                <ScalarProperty Name="Intelligence" ColumnName="Intelligence" />
+                <ScalarProperty Name="Beauty" ColumnName="Beauty" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Top10Judge6">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top10Judge6">
+              <MappingFragment StoreEntitySet="Top10Judge6">
+                <ScalarProperty Name="Delivery" ColumnName="Delivery" />
+                <ScalarProperty Name="Intelligence" ColumnName="Intelligence" />
+                <ScalarProperty Name="Beauty" ColumnName="Beauty" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Top10Judge7">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top10Judge7">
+              <MappingFragment StoreEntitySet="Top10Judge7">
+                <ScalarProperty Name="Delivery" ColumnName="Delivery" />
+                <ScalarProperty Name="Intelligence" ColumnName="Intelligence" />
+                <ScalarProperty Name="Beauty" ColumnName="Beauty" />
+                <ScalarProperty Name="ContestanceNo" ColumnName="ContestanceNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Top5Judge1">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top5Judge1">
+              <MappingFragment StoreEntitySet="Top5Judge1">
+                <ScalarProperty Name="Wit" ColumnName="Wit" />
+                <ScalarProperty Name="Personality" ColumnName="Personality" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Top5Judge2">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top5Judge2">
+              <MappingFragment StoreEntitySet="Top5Judge2">
+                <ScalarProperty Name="Wit" ColumnName="Wit" />
+                <ScalarProperty Name="Personality" ColumnName="Personality" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Top5Judge3">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top5Judge3">
+              <MappingFragment StoreEntitySet="Top5Judge3">
+                <ScalarProperty Name="Wit" ColumnName="Wit" />
+                <ScalarProperty Name="Personality" ColumnName="Personality" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Top5Judge4">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top5Judge4">
+              <MappingFragment StoreEntitySet="Top5Judge4">
+                <ScalarProperty Name="Wit" ColumnName="Wit" />
+                <ScalarProperty Name="Personality" ColumnName="Personality" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Top5Judge5">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top5Judge5">
+              <MappingFragment StoreEntitySet="Top5Judge5">
+                <ScalarProperty Name="Wit" ColumnName="Wit" />
+                <ScalarProperty Name="Personality" ColumnName="Personality" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Top5Judge6">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top5Judge6">
+              <MappingFragment StoreEntitySet="Top5Judge6">
+                <ScalarProperty Name="Wit" ColumnName="Wit" />
+                <ScalarProperty Name="Personality" ColumnName="Personality" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Top5Judge7">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top5Judge7">
+              <MappingFragment StoreEntitySet="Top5Judge7">
+                <ScalarProperty Name="Wit" ColumnName="Wit" />
+                <ScalarProperty Name="Personality" ColumnName="Personality" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="false" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -30,6 +30,7 @@
         {
             this.btnTop10 = new System.Windows.Forms.Button();
             this.btnTop5 = new System.Windows.Forms.Button();
+            this.lblJudgeName = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnTop10
@@ -41,6 +42,7 @@
             this.btnTop10.TabIndex = 0;
             this.btnTop10.Text = "Top 10";
             this.btnTop10.UseVisualStyleBackColor = true;
+            this.btnTop10.Click += new System.EventHandler(this.btnTop10_Click);
             // 
             // btnTop5
             // 
@@ -52,16 +54,27 @@
             this.btnTop5.Text = "Top 5";
             this.btnTop5.UseVisualStyleBackColor = true;
             // 
+            // lblJudgeName
+            // 
+            this.lblJudgeName.AutoSize = true;
+            this.lblJudgeName.Location = new System.Drawing.Point(3, 206);
+            this.lblJudgeName.Name = "lblJudgeName";
+            this.lblJudgeName.Size = new System.Drawing.Size(133, 13);
+            this.lblJudgeName.TabIndex = 2;
+            this.lblJudgeName.Text = "Welcome Judge Number 1";
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(616, 227);
+            this.Controls.Add(this.lblJudgeName);
             this.Controls.Add(this.btnTop5);
             this.Controls.Add(this.btnTop10);
             this.Name = "MainWindow";
             this.Text = "RSI Judging System 1.0";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -69,5 +82,6 @@
 
         private System.Windows.Forms.Button btnTop10;
         private System.Windows.Forms.Button btnTop5;
+        private System.Windows.Forms.Label lblJudgeName;
     }
 }

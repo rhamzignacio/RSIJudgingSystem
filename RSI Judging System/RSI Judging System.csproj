@@ -33,8 +33,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,6 +57,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ContestantProfile.cs">
+      <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseFunctions.cs" />
+    <Compile Include="JudgeProfile.cs">
+      <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,9 +78,72 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Top10.cs">
+    <Compile Include="RSIJudgingSystemEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RSIJudgingSystemEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RSIJudgingSystemEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RSIJudgingSystemEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RSIJudgingSystemEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Top10Judge1.cs">
+      <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Top10Judge2.cs">
+      <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Top10Judge3.cs">
+      <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Top10Judge4.cs">
+      <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Top10Judge5.cs">
+      <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Top10Judge6.cs">
+      <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Top10Judge7.cs">
+      <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Top5Judge1.cs">
+      <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Top5Judge2.cs">
+      <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Top5Judge3.cs">
+      <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Top5Judge4.cs">
+      <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Top5Judge5.cs">
+      <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Top5Judge6.cs">
+      <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Top5Judge7.cs">
+      <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TopTenWinners.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TopTenWinners.Designer.cs">
+      <DependentUpon>TopTenWinners.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -68,10 +155,12 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Top10.resx">
-      <DependentUpon>Top10.cs</DependentUpon>
+    <EmbeddedResource Include="TopTenWinners.resx">
+      <DependentUpon>TopTenWinners.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -82,12 +171,53 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="RSIJudgingSystem.bak" />
+    <EntityDeploy Include="RSIJudgingSystemEntities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>RSIJudgingSystemEntities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="RSIJudgingSystemEntities.edmx.diagram">
+      <DependentUpon>RSIJudgingSystemEntities.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ContestantPhoto\No 1.jpg" />
+    <Content Include="ContestantPhoto\No 10.jpg" />
+    <Content Include="ContestantPhoto\No 11.jpg" />
+    <Content Include="ContestantPhoto\No 12.jpg" />
+    <Content Include="ContestantPhoto\No 13.jpg" />
+    <Content Include="ContestantPhoto\No 14.jpg" />
+    <Content Include="ContestantPhoto\No 15.jpg" />
+    <Content Include="ContestantPhoto\No 16.jpg" />
+    <Content Include="ContestantPhoto\No 17.jpg" />
+    <Content Include="ContestantPhoto\No 19.jpg" />
+    <Content Include="ContestantPhoto\No 2.jpg" />
+    <Content Include="ContestantPhoto\No 20.jpg" />
+    <Content Include="ContestantPhoto\No 3.jpg" />
+    <Content Include="ContestantPhoto\No 4.jpg" />
+    <Content Include="ContestantPhoto\No 5.jpg" />
+    <Content Include="ContestantPhoto\No 6.jpg" />
+    <Content Include="ContestantPhoto\No 7.jpg" />
+    <Content Include="ContestantPhoto\No 8.jpg" />
+    <Content Include="ContestantPhoto\No 9.jpg" />
     <Content Include="Notes.txt" />
+    <Content Include="RSIJudgingSystemEntities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RSIJudgingSystemEntities.edmx</DependentUpon>
+      <LastGenOutput>RSIJudgingSystemEntities.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="RSIJudgingSystemEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>RSIJudgingSystemEntities.edmx</DependentUpon>
+      <LastGenOutput>RSIJudgingSystemEntities.cs</LastGenOutput>
+    </Content>
+    <Content Include="SRC\Background.jpg" />
+    <Content Include="SRC\Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

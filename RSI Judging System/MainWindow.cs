@@ -12,9 +12,22 @@ namespace RSI_Judging_System
 {
     public partial class MainWindow : Form
     {
-        public MainWindow()
+        JudgeProfile judgeProfile;
+
+        public MainWindow(JudgeProfile _judgeProfile)
         {
             InitializeComponent();
+
+            judgeProfile = _judgeProfile;
+
+            lblJudgeName.Text = "Welcome " + judgeProfile.Name + "! ! !";
+        }
+
+        private void btnTop10_Click(object sender, EventArgs e)
+        {
+            TopTenWinners form = new TopTenWinners(judgeProfile);
+
+            form.ShowDialog();
         }
     }
 }

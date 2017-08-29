@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="fd962173fa094026a787e40e3fbd500b" Name="Diagram1">
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.ContestantProfile" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.JudgeProfile" Width="1.5" PointX="2.75" PointY="0.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top10Judge1" Width="1.5" PointX="0.75" PointY="3.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top10Judge2" Width="1.5" PointX="2.75" PointY="3.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top10Judge3" Width="1.5" PointX="4.75" PointY="0.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top10Judge4" Width="1.5" PointX="4.75" PointY="3.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top10Judge5" Width="1.5" PointX="6.75" PointY="0.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top10Judge6" Width="1.5" PointX="0.75" PointY="6.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top10Judge7" Width="1.5" PointX="2.75" PointY="6.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge1" Width="1.5" PointX="6.75" PointY="3.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge2" Width="1.5" PointX="4.75" PointY="6.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge3" Width="1.5" PointX="6.75" PointY="6.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge4" Width="1.5" PointX="8.75" PointY="0.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge5" Width="1.5" PointX="8.75" PointY="3.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge6" Width="1.5" PointX="8.75" PointY="6.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge7" Width="1.5" PointX="0.75" PointY="9.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
