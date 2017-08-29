@@ -135,6 +135,12 @@
     <Compile Include="Top5Judge7.cs">
       <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="TopFiveWinners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TopFiveWinners.Designer.cs">
+      <DependentUpon>TopFiveWinners.cs</DependentUpon>
+    </Compile>
     <Compile Include="TopTenWinners.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +163,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TopFiveWinners.resx">
+      <DependentUpon>TopFiveWinners.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TopTenWinners.resx">
       <DependentUpon>TopTenWinners.cs</DependentUpon>
     </EmbeddedResource>
