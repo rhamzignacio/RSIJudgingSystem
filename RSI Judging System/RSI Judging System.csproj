@@ -187,6 +187,7 @@
     <None Include="RSIJudgingSystemEntities.edmx.diagram">
       <DependentUpon>RSIJudgingSystemEntities.edmx</DependentUpon>
     </None>
+    <None Include="RSIJudgingSystem_LogBackup_2017-08-29_08-56-53.bak" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
