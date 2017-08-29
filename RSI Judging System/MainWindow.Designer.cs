@@ -53,6 +53,7 @@
             this.btnTop5.TabIndex = 1;
             this.btnTop5.Text = "Top 5";
             this.btnTop5.UseVisualStyleBackColor = true;
+            this.btnTop5.Click += new System.EventHandler(this.btnTop5_Click);
             // 
             // lblJudgeName
             // 

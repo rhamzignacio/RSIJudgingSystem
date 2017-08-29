@@ -36,7 +36,6 @@
             this.label192 = new System.Windows.Forms.Label();
             this.label191 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.btnSubmit1 = new System.Windows.Forms.Button();
             this.btnNextNo1 = new System.Windows.Forms.Button();
             this.btnPrevNo1 = new System.Windows.Forms.Button();
@@ -468,9 +467,9 @@
             this.label189 = new System.Windows.Forms.Label();
             this.label190 = new System.Windows.Forms.Label();
             this.pictureBox38 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -526,6 +525,7 @@
             this.tabPage19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // lblJudgeName
@@ -572,11 +572,11 @@
             // 
             this.tabPage1.BackgroundImage = global::RSI_Judging_System.Properties.Resources.Background;
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage1.Controls.Add(this.pictureBox3);
             this.tabPage1.Controls.Add(this.label193);
             this.tabPage1.Controls.Add(this.label192);
             this.tabPage1.Controls.Add(this.label191);
             this.tabPage1.Controls.Add(this.label19);
-            this.tabPage1.Controls.Add(this.pictureBox3);
             this.tabPage1.Controls.Add(this.btnSubmit1);
             this.tabPage1.Controls.Add(this.btnNextNo1);
             this.tabPage1.Controls.Add(this.btnPrevNo1);
@@ -638,16 +638,6 @@
             this.label19.Size = new System.Drawing.Size(148, 24);
             this.label19.TabIndex = 18;
             this.label19.Text = "Contestant No. 1";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::RSI_Judging_System.Properties.Resources.Logo;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 426);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(339, 141);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 17;
-            this.pictureBox3.TabStop = false;
             // 
             // btnSubmit1
             // 
@@ -5405,6 +5395,16 @@
             this.pictureBox38.TabIndex = 133;
             this.pictureBox38.TabStop = false;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::RSI_Judging_System.Properties.Resources.Logo;
+            this.pictureBox3.Location = new System.Drawing.Point(6, 369);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(590, 208);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 22;
+            this.pictureBox3.TabStop = false;
+            // 
             // TopTenWinners
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5417,7 +5417,6 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
@@ -5491,6 +5490,7 @@
             this.tabPage19.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5814,7 +5814,6 @@
         private System.Windows.Forms.Label label192;
         private System.Windows.Forms.Label label191;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button btnSubmit1;
         private System.Windows.Forms.Button btnNextNo1;
         private System.Windows.Forms.Button btnPrevNo1;
@@ -5938,5 +5937,6 @@
         private System.Windows.Forms.Label label108;
         private System.Windows.Forms.Label label109;
         private System.Windows.Forms.PictureBox pictureBox21;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

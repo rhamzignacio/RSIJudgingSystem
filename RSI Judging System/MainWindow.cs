@@ -29,5 +29,12 @@ namespace RSI_Judging_System
 
             form.ShowDialog();
         }
+
+        private void btnTop5_Click(object sender, EventArgs e)
+        {
+            TopFiveWinners form = new TopFiveWinners();
+
+            form.ShowDialog();
+        }
     }
 }

@@ -64,6 +64,7 @@
     <Compile Include="JudgeProfile.cs">
       <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="JudgingModel.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
