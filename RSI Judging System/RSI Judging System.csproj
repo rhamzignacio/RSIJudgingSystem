@@ -224,6 +224,7 @@
       <DependentUpon>RSIJudgingSystemEntities.edmx</DependentUpon>
       <LastGenOutput>RSIJudgingSystemEntities.cs</LastGenOutput>
     </Content>
+    <Content Include="SELECT QUERY.txt" />
     <Content Include="SRC\Background.jpg" />
     <Content Include="SRC\Logo.jpg" />
   </ItemGroup>

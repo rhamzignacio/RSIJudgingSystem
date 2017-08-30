@@ -21,6 +21,8 @@ namespace RSI_Judging_System
             lblJudgeName.Text = _judgeProfile.Name;
 
             judgeProfile = _judgeProfile;
+
+            GetTop5();
         }
 
         private void GetTop5()
@@ -29,7 +31,7 @@ namespace RSI_Judging_System
             {
                 var contestant = db.ContestantProfile.OrderByDescending(r => r.PanelInterview).ToList();
 
-                List<Top5Model> top5 = new List<Top5Model>();
+                List<Top5Model> top10List = new List<Top5Model>();
 
                 for (int x = 0; x < contestant.Count; x++)
                 {
@@ -39,11 +41,62 @@ namespace RSI_Judging_System
                     }
                     else
                     {
-                        Top5Model top = new Top5Model
-                        {
-                            contestantNo = contestant[x].ContestantNo,
-                            TotalScore = contestant[x].PanelInterview 
-                        };
+                        var contesNo = contestant[x].ContestantNo;
+
+                        var query = from c in db.ContestantProfile
+                                    join j1 in db.Top10Judge1 on c.ContestantNo equals j1.ContestantNo
+                                    join j2 in db.Top10Judge2 on c.ContestantNo equals j2.ContestantNo
+                                    join j3 in db.Top10Judge3 on c.ContestantNo equals j3.ContestantNo
+                                    join j4 in db.Top10Judge4 on c.ContestantNo equals j4.ContestantNo
+                                    join j5 in db.Top10Judge5 on c.ContestantNo equals j5.ContestantNo
+                                    join j6 in db.Top10Judge6 on c.ContestantNo equals j6.ContestantNo
+                                    join j7 in db.Top10Judge7 on c.ContestantNo equals j7.ContestanceNo
+                                    where c.ContestantNo == contesNo
+                                    select new Top5Model
+                                    {
+                                        contestantNo = c.ContestantNo,
+                                        panelInterview = c.PanelInterview,
+
+                                        beauty1 = j1.Beauty,
+                                        intelligence1 = j1.Intelligence,
+                                        delivery1 = j1.Delivery,
+
+                                        beauty2 = j2.Beauty,
+                                        intelligence2 = j2.Intelligence,
+                                        delivery2 = j2.Delivery,
+
+                                        beauty3 = j3.Beauty,
+                                        intelligence3 = j3.Intelligence,
+                                        delivery3 = j3.Delivery,
+
+                                        beauty4 = j4.Beauty,
+                                        intelligence4 = j4.Intelligence,
+                                        delivery4 = j4.Delivery,
+
+                                        beauty5 = j5.Beauty,
+                                        intelligence5 = j5.Intelligence,
+                                        delivery5 = j5.Delivery,
+
+                                        beauty6 = j6.Beauty,
+                                        intelligence6 = j6.Intelligence,
+                                        delivery6 = j6.Delivery,
+
+                                        beauty7 = j7.Beauty,
+                                        intelligence7 = j7.Intelligence,
+                                        delivery7 = j7.Delivery
+                                    };
+
+                        top10List.Add(query.SingleOrDefault());
+                    }
+                }
+
+                var temp = top10List.OrderByDescending(r => r.TotalScore).ToList();
+
+                for(int x = 0; x < temp.Count; x++)
+                {
+                    if (x >= 5)
+                    {
+                        RemoveTab(temp[x].contestantNo);
                     }
                 }
             }

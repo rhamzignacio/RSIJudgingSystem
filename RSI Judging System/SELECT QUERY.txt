@@ -1,0 +1,30 @@
+﻿******GET TOP 5 ****
+
+SELECT TOP 6
+c.ContestantNo,
+c.Name,
+c.PanelInterview,
+SUM(((j1.Beauty + j1.Delivery + j1.Intelligence + ((c.PanelInterview/100) * 50)) +
+(j2.Beauty + j2.Delivery + j2.Intelligence + ((c.PanelInterview/100) * 50)) +
+(j3.Beauty + j3.Delivery + j3.Intelligence + ((c.PanelInterview/100) * 50)) +
+(j4.Beauty + j4.Delivery + j4.Intelligence + ((c.PanelInterview/100) * 50)) +
+(j5.Beauty + j5.Delivery + j5.Intelligence + ((c.PanelInterview/100) * 50)) +
+(j6.Beauty + j6.Delivery + j6.Intelligence + ((c.PanelInterview/100) * 50)) +
+(j7.Beauty + j7.Delivery + j7.Intelligence + ((c.PanelInterview/100) * 50)))/7) AS TotalScore,
+SUM(j1.Beauty + j1.Delivery + j1.Intelligence + ((c.PanelInterview/100) * 50)) as JudgeNo1,
+SUM(j2.Beauty + j2.Delivery + j2.Intelligence + ((c.PanelInterview/100) * 50)) as JudgeNo2,
+SUM(j3.Beauty + j3.Delivery + j3.Intelligence + ((c.PanelInterview/100) * 50)) as JudgeNo3,
+SUM(j4.Beauty + j4.Delivery + j4.Intelligence + ((c.PanelInterview/100) * 50)) as JudgeNo4,
+SUM(j5.Beauty + j5.Delivery + j5.Intelligence + ((c.PanelInterview/100) * 50)) as JudgeNo5,
+SUM(j6.Beauty + j6.Delivery + j6.Intelligence + ((c.PanelInterview/100) * 50)) as JudgeNo6,
+SUM(j7.Beauty + j7.Delivery + j7.Intelligence + ((c.PanelInterview/100) * 50)) as JudgeNo7
+FROM ContestantProfile AS c
+LEFT JOIN Top10Judge1 AS j1 ON c.ContestantNo = j1.ContestantNo
+LEFT JOIN Top10Judge2 AS j2 ON c.ContestantNo = j2.ContestantNo
+LEFT JOIN Top10Judge3 AS j3 ON c.ContestantNo = j3.ContestantNo
+LEFT JOIN Top10Judge4 AS j4 ON c.ContestantNo = j4.ContestantNo
+LEFT JOIN Top10Judge5 AS j5 ON c.ContestantNo = j5.ContestantNo
+LEFT JOIN Top10Judge6 AS j6 ON c.ContestantNo = j6.ContestantNo
+LEFT JOIN Top10Judge7 AS j7 ON c.ContestantNo = j7.ContestanceNo
+GROUP BY c.ContestantNo, c.Name, c.PanelInterview
+ORDER BY TotalScore DESC

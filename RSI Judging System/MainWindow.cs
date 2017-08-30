@@ -32,7 +32,7 @@ namespace RSI_Judging_System
 
         private void btnTop5_Click(object sender, EventArgs e)
         {
-            TopFiveWinners form = new TopFiveWinners();
+            TopFiveWinners form = new TopFiveWinners(judgeProfile);
 
             form.ShowDialog();
         }
