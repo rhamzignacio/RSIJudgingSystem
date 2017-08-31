@@ -44,46 +44,53 @@ namespace RSI_Judging_System
                         var contesNo = contestant[x].ContestantNo;
 
                         var query = from c in db.ContestantProfile
-                                    join j1 in db.Top10Judge1 on c.ContestantNo equals j1.ContestantNo
-                                    join j2 in db.Top10Judge2 on c.ContestantNo equals j2.ContestantNo
-                                    join j3 in db.Top10Judge3 on c.ContestantNo equals j3.ContestantNo
-                                    join j4 in db.Top10Judge4 on c.ContestantNo equals j4.ContestantNo
-                                    join j5 in db.Top10Judge5 on c.ContestantNo equals j5.ContestantNo
-                                    join j6 in db.Top10Judge6 on c.ContestantNo equals j6.ContestantNo
-                                    join j7 in db.Top10Judge7 on c.ContestantNo equals j7.ContestanceNo
+                                    join j1 in db.Top10Judge1 on c.ContestantNo equals j1.ContestantNo into q1
+                                    from fj1 in q1.DefaultIfEmpty()
+                                    join j2 in db.Top10Judge2 on c.ContestantNo equals j2.ContestantNo into q2
+                                    from fj2 in q2.DefaultIfEmpty()
+                                    join j3 in db.Top10Judge3 on c.ContestantNo equals j3.ContestantNo into q3
+                                    from fj3 in q3.DefaultIfEmpty()
+                                    join j4 in db.Top10Judge4 on c.ContestantNo equals j4.ContestantNo into q4
+                                    from fj4 in q4.DefaultIfEmpty()
+                                    join j5 in db.Top10Judge5 on c.ContestantNo equals j5.ContestantNo into q5
+                                    from fj5 in q5.DefaultIfEmpty()
+                                    join j6 in db.Top10Judge6 on c.ContestantNo equals j6.ContestantNo into q6
+                                    from fj6 in q6.DefaultIfEmpty()
+                                    join j7 in db.Top10Judge7 on c.ContestantNo equals j7.ContestanceNo into q7
+                                    from fj7 in q6.DefaultIfEmpty()
                                     where c.ContestantNo == contesNo
                                     select new Top5Model
                                     {
                                         contestantNo = c.ContestantNo,
                                         panelInterview = c.PanelInterview,
 
-                                        beauty1 = j1.Beauty,
-                                        intelligence1 = j1.Intelligence,
-                                        delivery1 = j1.Delivery,
+                                        beauty1 = fj1.Beauty,
+                                        intelligence1 = fj1.Intelligence,
+                                        delivery1 = fj1.Delivery,
 
-                                        beauty2 = j2.Beauty,
-                                        intelligence2 = j2.Intelligence,
-                                        delivery2 = j2.Delivery,
+                                        beauty2 = fj2.Beauty,
+                                        intelligence2 = fj2.Intelligence,
+                                        delivery2 = fj2.Delivery,
 
-                                        beauty3 = j3.Beauty,
-                                        intelligence3 = j3.Intelligence,
-                                        delivery3 = j3.Delivery,
+                                        beauty3 = fj3.Beauty,
+                                        intelligence3 = fj3.Intelligence,
+                                        delivery3 = fj3.Delivery,
 
-                                        beauty4 = j4.Beauty,
-                                        intelligence4 = j4.Intelligence,
-                                        delivery4 = j4.Delivery,
+                                        beauty4 = fj4.Beauty,
+                                        intelligence4 = fj4.Intelligence,
+                                        delivery4 = fj4.Delivery,
 
-                                        beauty5 = j5.Beauty,
-                                        intelligence5 = j5.Intelligence,
-                                        delivery5 = j5.Delivery,
+                                        beauty5 = fj5.Beauty,
+                                        intelligence5 = fj5.Intelligence,
+                                        delivery5 = fj5.Delivery,
 
-                                        beauty6 = j6.Beauty,
-                                        intelligence6 = j6.Intelligence,
-                                        delivery6 = j6.Delivery,
+                                        beauty6 = fj6.Beauty,
+                                        intelligence6 = fj6.Intelligence,
+                                        delivery6 = fj6.Delivery,
 
-                                        beauty7 = j7.Beauty,
-                                        intelligence7 = j7.Intelligence,
-                                        delivery7 = j7.Delivery
+                                        beauty7 = fj7.Beauty,
+                                        intelligence7 = fj7.Intelligence,
+                                        delivery7 = fj7.Delivery
                                     };
 
                         top10List.Add(query.SingleOrDefault());
