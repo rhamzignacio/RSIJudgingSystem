@@ -36,5 +36,12 @@ namespace RSI_Judging_System
 
             form.ShowDialog();
         }
+
+        private void btnForTop5_Click(object sender, EventArgs e)
+        {
+            TopTenToTopFiveWinners form = new TopTenToTopFiveWinners(judgeProfile);
+
+            form.ShowDialog();
+        }
     }
 }

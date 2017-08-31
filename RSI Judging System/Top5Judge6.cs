@@ -14,8 +14,9 @@ namespace RSI_Judging_System
     
     public partial class Top5Judge6
     {
-        public string ContestantNo { get; set; }
-        public Nullable<decimal> Personality { get; set; }
-        public Nullable<decimal> Wit { get; set; }
+        public string CandidateNo { get; set; }
+        public Nullable<decimal> Intelligence { get; set; }
+        public Nullable<decimal> Beauty { get; set; }
+        public Nullable<decimal> Poise { get; set; }
     }
 }

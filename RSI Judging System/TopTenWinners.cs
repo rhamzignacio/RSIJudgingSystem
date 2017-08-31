@@ -34,51 +34,44 @@ namespace RSI_Judging_System
 
                 for (int x = 0; x < contestant.Count; x++)
                 {
-                    if(x >= 10)
-                    {
-                        RemoveTab(contestant[x].ContestantNo);
-                    }
-                    else
-                    {
-                        if (contestant[x].ContestantNo == "1")
-                            txtBoxPanelInterviewNo1.Text = contestant[x].PanelInterview.ToString();
-                        else if (contestant[x].ContestantNo == "2")
-                            txtBoxPanelInterviewNo2.Text = contestant[x].PanelInterview.ToString();
-                        else if (contestant[x].ContestantNo == "3")
-                            txtBoxPanelInterviewNo3.Text = contestant[x].PanelInterview.ToString();
-                        else if (contestant[x].ContestantNo == "4")
-                            txtBoxPINo4.Text = contestant[x].PanelInterview.ToString();
-                        else if (contestant[x].ContestantNo == "5")
-                            txtBoxPINo5.Text = contestant[x].PanelInterview.ToString();
-                        else if (contestant[x].ContestantNo == "6")
-                            txtBoxPINo6.Text = contestant[x].PanelInterview.ToString();
-                        else if (contestant[x].ContestantNo == "7")
-                            txtBoxPINo7.Text = contestant[x].PanelInterview.ToString();
-                        else if (contestant[x].ContestantNo == "8")
-                            txtBoxPINo8.Text = contestant[x].PanelInterview.ToString();
-                        else if (contestant[x].ContestantNo == "9")
-                            txtBoxPINo9.Text = contestant[x].PanelInterview.ToString();
-                        else if (contestant[x].ContestantNo == "10")
-                            txtBoxPINo10.Text = contestant[x].PanelInterview.ToString();
-                        else if (contestant[x].ContestantNo == "11")
-                            txtBoxPINo11.Text = contestant[x].PanelInterview.ToString();
-                        else if (contestant[x].ContestantNo == "12")
-                            txtBoxPINo12.Text = contestant[x].PanelInterview.ToString();
-                        else if (contestant[x].ContestantNo == "13")
-                            txtBoxPINo13.Text = contestant[x].PanelInterview.ToString();
-                        else if (contestant[x].ContestantNo == "14")
-                            txtBoxPINo14.Text = contestant[x].PanelInterview.ToString();
-                        else if (contestant[x].ContestantNo == "15")
-                            txtBoxPINo15.Text = contestant[x].PanelInterview.ToString();
-                        else if (contestant[x].ContestantNo == "16")
-                            txtBoxPINo16.Text = contestant[x].PanelInterview.ToString();
-                        else if (contestant[x].ContestantNo == "17")
-                            txtBoxPINo17.Text = contestant[x].PanelInterview.ToString();
-                        else if (contestant[x].ContestantNo == "19")
-                            txtBoxPINo19.Text = contestant[x].PanelInterview.ToString();
-                        else if (contestant[x].ContestantNo == "20")
-                            txtBoxPINo20.Text = contestant[x].PanelInterview.ToString();
-                    }
+                    if (contestant[x].ContestantNo == "1")
+                        txtBoxPanelInterviewNo1.Text = contestant[x].PanelInterview.ToString();
+                    else if (contestant[x].ContestantNo == "2")
+                        txtBoxPanelInterviewNo2.Text = contestant[x].PanelInterview.ToString();
+                    else if (contestant[x].ContestantNo == "3")
+                        txtBoxPanelInterviewNo3.Text = contestant[x].PanelInterview.ToString();
+                    else if (contestant[x].ContestantNo == "4")
+                        txtBoxPINo4.Text = contestant[x].PanelInterview.ToString();
+                    else if (contestant[x].ContestantNo == "5")
+                        txtBoxPINo5.Text = contestant[x].PanelInterview.ToString();
+                    else if (contestant[x].ContestantNo == "6")
+                        txtBoxPINo6.Text = contestant[x].PanelInterview.ToString();
+                    else if (contestant[x].ContestantNo == "7")
+                        txtBoxPINo7.Text = contestant[x].PanelInterview.ToString();
+                    else if (contestant[x].ContestantNo == "8")
+                        txtBoxPINo8.Text = contestant[x].PanelInterview.ToString();
+                    else if (contestant[x].ContestantNo == "9")
+                        txtBoxPINo9.Text = contestant[x].PanelInterview.ToString();
+                    else if (contestant[x].ContestantNo == "10")
+                        txtBoxPINo10.Text = contestant[x].PanelInterview.ToString();
+                    else if (contestant[x].ContestantNo == "11")
+                        txtBoxPINo11.Text = contestant[x].PanelInterview.ToString();
+                    else if (contestant[x].ContestantNo == "12")
+                        txtBoxPINo12.Text = contestant[x].PanelInterview.ToString();
+                    else if (contestant[x].ContestantNo == "13")
+                        txtBoxPINo13.Text = contestant[x].PanelInterview.ToString();
+                    else if (contestant[x].ContestantNo == "14")
+                        txtBoxPINo14.Text = contestant[x].PanelInterview.ToString();
+                    else if (contestant[x].ContestantNo == "15")
+                        txtBoxPINo15.Text = contestant[x].PanelInterview.ToString();
+                    else if (contestant[x].ContestantNo == "16")
+                        txtBoxPINo16.Text = contestant[x].PanelInterview.ToString();
+                    else if (contestant[x].ContestantNo == "17")
+                        txtBoxPINo17.Text = contestant[x].PanelInterview.ToString();
+                    else if (contestant[x].ContestantNo == "19")
+                        txtBoxPINo19.Text = contestant[x].PanelInterview.ToString();
+                    else if (contestant[x].ContestantNo == "20")
+                        txtBoxPINo20.Text = contestant[x].PanelInterview.ToString();
                 }
             }
         }
@@ -387,36 +380,36 @@ namespace RSI_Judging_System
             string errorMessage = "";
 
             if (txtBoxBeautyNo1.Text == "")
-                errorMessage += "\n- Score for Beauty is required";
+                errorMessage += "\n- Score for Face is required";
             else
             {
-                if(double.Parse(txtBoxBeautyNo1.Text) > 25)
+                if(double.Parse(txtBoxBeautyNo1.Text) > 20)
                 {
-                    errorMessage += "\n- Only 1 - 25 score are allowed in Beauty";
+                    errorMessage += "\n- Only 1 - 20 score are allowed in Face";
 
                     txtBoxBeautyNo1.Text = "";
                 }
             }
 
             if (txtBoxDeliveryNo1.Text == "")
-                errorMessage += "\n- Score for Delivery is required";
+                errorMessage += "\n- Score for Poise is required";
             else
             {
-                if(double.Parse(txtBoxDeliveryNo1.Text) > 10)
+                if(double.Parse(txtBoxDeliveryNo1.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 10 score are allowed in Delivery";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Poise";
 
                     txtBoxDeliveryNo1.Text = "";
                 }
             }
 
             if (txtBoxIntelligenceNo1.Text == "")
-                errorMessage += "\n- Score for Intelligence is required";
+                errorMessage += "\n- Score for Figure is required";
             else
             {
                 if(double.Parse(txtBoxIntelligenceNo1.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 15 score are allowed in Intelligence";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Figure";
 
                     txtBoxIntelligenceNo1.Text = "";
                 }
@@ -465,36 +458,36 @@ namespace RSI_Judging_System
             string errorMessage = "";
 
             if (txtBoxBeauty2.Text == "")
-                errorMessage += "\n- Score for Beauty is required";
+                errorMessage += "\n- Score for Face is required";
             else
             {
-                if (double.Parse(txtBoxBeauty2.Text) > 25)
+                if (double.Parse(txtBoxBeauty2.Text) > 20)
                 {
-                    errorMessage += "\n- Only 1 - 25 score are allowed in Beauty";
+                    errorMessage += "\n- Only 1 - 20 score are allowed in Face";
 
                     txtBoxBeauty2.Text = "";
                 }
             }
 
             if (txtBoxDelivery2.Text == "")
-                errorMessage += "\n- Score for Delivery is required";
+                errorMessage += "\n- Score for Poise is required";
             else
             {
-                if (double.Parse(txtBoxDelivery2.Text) > 10)
+                if (double.Parse(txtBoxDelivery2.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 10 score are allowed in Delivery";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Poise";
 
                     txtBoxDelivery2.Text = "";
                 }
             }
 
             if (txtBoxIntelligence2.Text == "")
-                errorMessage += "\n- Score for Intelligence is required";
+                errorMessage += "\n- Score for Figure is required";
             else
             {
                 if (double.Parse(txtBoxIntelligence2.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 15 score are allowed in Intelligence";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Figure";
 
                     txtBoxIntelligence2.Text = "";
                 }
@@ -543,36 +536,36 @@ namespace RSI_Judging_System
             string errorMessage = "";
 
             if (txtBoxBeauty3.Text == "")
-                errorMessage += "\n- Score for Beauty is required";
+                errorMessage += "\n- Score for Face is required";
             else
             {
-                if (double.Parse(txtBoxBeauty3.Text) > 25)
+                if (double.Parse(txtBoxBeauty3.Text) > 20)
                 {
-                    errorMessage += "\n- Only 1 - 25 score are allowed in Beauty";
+                    errorMessage += "\n- Only 1 - 20 score are allowed in Face";
 
                     txtBoxBeauty3.Text = "";
                 }
             }
 
             if (txtBoxDelivery3.Text == "")
-                errorMessage += "\n- Score for Delivery is required";
+                errorMessage += "\n- Score for Poise is required";
             else
             {
-                if (double.Parse(txtBoxDelivery3.Text) > 10)
+                if (double.Parse(txtBoxDelivery3.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 10 score are allowed in Delivery";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Poise";
 
                     txtBoxDelivery3.Text = "";
                 }
             }
 
             if (txtBoxIntelligence3.Text == "")
-                errorMessage += "\n- Score for Intelligence is required";
+                errorMessage += "\n- Score for Figure is required";
             else
             {
                 if (double.Parse(txtBoxIntelligence3.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 15 score are allowed in Intelligence";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Figure";
 
                     txtBoxIntelligence3.Text = "";
                 }
@@ -621,36 +614,36 @@ namespace RSI_Judging_System
             string errorMessage = "";
 
             if (txtBoxBeauty4.Text == "")
-                errorMessage += "\n- Score for Beauty is required";
+                errorMessage += "\n- Score for Face is required";
             else
             {
-                if (double.Parse(txtBoxBeauty4.Text) > 25)
+                if (double.Parse(txtBoxBeauty4.Text) > 20)
                 {
-                    errorMessage += "\n- Only 1 - 25 score are allowed in Beauty";
+                    errorMessage += "\n- Only 1 - 20 score are allowed in Face";
 
                     txtBoxBeauty4.Text = "";
                 }
             }
 
             if (txtBoxDelivery4.Text == "")
-                errorMessage += "\n- Score for Delivery is required";
+                errorMessage += "\n- Score for Poise is required";
             else
             {
-                if (double.Parse(txtBoxDelivery4.Text) > 10)
+                if (double.Parse(txtBoxDelivery4.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 10 score are allowed in Delivery";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Poise";
 
                     txtBoxDelivery4.Text = "";
                 }
             }
 
             if (txtBoxIntelligence4.Text == "")
-                errorMessage += "\n- Score for Intelligence is required";
+                errorMessage += "\n- Score for Figure is required";
             else
             {
                 if (double.Parse(txtBoxIntelligence4.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 15 score are allowed in Intelligence";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Figure";
 
                     txtBoxIntelligence4.Text = "";
                 }
@@ -699,36 +692,36 @@ namespace RSI_Judging_System
             string errorMessage = "";
 
             if (txtBoxBeauty5.Text == "")
-                errorMessage += "\n- Score for Beauty is required";
+                errorMessage += "\n- Score for Face is required";
             else
             {
-                if (double.Parse(txtBoxBeauty5.Text) > 25)
+                if (double.Parse(txtBoxBeauty5.Text) > 20)
                 {
-                    errorMessage += "\n- Only 1 - 25 score are allowed in Beauty";
+                    errorMessage += "\n- Only 1 - 20 score are allowed in Face";
 
                     txtBoxBeauty5.Text = "";
                 }
             }
 
             if (txtBoxDelivery5.Text == "")
-                errorMessage += "\n- Score for Delivery is required";
+                errorMessage += "\n- Score for Poise is required";
             else
             {
-                if (double.Parse(txtBoxDelivery5.Text) > 10)
+                if (double.Parse(txtBoxDelivery5.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 10 score are allowed in Delivery";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Poise";
 
                     txtBoxDelivery5.Text = "";
                 }
             }
 
             if (txtBoxIntelligence5.Text == "")
-                errorMessage += "\n- Score for Intelligence is required";
+                errorMessage += "\n- Score for Figure is required";
             else
             {
                 if (double.Parse(txtBoxIntelligence5.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 15 score are allowed in Intelligence";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Figure";
 
                     txtBoxIntelligence5.Text = "";
                 }
@@ -782,36 +775,36 @@ namespace RSI_Judging_System
             string errorMessage = "";
 
             if (txtBoxBeauty6.Text == "")
-                errorMessage += "\n- Score for Beauty is required";
+                errorMessage += "\n- Score for Face is required";
             else
             {
-                if (double.Parse(txtBoxBeauty6.Text) > 25)
+                if (double.Parse(txtBoxBeauty6.Text) > 20)
                 {
-                    errorMessage += "\n- Only 1 - 25 score are allowed in Beauty";
+                    errorMessage += "\n- Only 1 - 20 score are allowed in Face";
 
                     txtBoxBeauty6.Text = "";
                 }
             }
 
             if (txtBoxDelivery6.Text == "")
-                errorMessage += "\n- Score for Delivery is required";
+                errorMessage += "\n- Score for Poise is required";
             else
             {
-                if (double.Parse(txtBoxDelivery6.Text) > 10)
+                if (double.Parse(txtBoxDelivery6.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 10 score are allowed in Delivery";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Poise";
 
                     txtBoxDelivery6.Text = "";
                 }
             }
 
             if (txtBoxIntelligence6.Text == "")
-                errorMessage += "\n- Score for Intelligence is required";
+                errorMessage += "\n- Score for Figure is required";
             else
             {
                 if (double.Parse(txtBoxIntelligence6.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 15 score are allowed in Intelligence";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Figure";
 
                     txtBoxIntelligence6.Text = "";
                 }
@@ -860,36 +853,36 @@ namespace RSI_Judging_System
             string errorMessage = "";
 
             if (txtBoxBeauty7.Text == "")
-                errorMessage += "\n- Score for Beauty is required";
+                errorMessage += "\n- Score for Face is required";
             else
             {
-                if (double.Parse(txtBoxBeauty7.Text) > 25)
+                if (double.Parse(txtBoxBeauty7.Text) > 20)
                 {
-                    errorMessage += "\n- Only 1 - 25 score are allowed in Beauty";
+                    errorMessage += "\n- Only 1 - 20 score are allowed in Face";
 
                     txtBoxBeauty7.Text = "";
                 }
             }
 
             if (txtBoxDelivery7.Text == "")
-                errorMessage += "\n- Score for Delivery is required";
+                errorMessage += "\n- Score for Poise is required";
             else
             {
-                if (double.Parse(txtBoxDelivery7.Text) > 10)
+                if (double.Parse(txtBoxDelivery7.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 10 score are allowed in Delivery";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Poise";
 
                     txtBoxDelivery7.Text = "";
                 }
             }
 
             if (txtBoxIntelligence7.Text == "")
-                errorMessage += "\n- Score for Intelligence is required";
+                errorMessage += "\n- Score for Figure is required";
             else
             {
                 if (double.Parse(txtBoxIntelligence7.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 15 score are allowed in Intelligence";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Figure";
 
                     txtBoxIntelligence7.Text = "";
                 }
@@ -938,36 +931,36 @@ namespace RSI_Judging_System
             string errorMessage = "";
 
             if (txtBoxBeauty8.Text == "")
-                errorMessage += "\n- Score for Beauty is required";
+                errorMessage += "\n- Score for Face is required";
             else
             {
-                if (double.Parse(txtBoxBeauty8.Text) > 25)
+                if (double.Parse(txtBoxBeauty8.Text) > 20)
                 {
-                    errorMessage += "\n- Only 1 - 25 score are allowed in Beauty";
+                    errorMessage += "\n- Only 1 - 20 score are allowed in Face";
 
                     txtBoxBeauty8.Text = "";
                 }
             }
 
             if (txtBoxDelivery8.Text == "")
-                errorMessage += "\n- Score for Delivery is required";
+                errorMessage += "\n- Score for Poise is required";
             else
             {
-                if (double.Parse(txtBoxDelivery8.Text) > 10)
+                if (double.Parse(txtBoxDelivery8.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 10 score are allowed in Delivery";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Poise";
 
                     txtBoxDelivery8.Text = "";
                 }
             }
 
             if (txtBoxIntelligence8.Text == "")
-                errorMessage += "\n- Score for Intelligence is required";
+                errorMessage += "\n- Score for Figure is required";
             else
             {
                 if (double.Parse(txtBoxIntelligence8.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 15 score are allowed in Intelligence";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Figure";
 
                     txtBoxIntelligence8.Text = "";
                 }
@@ -1016,36 +1009,36 @@ namespace RSI_Judging_System
             string errorMessage = "";
 
             if (txtBoxBeauty9.Text == "")
-                errorMessage += "\n- Score for Beauty is required";
+                errorMessage += "\n- Score for Face is required";
             else
             {
-                if (double.Parse(txtBoxBeauty9.Text) > 25)
+                if (double.Parse(txtBoxBeauty9.Text) > 20)
                 {
-                    errorMessage += "\n- Only 1 - 25 score are allowed in Beauty";
+                    errorMessage += "\n- Only 1 - 20 score are allowed in Face";
 
                     txtBoxBeauty9.Text = "";
                 }
             }
 
             if (txtBoxDelivery9.Text == "")
-                errorMessage += "\n- Score for Delivery is required";
+                errorMessage += "\n- Score for Poise is required";
             else
             {
-                if (double.Parse(txtBoxDelivery9.Text) > 10)
+                if (double.Parse(txtBoxDelivery9.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 10 score are allowed in Delivery";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Poise";
 
                     txtBoxDelivery9.Text = "";
                 }
             }
 
             if (txtBoxIntelligence9.Text == "")
-                errorMessage += "\n- Score for Intelligence is required";
+                errorMessage += "\n- Score for Figure is required";
             else
             {
                 if (double.Parse(txtBoxIntelligence9.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 15 score are allowed in Intelligence";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Figure";
 
                     txtBoxIntelligence9.Text = "";
                 }
@@ -1094,36 +1087,36 @@ namespace RSI_Judging_System
             string errorMessage = "";
 
             if (txtBoxBeauty10.Text == "")
-                errorMessage += "\n- Score for Beauty is required";
+                errorMessage += "\n- Score for Face is required";
             else
             {
-                if (double.Parse(txtBoxBeauty10.Text) > 25)
+                if (double.Parse(txtBoxBeauty10.Text) > 20)
                 {
-                    errorMessage += "\n- Only 1 - 25 score are allowed in Beauty";
+                    errorMessage += "\n- Only 1 - 20 score are allowed in Face";
 
                     txtBoxBeauty10.Text = "";
                 }
             }
 
             if (txtBoxDelivery10.Text == "")
-                errorMessage += "\n- Score for Delivery is required";
+                errorMessage += "\n- Score for Poise is required";
             else
             {
-                if (double.Parse(txtBoxDelivery10.Text) > 10)
+                if (double.Parse(txtBoxDelivery10.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 10 score are allowed in Delivery";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Poise";
 
                     txtBoxDelivery10.Text = "";
                 }
             }
 
             if (txtBoxIntelligence10.Text == "")
-                errorMessage += "\n- Score for Intelligence is required";
+                errorMessage += "\n- Score for Figure is required";
             else
             {
                 if (double.Parse(txtBoxIntelligence10.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 15 score are allowed in Intelligence";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Figure";
 
                     txtBoxIntelligence10.Text = "";
                 }
@@ -1172,36 +1165,36 @@ namespace RSI_Judging_System
             string errorMessage = "";
 
             if (txtBoxBeauty11.Text == "")
-                errorMessage += "\n- Score for Beauty is required";
+                errorMessage += "\n- Score for Face is required";
             else
             {
-                if (double.Parse(txtBoxBeauty11.Text) > 25)
+                if (double.Parse(txtBoxBeauty11.Text) > 20)
                 {
-                    errorMessage += "\n- Only 1 - 25 score are allowed in Beauty";
+                    errorMessage += "\n- Only 1 - 20 score are allowed in Face";
 
                     txtBoxBeauty11.Text = "";
                 }
             }
 
             if (txtBoxDelivery11.Text == "")
-                errorMessage += "\n- Score for Delivery is required";
+                errorMessage += "\n- Score for Poise is required";
             else
             {
-                if (double.Parse(txtBoxDelivery11.Text) > 10)
+                if (double.Parse(txtBoxDelivery11.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 10 score are allowed in Delivery";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Poise";
 
                     txtBoxDelivery11.Text = "";
                 }
             }
 
             if (txtBoxIntelligence11.Text == "")
-                errorMessage += "\n- Score for Intelligence is required";
+                errorMessage += "\n- Score for Figure is required";
             else
             {
                 if (double.Parse(txtBoxIntelligence11.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 15 score are allowed in Intelligence";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Figure";
 
                     txtBoxIntelligence11.Text = "";
                 }
@@ -1250,36 +1243,36 @@ namespace RSI_Judging_System
             string errorMessage = "";
 
             if (txtBoxBeauty12.Text == "")
-                errorMessage += "\n- Score for Beauty is required";
+                errorMessage += "\n- Score for Face is required";
             else
             {
-                if (double.Parse(txtBoxBeauty12.Text) > 25)
+                if (double.Parse(txtBoxBeauty12.Text) > 20)
                 {
-                    errorMessage += "\n- Only 1 - 25 score are allowed in Beauty";
+                    errorMessage += "\n- Only 1 - 20 score are allowed in Face";
 
                     txtBoxBeauty12.Text = "";
                 }
             }
 
             if (txtBoxDelivery12.Text == "")
-                errorMessage += "\n- Score for Delivery is required";
+                errorMessage += "\n- Score for Poise is required";
             else
             {
-                if (double.Parse(txtBoxDelivery12.Text) > 10)
+                if (double.Parse(txtBoxDelivery12.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 10 score are allowed in Delivery";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Poise";
 
                     txtBoxDelivery12.Text = "";
                 }
             }
 
             if (txtBoxIntelligence12.Text == "")
-                errorMessage += "\n- Score for Intelligence is required";
+                errorMessage += "\n- Score for Figure is required";
             else
             {
                 if (double.Parse(txtBoxIntelligence12.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 15 score are allowed in Intelligence";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Figure";
 
                     txtBoxIntelligence12.Text = "";
                 }
@@ -1328,36 +1321,36 @@ namespace RSI_Judging_System
             string errorMessage = "";
 
             if (txtBoxBeauty13.Text == "")
-                errorMessage += "\n- Score for Beauty is required";
+                errorMessage += "\n- Score for Face is required";
             else
             {
-                if (double.Parse(txtBoxBeauty13.Text) > 25)
+                if (double.Parse(txtBoxBeauty13.Text) > 20)
                 {
-                    errorMessage += "\n- Only 1 - 25 score are allowed in Beauty";
+                    errorMessage += "\n- Only 1 - 20 score are allowed in Face";
 
                     txtBoxBeauty13.Text = "";
                 }
             }
 
             if (txtBoxDelivery13.Text == "")
-                errorMessage += "\n- Score for Delivery is required";
+                errorMessage += "\n- Score for Poise is required";
             else
             {
-                if (double.Parse(txtBoxDelivery13.Text) > 10)
+                if (double.Parse(txtBoxDelivery13.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 10 score are allowed in Delivery";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Poise";
 
                     txtBoxDelivery13.Text = "";
                 }
             }
 
             if (txtBoxIntelligence13.Text == "")
-                errorMessage += "\n- Score for Intelligence is required";
+                errorMessage += "\n- Score for Figure is required";
             else
             {
                 if (double.Parse(txtBoxIntelligence13.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 15 score are allowed in Intelligence";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Figure";
 
                     txtBoxIntelligence13.Text = "";
                 }
@@ -1406,36 +1399,36 @@ namespace RSI_Judging_System
             string errorMessage = "";
 
             if (txtBoxBeauty14.Text == "")
-                errorMessage += "\n- Score for Beauty is required";
+                errorMessage += "\n- Score for Face is required";
             else
             {
-                if (double.Parse(txtBoxBeauty14.Text) > 25)
+                if (double.Parse(txtBoxBeauty14.Text) > 20)
                 {
-                    errorMessage += "\n- Only 1 - 25 score are allowed in Beauty";
+                    errorMessage += "\n- Only 1 - 20 score are allowed in Face";
 
                     txtBoxBeauty14.Text = "";
                 }
             }
 
             if (txtBoxDelivery14.Text == "")
-                errorMessage += "\n- Score for Delivery is required";
+                errorMessage += "\n- Score for Poise is required";
             else
             {
-                if (double.Parse(txtBoxDelivery14.Text) > 10)
+                if (double.Parse(txtBoxDelivery14.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 10 score are allowed in Delivery";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Poise";
 
                     txtBoxDelivery14.Text = "";
                 }
             }
 
             if (txtBoxIntelligence14.Text == "")
-                errorMessage += "\n- Score for Intelligence is required";
+                errorMessage += "\n- Score for Figure is required";
             else
             {
                 if (double.Parse(txtBoxIntelligence14.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 15 score are allowed in Intelligence";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Figure";
 
                     txtBoxIntelligence14.Text = "";
                 }
@@ -1484,36 +1477,36 @@ namespace RSI_Judging_System
             string errorMessage = "";
 
             if (txtBoxBeauty15.Text == "")
-                errorMessage += "\n- Score for Beauty is required";
+                errorMessage += "\n- Score for Face is required";
             else
             {
-                if (double.Parse(txtBoxBeauty15.Text) > 25)
+                if (double.Parse(txtBoxBeauty15.Text) > 20)
                 {
-                    errorMessage += "\n- Only 1 - 25 score are allowed in Beauty";
+                    errorMessage += "\n- Only 1 - 20 score are allowed in Face";
 
                     txtBoxBeauty15.Text = "";
                 }
             }
 
             if (txtBoxDelivery15.Text == "")
-                errorMessage += "\n- Score for Delivery is required";
+                errorMessage += "\n- Score for Poise is required";
             else
             {
-                if (double.Parse(txtBoxDelivery15.Text) > 10)
+                if (double.Parse(txtBoxDelivery15.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 10 score are allowed in Delivery";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Poise";
 
                     txtBoxDelivery15.Text = "";
                 }
             }
 
             if (txtBoxIntelligence15.Text == "")
-                errorMessage += "\n- Score for Intelligence is required";
+                errorMessage += "\n- Score for Figure is required";
             else
             {
                 if (double.Parse(txtBoxIntelligence15.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 15 score are allowed in Intelligence";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Figure";
 
                     txtBoxIntelligence15.Text = "";
                 }
@@ -1562,36 +1555,36 @@ namespace RSI_Judging_System
             string errorMessage = "";
 
             if (txtBoxBeauty16.Text == "")
-                errorMessage += "\n- Score for Beauty is required";
+                errorMessage += "\n- Score for Face is required";
             else
             {
-                if (double.Parse(txtBoxBeauty16.Text) > 25)
+                if (double.Parse(txtBoxBeauty16.Text) > 20)
                 {
-                    errorMessage += "\n- Only 1 - 25 score are allowed in Beauty";
+                    errorMessage += "\n- Only 1 - 20 score are allowed in Face";
 
                     txtBoxBeauty16.Text = "";
                 }
             }
 
             if (txtBoxDelivery16.Text == "")
-                errorMessage += "\n- Score for Delivery is required";
+                errorMessage += "\n- Score for Poise is required";
             else
             {
-                if (double.Parse(txtBoxDelivery16.Text) > 10)
+                if (double.Parse(txtBoxDelivery16.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 10 score are allowed in Delivery";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Poise";
 
                     txtBoxDelivery16.Text = "";
                 }
             }
 
             if (txtBoxIntelligence16.Text == "")
-                errorMessage += "\n- Score for Intelligence is required";
+                errorMessage += "\n- Score for Figure is required";
             else
             {
                 if (double.Parse(txtBoxIntelligence16.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 15 score are allowed in Intelligence";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Figure";
 
                     txtBoxIntelligence16.Text = "";
                 }
@@ -1640,36 +1633,36 @@ namespace RSI_Judging_System
             string errorMessage = "";
 
             if (txtBoxBeauty17.Text == "")
-                errorMessage += "\n- Score for Beauty is required";
+                errorMessage += "\n- Score for Face is required";
             else
             {
-                if (double.Parse(txtBoxBeauty17.Text) > 25)
+                if (double.Parse(txtBoxBeauty17.Text) > 20)
                 {
-                    errorMessage += "\n- Only 1 - 25 score are allowed in Beauty";
+                    errorMessage += "\n- Only 1 - 20 score are allowed in Face";
 
                     txtBoxBeauty17.Text = "";
                 }
             }
 
             if (txtBoxDelivery17.Text == "")
-                errorMessage += "\n- Score for Delivery is required";
+                errorMessage += "\n- Score for Poise is required";
             else
             {
-                if (double.Parse(txtBoxDelivery17.Text) > 10)
+                if (double.Parse(txtBoxDelivery17.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 10 score are allowed in Delivery";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Poise";
 
                     txtBoxDelivery17.Text = "";
                 }
             }
 
             if (txtBoxIntelligence17.Text == "")
-                errorMessage += "\n- Score for Intelligence is required";
+                errorMessage += "\n- Score for Figure is required";
             else
             {
                 if (double.Parse(txtBoxIntelligence17.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 15 score are allowed in Intelligence";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Figure";
 
                     txtBoxIntelligence17.Text = "";
                 }
@@ -1718,36 +1711,36 @@ namespace RSI_Judging_System
             string errorMessage = "";
 
             if (txtBoxBeauty19.Text == "")
-                errorMessage += "\n- Score for Beauty is required";
+                errorMessage += "\n- Score for Face is required";
             else
             {
-                if (double.Parse(txtBoxBeauty19.Text) > 25)
+                if (double.Parse(txtBoxBeauty19.Text) > 20)
                 {
-                    errorMessage += "\n- Only 1 - 25 score are allowed in Beauty";
+                    errorMessage += "\n- Only 1 - 20 score are allowed in Face";
 
                     txtBoxBeauty19.Text = "";
                 }
             }
 
             if (txtBoxDelivery19.Text == "")
-                errorMessage += "\n- Score for Delivery is required";
+                errorMessage += "\n- Score for Poise is required";
             else
             {
-                if (double.Parse(txtBoxDelivery19.Text) > 10)
+                if (double.Parse(txtBoxDelivery19.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 10 score are allowed in Delivery";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Poise";
 
                     txtBoxDelivery19.Text = "";
                 }
             }
 
             if (txtBoxIntelligence19.Text == "")
-                errorMessage += "\n- Score for Intelligence is required";
+                errorMessage += "\n- Score for Figure is required";
             else
             {
                 if (double.Parse(txtBoxIntelligence19.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 15 score are allowed in Intelligence";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Figure";
 
                     txtBoxIntelligence19.Text = "";
                 }
@@ -1796,36 +1789,36 @@ namespace RSI_Judging_System
             string errorMessage = "";
 
             if (txtBoxBeauty20.Text == "")
-                errorMessage += "\n- Score for Beauty is required";
+                errorMessage += "\n- Score for Face is required";
             else
             {
-                if (double.Parse(txtBoxBeauty20.Text) > 25)
+                if (double.Parse(txtBoxBeauty20.Text) > 20)
                 {
-                    errorMessage += "\n- Only 1 - 25 score are allowed in Beauty";
+                    errorMessage += "\n- Only 1 - 20 score are allowed in Face";
 
                     txtBoxBeauty20.Text = "";
                 }
             }
 
             if (txtBoxDelivery20.Text == "")
-                errorMessage += "\n- Score for Delivery is required";
+                errorMessage += "\n- Score for Poise is required";
             else
             {
-                if (double.Parse(txtBoxDelivery20.Text) > 10)
+                if (double.Parse(txtBoxDelivery20.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 10 score are allowed in Delivery";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Poise";
 
                     txtBoxDelivery20.Text = "";
                 }
             }
 
             if (txtBoxIntelligence20.Text == "")
-                errorMessage += "\n- Score for Intelligence is required";
+                errorMessage += "\n- Score for Figure is required";
             else
             {
                 if (double.Parse(txtBoxIntelligence20.Text) > 15)
                 {
-                    errorMessage += "\n- Only 1 - 15 score are allowed in Intelligence";
+                    errorMessage += "\n- Only 1 - 15 score are allowed in Figure";
 
                     txtBoxIntelligence20.Text = "";
                 }
@@ -1852,6 +1845,11 @@ namespace RSI_Judging_System
                         btnSubmit20.Enabled = false;
                 }
             }
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
