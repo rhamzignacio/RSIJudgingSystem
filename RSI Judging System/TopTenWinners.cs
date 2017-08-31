@@ -32,49 +32,52 @@ namespace RSI_Judging_System
             {
                 var contestant = db.ContestantProfile.OrderByDescending(r => r.PanelInterview).ToList();
 
-                txtBoxPanelInterviewNo1.Text = ConvertPI(contestant[0].PanelInterview);
-
-                txtBoxPanelInterviewNo2.Text = ConvertPI(contestant[1].PanelInterview);
-
-                txtBoxPanelInterviewNo3.Text = ConvertPI(contestant[2].PanelInterview);
-
-                txtBoxPINo4.Text = ConvertPI(contestant[3].PanelInterview);
-
-                txtBoxPINo5.Text = ConvertPI(contestant[4].PanelInterview);
-
-                txtBoxPINo6.Text = ConvertPI(contestant[5].PanelInterview);
-
-                txtBoxPINo7.Text = ConvertPI(contestant[6].PanelInterview);
-
-                txtBoxPINo8.Text = ConvertPI(contestant[7].PanelInterview);
-
-                txtBoxPINo9.Text = ConvertPI(contestant[8].PanelInterview);
-
-                txtBoxPINo10.Text = ConvertPI(contestant[9].PanelInterview);
-
-                txtBoxPINo11.Text = ConvertPI(contestant[10].PanelInterview);
-
-                txtBoxPINo12.Text = ConvertPI(contestant[11].PanelInterview);
-
-                txtBoxPINo13.Text = ConvertPI(contestant[12].PanelInterview);
-
-                txtBoxPINo14.Text = ConvertPI(contestant[13].PanelInterview);
-
-                txtBoxPINo15.Text = ConvertPI(contestant[14].PanelInterview);
-
-                txtBoxPINo16.Text = ConvertPI(contestant[15].PanelInterview);
-
-                txtBoxPINo17.Text = ConvertPI(contestant[16].PanelInterview);
-
-                txtBoxPINo19.Text = ConvertPI(contestant[17].PanelInterview);
-
-                txtBoxPINo20.Text = ConvertPI(contestant[18].PanelInterview);
-
                 for (int x = 0; x < contestant.Count; x++)
                 {
                     if(x >= 10)
                     {
                         RemoveTab(contestant[x].ContestantNo);
+                    }
+                    else
+                    {
+                        if (contestant[x].ContestantNo == "1")
+                            txtBoxPanelInterviewNo1.Text = contestant[x].PanelInterview.ToString();
+                        else if (contestant[x].ContestantNo == "2")
+                            txtBoxPanelInterviewNo2.Text = contestant[x].PanelInterview.ToString();
+                        else if (contestant[x].ContestantNo == "3")
+                            txtBoxPanelInterviewNo3.Text = contestant[x].PanelInterview.ToString();
+                        else if (contestant[x].ContestantNo == "4")
+                            txtBoxPINo4.Text = contestant[x].PanelInterview.ToString();
+                        else if (contestant[x].ContestantNo == "5")
+                            txtBoxPINo5.Text = contestant[x].PanelInterview.ToString();
+                        else if (contestant[x].ContestantNo == "6")
+                            txtBoxPINo6.Text = contestant[x].PanelInterview.ToString();
+                        else if (contestant[x].ContestantNo == "7")
+                            txtBoxPINo7.Text = contestant[x].PanelInterview.ToString();
+                        else if (contestant[x].ContestantNo == "8")
+                            txtBoxPINo8.Text = contestant[x].PanelInterview.ToString();
+                        else if (contestant[x].ContestantNo == "9")
+                            txtBoxPINo9.Text = contestant[x].PanelInterview.ToString();
+                        else if (contestant[x].ContestantNo == "10")
+                            txtBoxPINo10.Text = contestant[x].PanelInterview.ToString();
+                        else if (contestant[x].ContestantNo == "11")
+                            txtBoxPINo11.Text = contestant[x].PanelInterview.ToString();
+                        else if (contestant[x].ContestantNo == "12")
+                            txtBoxPINo12.Text = contestant[x].PanelInterview.ToString();
+                        else if (contestant[x].ContestantNo == "13")
+                            txtBoxPINo13.Text = contestant[x].PanelInterview.ToString();
+                        else if (contestant[x].ContestantNo == "14")
+                            txtBoxPINo14.Text = contestant[x].PanelInterview.ToString();
+                        else if (contestant[x].ContestantNo == "15")
+                            txtBoxPINo15.Text = contestant[x].PanelInterview.ToString();
+                        else if (contestant[x].ContestantNo == "16")
+                            txtBoxPINo16.Text = contestant[x].PanelInterview.ToString();
+                        else if (contestant[x].ContestantNo == "17")
+                            txtBoxPINo17.Text = contestant[x].PanelInterview.ToString();
+                        else if (contestant[x].ContestantNo == "19")
+                            txtBoxPINo19.Text = contestant[x].PanelInterview.ToString();
+                        else if (contestant[x].ContestantNo == "20")
+                            txtBoxPINo20.Text = contestant[x].PanelInterview.ToString();
                     }
                 }
             }

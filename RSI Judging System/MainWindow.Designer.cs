@@ -73,6 +73,7 @@
             this.Controls.Add(this.btnTop5);
             this.Controls.Add(this.btnTop10);
             this.Name = "MainWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RSI Judging System 1.0";
             this.ResumeLayout(false);
             this.PerformLayout();
