@@ -27,6 +27,13 @@ namespace RSI_Judging_System
     
         public virtual DbSet<ContestantProfile> ContestantProfile { get; set; }
         public virtual DbSet<JudgeProfile> JudgeProfile { get; set; }
+        public virtual DbSet<RankingJudge1> RankingJudge1 { get; set; }
+        public virtual DbSet<RankingJudge2> RankingJudge2 { get; set; }
+        public virtual DbSet<RankingJudge3> RankingJudge3 { get; set; }
+        public virtual DbSet<RankingJudge4> RankingJudge4 { get; set; }
+        public virtual DbSet<RankingJudge5> RankingJudge5 { get; set; }
+        public virtual DbSet<RankingJudge6> RankingJudge6 { get; set; }
+        public virtual DbSet<RankingJudge7> RankingJudge7 { get; set; }
         public virtual DbSet<Top10Judge1> Top10Judge1 { get; set; }
         public virtual DbSet<Top10Judge2> Top10Judge2 { get; set; }
         public virtual DbSet<Top10Judge3> Top10Judge3 { get; set; }

@@ -335,6 +335,7 @@
             this.lblName = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.label2 = new System.Windows.Forms.Label();
             this.tabPage19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox38)).BeginInit();
@@ -427,7 +428,7 @@
             this.tabPage19.Location = new System.Drawing.Point(4, 22);
             this.tabPage19.Name = "tabPage19";
             this.tabPage19.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage19.Size = new System.Drawing.Size(854, 583);
+            this.tabPage19.Size = new System.Drawing.Size(917, 623);
             this.tabPage19.TabIndex = 18;
             this.tabPage19.Text = "NO.20";
             this.tabPage19.UseVisualStyleBackColor = true;
@@ -435,7 +436,7 @@
             // pictureBox37
             // 
             this.pictureBox37.Image = global::RSI_Judging_System.Properties.Resources.Logo;
-            this.pictureBox37.Location = new System.Drawing.Point(6, 369);
+            this.pictureBox37.Location = new System.Drawing.Point(3, 412);
             this.pictureBox37.Name = "pictureBox37";
             this.pictureBox37.Size = new System.Drawing.Size(590, 208);
             this.pictureBox37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -463,17 +464,17 @@
             // label181
             // 
             this.label181.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label181.Location = new System.Drawing.Point(423, 258);
+            this.label181.Location = new System.Drawing.Point(698, 367);
             this.label181.Name = "label181";
             this.label181.Size = new System.Drawing.Size(278, 24);
             this.label181.TabIndex = 151;
-            this.label181.Text = "Contestant No. 20";
+            this.label181.Text = "Candidate No. 20";
             this.label181.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnSubmit20
             // 
             this.btnSubmit20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit20.Location = new System.Drawing.Point(147, 182);
+            this.btnSubmit20.Location = new System.Drawing.Point(811, 582);
             this.btnSubmit20.Name = "btnSubmit20";
             this.btnSubmit20.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit20.TabIndex = 149;
@@ -485,7 +486,7 @@
             // 
             this.btnNext20.Enabled = false;
             this.btnNext20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext20.Location = new System.Drawing.Point(746, 523);
+            this.btnNext20.Location = new System.Drawing.Point(210, 192);
             this.btnNext20.Name = "btnNext20";
             this.btnNext20.Size = new System.Drawing.Size(84, 35);
             this.btnNext20.TabIndex = 148;
@@ -496,7 +497,7 @@
             // btnPrevNo20
             // 
             this.btnPrevNo20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevNo20.Location = new System.Drawing.Point(656, 523);
+            this.btnPrevNo20.Location = new System.Drawing.Point(57, 192);
             this.btnPrevNo20.Name = "btnPrevNo20";
             this.btnPrevNo20.Size = new System.Drawing.Size(84, 35);
             this.btnPrevNo20.TabIndex = 147;
@@ -548,11 +549,11 @@
             // 
             this.label187.AutoSize = true;
             this.label187.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label187.Location = new System.Drawing.Point(99, 131);
+            this.label187.Location = new System.Drawing.Point(82, 134);
             this.label187.Name = "label187";
-            this.label187.Size = new System.Drawing.Size(38, 20);
+            this.label187.Size = new System.Drawing.Size(59, 20);
             this.label187.TabIndex = 139;
-            this.label187.Text = "WIT";
+            this.label187.Text = "Beauty";
             // 
             // label188
             // 
@@ -560,14 +561,14 @@
             this.label188.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label188.Location = new System.Drawing.Point(51, 78);
             this.label188.Name = "label188";
-            this.label188.Size = new System.Drawing.Size(86, 20);
+            this.label188.Size = new System.Drawing.Size(90, 20);
             this.label188.TabIndex = 137;
-            this.label188.Text = "Personality";
+            this.label188.Text = "Intelligence";
             // 
             // label190
             // 
             this.label190.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label190.Location = new System.Drawing.Point(378, 281);
+            this.label190.Location = new System.Drawing.Point(573, 391);
             this.label190.Name = "label190";
             this.label190.Size = new System.Drawing.Size(362, 29);
             this.label190.TabIndex = 134;
@@ -577,9 +578,9 @@
             // pictureBox38
             // 
             this.pictureBox38.Image = global::RSI_Judging_System.Properties.Resources.No_20;
-            this.pictureBox38.Location = new System.Drawing.Point(423, 9);
+            this.pictureBox38.Location = new System.Drawing.Point(522, 6);
             this.pictureBox38.Name = "pictureBox38";
-            this.pictureBox38.Size = new System.Drawing.Size(278, 241);
+            this.pictureBox38.Size = new System.Drawing.Size(389, 358);
             this.pictureBox38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox38.TabIndex = 133;
             this.pictureBox38.TabStop = false;
@@ -607,7 +608,7 @@
             this.tabPage18.Location = new System.Drawing.Point(4, 22);
             this.tabPage18.Name = "tabPage18";
             this.tabPage18.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage18.Size = new System.Drawing.Size(854, 583);
+            this.tabPage18.Size = new System.Drawing.Size(917, 623);
             this.tabPage18.TabIndex = 17;
             this.tabPage18.Text = "NO.19";
             this.tabPage18.UseVisualStyleBackColor = true;
@@ -615,7 +616,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::RSI_Judging_System.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 369);
+            this.pictureBox1.Location = new System.Drawing.Point(6, 409);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(590, 208);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -645,17 +646,17 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(423, 258);
+            this.label1.Location = new System.Drawing.Point(698, 367);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(278, 24);
             this.label1.TabIndex = 151;
-            this.label1.Text = "Contestant No. 19";
+            this.label1.Text = "Candidate No. 19";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnSubmit19
             // 
             this.btnSubmit19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit19.Location = new System.Drawing.Point(147, 188);
+            this.btnSubmit19.Location = new System.Drawing.Point(811, 582);
             this.btnSubmit19.Name = "btnSubmit19";
             this.btnSubmit19.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit19.TabIndex = 149;
@@ -666,7 +667,7 @@
             // btnNextNo19
             // 
             this.btnNextNo19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextNo19.Location = new System.Drawing.Point(746, 523);
+            this.btnNextNo19.Location = new System.Drawing.Point(210, 194);
             this.btnNextNo19.Name = "btnNextNo19";
             this.btnNextNo19.Size = new System.Drawing.Size(84, 35);
             this.btnNextNo19.TabIndex = 148;
@@ -677,7 +678,7 @@
             // btnPrevNo19
             // 
             this.btnPrevNo19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevNo19.Location = new System.Drawing.Point(656, 523);
+            this.btnPrevNo19.Location = new System.Drawing.Point(57, 194);
             this.btnPrevNo19.Name = "btnPrevNo19";
             this.btnPrevNo19.Size = new System.Drawing.Size(84, 35);
             this.btnPrevNo19.TabIndex = 147;
@@ -729,11 +730,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(99, 131);
+            this.label7.Location = new System.Drawing.Point(82, 131);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 20);
+            this.label7.Size = new System.Drawing.Size(59, 20);
             this.label7.TabIndex = 139;
-            this.label7.Text = "WIT";
+            this.label7.Text = "Beauty";
             // 
             // label8
             // 
@@ -741,14 +742,14 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(51, 78);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 20);
+            this.label8.Size = new System.Drawing.Size(90, 20);
             this.label8.TabIndex = 137;
-            this.label8.Text = "Personality";
+            this.label8.Text = "Intelligence";
             // 
             // label180
             // 
             this.label180.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label180.Location = new System.Drawing.Point(423, 282);
+            this.label180.Location = new System.Drawing.Point(669, 391);
             this.label180.Name = "label180";
             this.label180.Size = new System.Drawing.Size(278, 29);
             this.label180.TabIndex = 134;
@@ -758,9 +759,9 @@
             // pictureBox36
             // 
             this.pictureBox36.Image = global::RSI_Judging_System.Properties.Resources.No_19;
-            this.pictureBox36.Location = new System.Drawing.Point(423, 9);
+            this.pictureBox36.Location = new System.Drawing.Point(522, 6);
             this.pictureBox36.Name = "pictureBox36";
-            this.pictureBox36.Size = new System.Drawing.Size(278, 241);
+            this.pictureBox36.Size = new System.Drawing.Size(389, 358);
             this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox36.TabIndex = 133;
             this.pictureBox36.TabStop = false;
@@ -787,7 +788,7 @@
             this.tabPage17.Location = new System.Drawing.Point(4, 22);
             this.tabPage17.Name = "tabPage17";
             this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage17.Size = new System.Drawing.Size(854, 583);
+            this.tabPage17.Size = new System.Drawing.Size(917, 623);
             this.tabPage17.TabIndex = 16;
             this.tabPage17.Text = "NO.17";
             this.tabPage17.UseVisualStyleBackColor = true;
@@ -795,7 +796,7 @@
             // pictureBox34
             // 
             this.pictureBox34.Image = global::RSI_Judging_System.Properties.Resources.Logo;
-            this.pictureBox34.Location = new System.Drawing.Point(6, 369);
+            this.pictureBox34.Location = new System.Drawing.Point(6, 409);
             this.pictureBox34.Name = "pictureBox34";
             this.pictureBox34.Size = new System.Drawing.Size(590, 208);
             this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -823,17 +824,17 @@
             // label170
             // 
             this.label170.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label170.Location = new System.Drawing.Point(423, 258);
+            this.label170.Location = new System.Drawing.Point(695, 367);
             this.label170.Name = "label170";
             this.label170.Size = new System.Drawing.Size(278, 24);
             this.label170.TabIndex = 151;
-            this.label170.Text = "Contestant No. 17";
+            this.label170.Text = "Candidate No. 17";
             this.label170.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnSubmit17
             // 
             this.btnSubmit17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit17.Location = new System.Drawing.Point(147, 186);
+            this.btnSubmit17.Location = new System.Drawing.Point(814, 582);
             this.btnSubmit17.Name = "btnSubmit17";
             this.btnSubmit17.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit17.TabIndex = 149;
@@ -844,7 +845,7 @@
             // btnNextNo17
             // 
             this.btnNextNo17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextNo17.Location = new System.Drawing.Point(746, 523);
+            this.btnNextNo17.Location = new System.Drawing.Point(210, 184);
             this.btnNextNo17.Name = "btnNextNo17";
             this.btnNextNo17.Size = new System.Drawing.Size(84, 35);
             this.btnNextNo17.TabIndex = 148;
@@ -855,7 +856,7 @@
             // btnPrevNo17
             // 
             this.btnPrevNo17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevNo17.Location = new System.Drawing.Point(656, 523);
+            this.btnPrevNo17.Location = new System.Drawing.Point(57, 184);
             this.btnPrevNo17.Name = "btnPrevNo17";
             this.btnPrevNo17.Size = new System.Drawing.Size(84, 35);
             this.btnPrevNo17.TabIndex = 147;
@@ -907,11 +908,11 @@
             // 
             this.label176.AutoSize = true;
             this.label176.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label176.Location = new System.Drawing.Point(99, 131);
+            this.label176.Location = new System.Drawing.Point(82, 131);
             this.label176.Name = "label176";
-            this.label176.Size = new System.Drawing.Size(38, 20);
+            this.label176.Size = new System.Drawing.Size(59, 20);
             this.label176.TabIndex = 139;
-            this.label176.Text = "WIT";
+            this.label176.Text = "Beauty";
             // 
             // label177
             // 
@@ -919,14 +920,14 @@
             this.label177.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label177.Location = new System.Drawing.Point(51, 78);
             this.label177.Name = "label177";
-            this.label177.Size = new System.Drawing.Size(86, 20);
+            this.label177.Size = new System.Drawing.Size(90, 20);
             this.label177.TabIndex = 137;
-            this.label177.Text = "Personality";
+            this.label177.Text = "Intelligence";
             // 
             // label179
             // 
             this.label179.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label179.Location = new System.Drawing.Point(423, 282);
+            this.label179.Location = new System.Drawing.Point(669, 391);
             this.label179.Name = "label179";
             this.label179.Size = new System.Drawing.Size(278, 29);
             this.label179.TabIndex = 134;
@@ -936,9 +937,9 @@
             // pictureBox35
             // 
             this.pictureBox35.Image = global::RSI_Judging_System.Properties.Resources.No_17;
-            this.pictureBox35.Location = new System.Drawing.Point(423, 9);
+            this.pictureBox35.Location = new System.Drawing.Point(522, 6);
             this.pictureBox35.Name = "pictureBox35";
-            this.pictureBox35.Size = new System.Drawing.Size(278, 241);
+            this.pictureBox35.Size = new System.Drawing.Size(389, 358);
             this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox35.TabIndex = 133;
             this.pictureBox35.TabStop = false;
@@ -965,7 +966,7 @@
             this.tabPage16.Location = new System.Drawing.Point(4, 22);
             this.tabPage16.Name = "tabPage16";
             this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage16.Size = new System.Drawing.Size(854, 583);
+            this.tabPage16.Size = new System.Drawing.Size(917, 623);
             this.tabPage16.TabIndex = 15;
             this.tabPage16.Text = "NO.16";
             this.tabPage16.UseVisualStyleBackColor = true;
@@ -974,7 +975,7 @@
             // pictureBox32
             // 
             this.pictureBox32.Image = global::RSI_Judging_System.Properties.Resources.Logo;
-            this.pictureBox32.Location = new System.Drawing.Point(6, 369);
+            this.pictureBox32.Location = new System.Drawing.Point(6, 409);
             this.pictureBox32.Name = "pictureBox32";
             this.pictureBox32.Size = new System.Drawing.Size(590, 208);
             this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1002,17 +1003,17 @@
             // label160
             // 
             this.label160.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label160.Location = new System.Drawing.Point(423, 258);
+            this.label160.Location = new System.Drawing.Point(700, 369);
             this.label160.Name = "label160";
             this.label160.Size = new System.Drawing.Size(278, 24);
             this.label160.TabIndex = 151;
-            this.label160.Text = "Contestant No. 16";
+            this.label160.Text = "Candidate No. 16";
             this.label160.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnSubmit16
             // 
             this.btnSubmit16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit16.Location = new System.Drawing.Point(147, 186);
+            this.btnSubmit16.Location = new System.Drawing.Point(814, 582);
             this.btnSubmit16.Name = "btnSubmit16";
             this.btnSubmit16.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit16.TabIndex = 149;
@@ -1023,7 +1024,7 @@
             // btnNextNo16
             // 
             this.btnNextNo16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextNo16.Location = new System.Drawing.Point(746, 523);
+            this.btnNextNo16.Location = new System.Drawing.Point(210, 178);
             this.btnNextNo16.Name = "btnNextNo16";
             this.btnNextNo16.Size = new System.Drawing.Size(84, 35);
             this.btnNextNo16.TabIndex = 148;
@@ -1034,7 +1035,7 @@
             // btnPrevNo16
             // 
             this.btnPrevNo16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevNo16.Location = new System.Drawing.Point(656, 523);
+            this.btnPrevNo16.Location = new System.Drawing.Point(61, 178);
             this.btnPrevNo16.Name = "btnPrevNo16";
             this.btnPrevNo16.Size = new System.Drawing.Size(84, 35);
             this.btnPrevNo16.TabIndex = 147;
@@ -1087,11 +1088,11 @@
             // 
             this.label166.AutoSize = true;
             this.label166.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label166.Location = new System.Drawing.Point(103, 131);
+            this.label166.Location = new System.Drawing.Point(82, 131);
             this.label166.Name = "label166";
-            this.label166.Size = new System.Drawing.Size(38, 20);
+            this.label166.Size = new System.Drawing.Size(59, 20);
             this.label166.TabIndex = 139;
-            this.label166.Text = "WIT";
+            this.label166.Text = "Beauty";
             // 
             // label167
             // 
@@ -1099,14 +1100,14 @@
             this.label167.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label167.Location = new System.Drawing.Point(55, 78);
             this.label167.Name = "label167";
-            this.label167.Size = new System.Drawing.Size(86, 20);
+            this.label167.Size = new System.Drawing.Size(90, 20);
             this.label167.TabIndex = 137;
-            this.label167.Text = "Personality";
+            this.label167.Text = "Intelligence";
             // 
             // label169
             // 
             this.label169.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label169.Location = new System.Drawing.Point(423, 282);
+            this.label169.Location = new System.Drawing.Point(643, 393);
             this.label169.Name = "label169";
             this.label169.Size = new System.Drawing.Size(278, 29);
             this.label169.TabIndex = 134;
@@ -1116,9 +1117,9 @@
             // pictureBox33
             // 
             this.pictureBox33.Image = global::RSI_Judging_System.Properties.Resources.No_16;
-            this.pictureBox33.Location = new System.Drawing.Point(423, 9);
+            this.pictureBox33.Location = new System.Drawing.Point(522, 6);
             this.pictureBox33.Name = "pictureBox33";
-            this.pictureBox33.Size = new System.Drawing.Size(278, 241);
+            this.pictureBox33.Size = new System.Drawing.Size(389, 358);
             this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox33.TabIndex = 133;
             this.pictureBox33.TabStop = false;
@@ -1145,7 +1146,7 @@
             this.tabPage15.Location = new System.Drawing.Point(4, 22);
             this.tabPage15.Name = "tabPage15";
             this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage15.Size = new System.Drawing.Size(854, 583);
+            this.tabPage15.Size = new System.Drawing.Size(917, 623);
             this.tabPage15.TabIndex = 14;
             this.tabPage15.Text = "NO.15";
             this.tabPage15.UseVisualStyleBackColor = true;
@@ -1153,9 +1154,9 @@
             // pictureBox30
             // 
             this.pictureBox30.Image = global::RSI_Judging_System.Properties.Resources.Logo;
-            this.pictureBox30.Location = new System.Drawing.Point(6, 369);
+            this.pictureBox30.Location = new System.Drawing.Point(6, 409);
             this.pictureBox30.Name = "pictureBox30";
-            this.pictureBox30.Size = new System.Drawing.Size(590, 208);
+            this.pictureBox30.Size = new System.Drawing.Size(562, 208);
             this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox30.TabIndex = 154;
             this.pictureBox30.TabStop = false;
@@ -1181,17 +1182,17 @@
             // label150
             // 
             this.label150.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label150.Location = new System.Drawing.Point(423, 258);
+            this.label150.Location = new System.Drawing.Point(699, 369);
             this.label150.Name = "label150";
             this.label150.Size = new System.Drawing.Size(278, 24);
             this.label150.TabIndex = 151;
-            this.label150.Text = "Contestant No. 15";
+            this.label150.Text = "Candidate No. 15";
             this.label150.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnSubmit15
             // 
             this.btnSubmit15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit15.Location = new System.Drawing.Point(147, 184);
+            this.btnSubmit15.Location = new System.Drawing.Point(811, 582);
             this.btnSubmit15.Name = "btnSubmit15";
             this.btnSubmit15.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit15.TabIndex = 149;
@@ -1202,7 +1203,7 @@
             // btnNextNo15
             // 
             this.btnNextNo15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextNo15.Location = new System.Drawing.Point(746, 523);
+            this.btnNextNo15.Location = new System.Drawing.Point(210, 182);
             this.btnNextNo15.Name = "btnNextNo15";
             this.btnNextNo15.Size = new System.Drawing.Size(84, 35);
             this.btnNextNo15.TabIndex = 148;
@@ -1213,7 +1214,7 @@
             // btnPrevNo15
             // 
             this.btnPrevNo15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevNo15.Location = new System.Drawing.Point(656, 523);
+            this.btnPrevNo15.Location = new System.Drawing.Point(57, 182);
             this.btnPrevNo15.Name = "btnPrevNo15";
             this.btnPrevNo15.Size = new System.Drawing.Size(84, 35);
             this.btnPrevNo15.TabIndex = 147;
@@ -1265,11 +1266,11 @@
             // 
             this.label156.AutoSize = true;
             this.label156.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label156.Location = new System.Drawing.Point(99, 131);
+            this.label156.Location = new System.Drawing.Point(82, 131);
             this.label156.Name = "label156";
-            this.label156.Size = new System.Drawing.Size(38, 20);
+            this.label156.Size = new System.Drawing.Size(59, 20);
             this.label156.TabIndex = 139;
-            this.label156.Text = "WIT";
+            this.label156.Text = "Beauty";
             // 
             // label157
             // 
@@ -1277,14 +1278,14 @@
             this.label157.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label157.Location = new System.Drawing.Point(51, 78);
             this.label157.Name = "label157";
-            this.label157.Size = new System.Drawing.Size(86, 20);
+            this.label157.Size = new System.Drawing.Size(90, 20);
             this.label157.TabIndex = 137;
-            this.label157.Text = "Personality";
+            this.label157.Text = "Intelligence";
             // 
             // label159
             // 
             this.label159.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label159.Location = new System.Drawing.Point(378, 282);
+            this.label159.Location = new System.Drawing.Point(567, 393);
             this.label159.Name = "label159";
             this.label159.Size = new System.Drawing.Size(363, 29);
             this.label159.TabIndex = 134;
@@ -1294,9 +1295,9 @@
             // pictureBox31
             // 
             this.pictureBox31.Image = global::RSI_Judging_System.Properties.Resources.No_15;
-            this.pictureBox31.Location = new System.Drawing.Point(423, 9);
+            this.pictureBox31.Location = new System.Drawing.Point(522, 6);
             this.pictureBox31.Name = "pictureBox31";
-            this.pictureBox31.Size = new System.Drawing.Size(278, 241);
+            this.pictureBox31.Size = new System.Drawing.Size(389, 358);
             this.pictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox31.TabIndex = 133;
             this.pictureBox31.TabStop = false;
@@ -1323,7 +1324,7 @@
             this.tabPage14.Location = new System.Drawing.Point(4, 22);
             this.tabPage14.Name = "tabPage14";
             this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage14.Size = new System.Drawing.Size(854, 583);
+            this.tabPage14.Size = new System.Drawing.Size(917, 623);
             this.tabPage14.TabIndex = 13;
             this.tabPage14.Text = "NO.14";
             this.tabPage14.UseVisualStyleBackColor = true;
@@ -1331,7 +1332,7 @@
             // pictureBox28
             // 
             this.pictureBox28.Image = global::RSI_Judging_System.Properties.Resources.Logo;
-            this.pictureBox28.Location = new System.Drawing.Point(6, 369);
+            this.pictureBox28.Location = new System.Drawing.Point(6, 409);
             this.pictureBox28.Name = "pictureBox28";
             this.pictureBox28.Size = new System.Drawing.Size(590, 208);
             this.pictureBox28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1359,17 +1360,17 @@
             // label140
             // 
             this.label140.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label140.Location = new System.Drawing.Point(423, 258);
+            this.label140.Location = new System.Drawing.Point(697, 369);
             this.label140.Name = "label140";
             this.label140.Size = new System.Drawing.Size(278, 24);
             this.label140.TabIndex = 151;
-            this.label140.Text = "Contestant No. 14";
+            this.label140.Text = "Candidate No. 14";
             this.label140.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnSubmit14
             // 
             this.btnSubmit14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit14.Location = new System.Drawing.Point(147, 183);
+            this.btnSubmit14.Location = new System.Drawing.Point(811, 585);
             this.btnSubmit14.Name = "btnSubmit14";
             this.btnSubmit14.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit14.TabIndex = 149;
@@ -1380,7 +1381,7 @@
             // btnNextNo14
             // 
             this.btnNextNo14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextNo14.Location = new System.Drawing.Point(746, 523);
+            this.btnNextNo14.Location = new System.Drawing.Point(210, 181);
             this.btnNextNo14.Name = "btnNextNo14";
             this.btnNextNo14.Size = new System.Drawing.Size(84, 35);
             this.btnNextNo14.TabIndex = 148;
@@ -1391,7 +1392,7 @@
             // btnPrevNo14
             // 
             this.btnPrevNo14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevNo14.Location = new System.Drawing.Point(656, 523);
+            this.btnPrevNo14.Location = new System.Drawing.Point(57, 181);
             this.btnPrevNo14.Name = "btnPrevNo14";
             this.btnPrevNo14.Size = new System.Drawing.Size(84, 35);
             this.btnPrevNo14.TabIndex = 147;
@@ -1443,11 +1444,11 @@
             // 
             this.label146.AutoSize = true;
             this.label146.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label146.Location = new System.Drawing.Point(99, 131);
+            this.label146.Location = new System.Drawing.Point(82, 131);
             this.label146.Name = "label146";
-            this.label146.Size = new System.Drawing.Size(38, 20);
+            this.label146.Size = new System.Drawing.Size(59, 20);
             this.label146.TabIndex = 139;
-            this.label146.Text = "WIT";
+            this.label146.Text = "Beauty";
             // 
             // label147
             // 
@@ -1455,14 +1456,14 @@
             this.label147.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label147.Location = new System.Drawing.Point(51, 78);
             this.label147.Name = "label147";
-            this.label147.Size = new System.Drawing.Size(86, 20);
+            this.label147.Size = new System.Drawing.Size(90, 20);
             this.label147.TabIndex = 137;
-            this.label147.Text = "Personality";
+            this.label147.Text = "Intelligence";
             // 
             // label149
             // 
             this.label149.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label149.Location = new System.Drawing.Point(423, 282);
+            this.label149.Location = new System.Drawing.Point(709, 393);
             this.label149.Name = "label149";
             this.label149.Size = new System.Drawing.Size(278, 29);
             this.label149.TabIndex = 134;
@@ -1472,9 +1473,9 @@
             // pictureBox29
             // 
             this.pictureBox29.Image = global::RSI_Judging_System.Properties.Resources.No_14;
-            this.pictureBox29.Location = new System.Drawing.Point(423, 9);
+            this.pictureBox29.Location = new System.Drawing.Point(522, 6);
             this.pictureBox29.Name = "pictureBox29";
-            this.pictureBox29.Size = new System.Drawing.Size(278, 241);
+            this.pictureBox29.Size = new System.Drawing.Size(389, 358);
             this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox29.TabIndex = 133;
             this.pictureBox29.TabStop = false;
@@ -1501,7 +1502,7 @@
             this.tabPage13.Location = new System.Drawing.Point(4, 22);
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(854, 583);
+            this.tabPage13.Size = new System.Drawing.Size(917, 623);
             this.tabPage13.TabIndex = 12;
             this.tabPage13.Text = "NO. 13";
             this.tabPage13.UseVisualStyleBackColor = true;
@@ -1509,7 +1510,7 @@
             // pictureBox26
             // 
             this.pictureBox26.Image = global::RSI_Judging_System.Properties.Resources.Logo;
-            this.pictureBox26.Location = new System.Drawing.Point(6, 369);
+            this.pictureBox26.Location = new System.Drawing.Point(6, 409);
             this.pictureBox26.Name = "pictureBox26";
             this.pictureBox26.Size = new System.Drawing.Size(590, 208);
             this.pictureBox26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1537,17 +1538,17 @@
             // label130
             // 
             this.label130.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label130.Location = new System.Drawing.Point(423, 258);
+            this.label130.Location = new System.Drawing.Point(694, 369);
             this.label130.Name = "label130";
             this.label130.Size = new System.Drawing.Size(278, 24);
             this.label130.TabIndex = 151;
-            this.label130.Text = "Contestant No. 13";
+            this.label130.Text = "Candidate No. 13";
             this.label130.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnSubmit13
             // 
             this.btnSubmit13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit13.Location = new System.Drawing.Point(147, 191);
+            this.btnSubmit13.Location = new System.Drawing.Point(814, 582);
             this.btnSubmit13.Name = "btnSubmit13";
             this.btnSubmit13.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit13.TabIndex = 149;
@@ -1558,7 +1559,7 @@
             // btnNextNo13
             // 
             this.btnNextNo13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextNo13.Location = new System.Drawing.Point(746, 523);
+            this.btnNextNo13.Location = new System.Drawing.Point(210, 181);
             this.btnNextNo13.Name = "btnNextNo13";
             this.btnNextNo13.Size = new System.Drawing.Size(84, 35);
             this.btnNextNo13.TabIndex = 148;
@@ -1569,7 +1570,7 @@
             // btnPrevNo13
             // 
             this.btnPrevNo13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevNo13.Location = new System.Drawing.Point(656, 523);
+            this.btnPrevNo13.Location = new System.Drawing.Point(57, 181);
             this.btnPrevNo13.Name = "btnPrevNo13";
             this.btnPrevNo13.Size = new System.Drawing.Size(84, 35);
             this.btnPrevNo13.TabIndex = 147;
@@ -1621,11 +1622,11 @@
             // 
             this.label136.AutoSize = true;
             this.label136.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label136.Location = new System.Drawing.Point(99, 131);
+            this.label136.Location = new System.Drawing.Point(82, 131);
             this.label136.Name = "label136";
-            this.label136.Size = new System.Drawing.Size(38, 20);
+            this.label136.Size = new System.Drawing.Size(59, 20);
             this.label136.TabIndex = 139;
-            this.label136.Text = "WIT";
+            this.label136.Text = "Beauty";
             // 
             // label137
             // 
@@ -1633,14 +1634,14 @@
             this.label137.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label137.Location = new System.Drawing.Point(51, 78);
             this.label137.Name = "label137";
-            this.label137.Size = new System.Drawing.Size(86, 20);
+            this.label137.Size = new System.Drawing.Size(90, 20);
             this.label137.TabIndex = 137;
-            this.label137.Text = "Personality";
+            this.label137.Text = "Intelligence";
             // 
             // label139
             // 
             this.label139.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label139.Location = new System.Drawing.Point(423, 282);
+            this.label139.Location = new System.Drawing.Point(663, 393);
             this.label139.Name = "label139";
             this.label139.Size = new System.Drawing.Size(278, 29);
             this.label139.TabIndex = 134;
@@ -1650,9 +1651,9 @@
             // pictureBox27
             // 
             this.pictureBox27.Image = global::RSI_Judging_System.Properties.Resources.No_13;
-            this.pictureBox27.Location = new System.Drawing.Point(423, 9);
+            this.pictureBox27.Location = new System.Drawing.Point(522, 6);
             this.pictureBox27.Name = "pictureBox27";
-            this.pictureBox27.Size = new System.Drawing.Size(278, 241);
+            this.pictureBox27.Size = new System.Drawing.Size(389, 358);
             this.pictureBox27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox27.TabIndex = 133;
             this.pictureBox27.TabStop = false;
@@ -1679,7 +1680,7 @@
             this.tabPage12.Location = new System.Drawing.Point(4, 22);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(854, 583);
+            this.tabPage12.Size = new System.Drawing.Size(917, 623);
             this.tabPage12.TabIndex = 11;
             this.tabPage12.Text = "NO.12";
             this.tabPage12.UseVisualStyleBackColor = true;
@@ -1687,7 +1688,7 @@
             // pictureBox24
             // 
             this.pictureBox24.Image = global::RSI_Judging_System.Properties.Resources.Logo;
-            this.pictureBox24.Location = new System.Drawing.Point(6, 369);
+            this.pictureBox24.Location = new System.Drawing.Point(3, 409);
             this.pictureBox24.Name = "pictureBox24";
             this.pictureBox24.Size = new System.Drawing.Size(590, 208);
             this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -1715,17 +1716,17 @@
             // label120
             // 
             this.label120.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label120.Location = new System.Drawing.Point(423, 258);
+            this.label120.Location = new System.Drawing.Point(697, 367);
             this.label120.Name = "label120";
             this.label120.Size = new System.Drawing.Size(278, 24);
             this.label120.TabIndex = 132;
-            this.label120.Text = "Contestant No. 12";
+            this.label120.Text = "Candidate No. 12";
             this.label120.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnSubmit12
             // 
             this.btnSubmit12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit12.Location = new System.Drawing.Point(147, 186);
+            this.btnSubmit12.Location = new System.Drawing.Point(811, 582);
             this.btnSubmit12.Name = "btnSubmit12";
             this.btnSubmit12.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit12.TabIndex = 130;
@@ -1736,7 +1737,7 @@
             // btnNext12
             // 
             this.btnNext12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNext12.Location = new System.Drawing.Point(746, 523);
+            this.btnNext12.Location = new System.Drawing.Point(210, 183);
             this.btnNext12.Name = "btnNext12";
             this.btnNext12.Size = new System.Drawing.Size(84, 35);
             this.btnNext12.TabIndex = 129;
@@ -1747,7 +1748,7 @@
             // btnPrevNo12
             // 
             this.btnPrevNo12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevNo12.Location = new System.Drawing.Point(656, 523);
+            this.btnPrevNo12.Location = new System.Drawing.Point(57, 183);
             this.btnPrevNo12.Name = "btnPrevNo12";
             this.btnPrevNo12.Size = new System.Drawing.Size(84, 35);
             this.btnPrevNo12.TabIndex = 128;
@@ -1799,11 +1800,11 @@
             // 
             this.label126.AutoSize = true;
             this.label126.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label126.Location = new System.Drawing.Point(103, 131);
+            this.label126.Location = new System.Drawing.Point(82, 131);
             this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(38, 20);
+            this.label126.Size = new System.Drawing.Size(59, 20);
             this.label126.TabIndex = 120;
-            this.label126.Text = "WIT";
+            this.label126.Text = "Beauty";
             // 
             // label127
             // 
@@ -1811,14 +1812,14 @@
             this.label127.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label127.Location = new System.Drawing.Point(55, 78);
             this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(86, 20);
+            this.label127.Size = new System.Drawing.Size(90, 20);
             this.label127.TabIndex = 118;
-            this.label127.Text = "Personality";
+            this.label127.Text = "Intelligence";
             // 
             // label129
             // 
             this.label129.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label129.Location = new System.Drawing.Point(423, 282);
+            this.label129.Location = new System.Drawing.Point(664, 391);
             this.label129.Name = "label129";
             this.label129.Size = new System.Drawing.Size(278, 29);
             this.label129.TabIndex = 115;
@@ -1828,9 +1829,9 @@
             // pictureBox25
             // 
             this.pictureBox25.Image = global::RSI_Judging_System.Properties.Resources.No_12;
-            this.pictureBox25.Location = new System.Drawing.Point(423, 9);
+            this.pictureBox25.Location = new System.Drawing.Point(522, 6);
             this.pictureBox25.Name = "pictureBox25";
-            this.pictureBox25.Size = new System.Drawing.Size(278, 241);
+            this.pictureBox25.Size = new System.Drawing.Size(389, 358);
             this.pictureBox25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox25.TabIndex = 114;
             this.pictureBox25.TabStop = false;
@@ -1857,7 +1858,7 @@
             this.tabPage11.Location = new System.Drawing.Point(4, 22);
             this.tabPage11.Name = "tabPage11";
             this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(854, 583);
+            this.tabPage11.Size = new System.Drawing.Size(917, 623);
             this.tabPage11.TabIndex = 10;
             this.tabPage11.Text = "NO.11";
             this.tabPage11.UseVisualStyleBackColor = true;
@@ -1865,9 +1866,9 @@
             // pictureBox22
             // 
             this.pictureBox22.Image = global::RSI_Judging_System.Properties.Resources.Logo;
-            this.pictureBox22.Location = new System.Drawing.Point(6, 369);
+            this.pictureBox22.Location = new System.Drawing.Point(6, 409);
             this.pictureBox22.Name = "pictureBox22";
-            this.pictureBox22.Size = new System.Drawing.Size(590, 208);
+            this.pictureBox22.Size = new System.Drawing.Size(568, 208);
             this.pictureBox22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox22.TabIndex = 135;
             this.pictureBox22.TabStop = false;
@@ -1893,17 +1894,17 @@
             // label110
             // 
             this.label110.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label110.Location = new System.Drawing.Point(423, 258);
+            this.label110.Location = new System.Drawing.Point(699, 367);
             this.label110.Name = "label110";
             this.label110.Size = new System.Drawing.Size(278, 24);
             this.label110.TabIndex = 132;
-            this.label110.Text = "Contestant No. 11";
+            this.label110.Text = "Candidate No. 11";
             this.label110.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnSubmit11
             // 
             this.btnSubmit11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit11.Location = new System.Drawing.Point(147, 185);
+            this.btnSubmit11.Location = new System.Drawing.Point(811, 582);
             this.btnSubmit11.Name = "btnSubmit11";
             this.btnSubmit11.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit11.TabIndex = 130;
@@ -1914,7 +1915,7 @@
             // btnNextNo11
             // 
             this.btnNextNo11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextNo11.Location = new System.Drawing.Point(746, 523);
+            this.btnNextNo11.Location = new System.Drawing.Point(210, 181);
             this.btnNextNo11.Name = "btnNextNo11";
             this.btnNextNo11.Size = new System.Drawing.Size(84, 35);
             this.btnNextNo11.TabIndex = 129;
@@ -1925,7 +1926,7 @@
             // btnPrevNo11
             // 
             this.btnPrevNo11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevNo11.Location = new System.Drawing.Point(656, 523);
+            this.btnPrevNo11.Location = new System.Drawing.Point(57, 181);
             this.btnPrevNo11.Name = "btnPrevNo11";
             this.btnPrevNo11.Size = new System.Drawing.Size(84, 35);
             this.btnPrevNo11.TabIndex = 128;
@@ -1977,11 +1978,11 @@
             // 
             this.label116.AutoSize = true;
             this.label116.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label116.Location = new System.Drawing.Point(99, 131);
+            this.label116.Location = new System.Drawing.Point(71, 128);
             this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(38, 20);
+            this.label116.Size = new System.Drawing.Size(59, 20);
             this.label116.TabIndex = 120;
-            this.label116.Text = "WIT";
+            this.label116.Text = "Beauty";
             // 
             // label117
             // 
@@ -1989,14 +1990,14 @@
             this.label117.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label117.Location = new System.Drawing.Point(51, 78);
             this.label117.Name = "label117";
-            this.label117.Size = new System.Drawing.Size(86, 20);
+            this.label117.Size = new System.Drawing.Size(90, 20);
             this.label117.TabIndex = 118;
-            this.label117.Text = "Personality";
+            this.label117.Text = "Intelligence";
             // 
             // label119
             // 
             this.label119.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label119.Location = new System.Drawing.Point(391, 282);
+            this.label119.Location = new System.Drawing.Point(572, 391);
             this.label119.Name = "label119";
             this.label119.Size = new System.Drawing.Size(349, 29);
             this.label119.TabIndex = 115;
@@ -2006,9 +2007,9 @@
             // pictureBox23
             // 
             this.pictureBox23.Image = global::RSI_Judging_System.Properties.Resources.No_11;
-            this.pictureBox23.Location = new System.Drawing.Point(423, 9);
+            this.pictureBox23.Location = new System.Drawing.Point(522, 6);
             this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(278, 241);
+            this.pictureBox23.Size = new System.Drawing.Size(389, 358);
             this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox23.TabIndex = 114;
             this.pictureBox23.TabStop = false;
@@ -2035,7 +2036,7 @@
             this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Name = "tabPage10";
             this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(854, 583);
+            this.tabPage10.Size = new System.Drawing.Size(917, 623);
             this.tabPage10.TabIndex = 9;
             this.tabPage10.Text = "NO.10";
             this.tabPage10.UseVisualStyleBackColor = true;
@@ -2043,7 +2044,7 @@
             // pictureBox20
             // 
             this.pictureBox20.Image = global::RSI_Judging_System.Properties.Resources.Logo;
-            this.pictureBox20.Location = new System.Drawing.Point(6, 369);
+            this.pictureBox20.Location = new System.Drawing.Point(3, 409);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(590, 208);
             this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2071,17 +2072,17 @@
             // label100
             // 
             this.label100.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label100.Location = new System.Drawing.Point(423, 258);
+            this.label100.Location = new System.Drawing.Point(698, 369);
             this.label100.Name = "label100";
             this.label100.Size = new System.Drawing.Size(278, 24);
             this.label100.TabIndex = 132;
-            this.label100.Text = "Contestant No. 10";
+            this.label100.Text = "Candidate No. 10";
             this.label100.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnSubmit10
             // 
             this.btnSubmit10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit10.Location = new System.Drawing.Point(147, 188);
+            this.btnSubmit10.Location = new System.Drawing.Point(814, 582);
             this.btnSubmit10.Name = "btnSubmit10";
             this.btnSubmit10.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit10.TabIndex = 130;
@@ -2092,7 +2093,7 @@
             // btnNextNo10
             // 
             this.btnNextNo10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextNo10.Location = new System.Drawing.Point(746, 523);
+            this.btnNextNo10.Location = new System.Drawing.Point(210, 181);
             this.btnNextNo10.Name = "btnNextNo10";
             this.btnNextNo10.Size = new System.Drawing.Size(84, 35);
             this.btnNextNo10.TabIndex = 129;
@@ -2103,7 +2104,7 @@
             // btnPrevNo10
             // 
             this.btnPrevNo10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevNo10.Location = new System.Drawing.Point(656, 523);
+            this.btnPrevNo10.Location = new System.Drawing.Point(57, 181);
             this.btnPrevNo10.Name = "btnPrevNo10";
             this.btnPrevNo10.Size = new System.Drawing.Size(84, 35);
             this.btnPrevNo10.TabIndex = 128;
@@ -2155,11 +2156,11 @@
             // 
             this.label106.AutoSize = true;
             this.label106.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label106.Location = new System.Drawing.Point(99, 131);
+            this.label106.Location = new System.Drawing.Point(82, 131);
             this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(38, 20);
+            this.label106.Size = new System.Drawing.Size(59, 20);
             this.label106.TabIndex = 120;
-            this.label106.Text = "WIT";
+            this.label106.Text = "Beauty";
             // 
             // label107
             // 
@@ -2167,14 +2168,14 @@
             this.label107.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label107.Location = new System.Drawing.Point(51, 78);
             this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(86, 20);
+            this.label107.Size = new System.Drawing.Size(90, 20);
             this.label107.TabIndex = 118;
-            this.label107.Text = "Personality";
+            this.label107.Text = "Intelligence";
             // 
             // label109
             // 
             this.label109.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label109.Location = new System.Drawing.Point(423, 282);
+            this.label109.Location = new System.Drawing.Point(663, 393);
             this.label109.Name = "label109";
             this.label109.Size = new System.Drawing.Size(278, 29);
             this.label109.TabIndex = 115;
@@ -2184,9 +2185,9 @@
             // pictureBox21
             // 
             this.pictureBox21.Image = global::RSI_Judging_System.Properties.Resources.No_10;
-            this.pictureBox21.Location = new System.Drawing.Point(423, 9);
+            this.pictureBox21.Location = new System.Drawing.Point(522, 6);
             this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(278, 241);
+            this.pictureBox21.Size = new System.Drawing.Size(389, 358);
             this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox21.TabIndex = 114;
             this.pictureBox21.TabStop = false;
@@ -2213,7 +2214,7 @@
             this.tabPage9.Location = new System.Drawing.Point(4, 22);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(854, 583);
+            this.tabPage9.Size = new System.Drawing.Size(917, 623);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "NO.9";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -2221,7 +2222,7 @@
             // pictureBox18
             // 
             this.pictureBox18.Image = global::RSI_Judging_System.Properties.Resources.Logo;
-            this.pictureBox18.Location = new System.Drawing.Point(6, 369);
+            this.pictureBox18.Location = new System.Drawing.Point(6, 409);
             this.pictureBox18.Name = "pictureBox18";
             this.pictureBox18.Size = new System.Drawing.Size(590, 208);
             this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2249,17 +2250,17 @@
             // label90
             // 
             this.label90.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label90.Location = new System.Drawing.Point(423, 258);
+            this.label90.Location = new System.Drawing.Point(703, 369);
             this.label90.Name = "label90";
             this.label90.Size = new System.Drawing.Size(278, 24);
             this.label90.TabIndex = 132;
-            this.label90.Text = "Contestant No. 9";
+            this.label90.Text = "Candidate No. 9";
             this.label90.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnSubmit9
             // 
             this.btnSubmit9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit9.Location = new System.Drawing.Point(147, 185);
+            this.btnSubmit9.Location = new System.Drawing.Point(811, 582);
             this.btnSubmit9.Name = "btnSubmit9";
             this.btnSubmit9.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit9.TabIndex = 130;
@@ -2270,7 +2271,7 @@
             // btnNextNo9
             // 
             this.btnNextNo9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextNo9.Location = new System.Drawing.Point(746, 523);
+            this.btnNextNo9.Location = new System.Drawing.Point(210, 196);
             this.btnNextNo9.Name = "btnNextNo9";
             this.btnNextNo9.Size = new System.Drawing.Size(84, 35);
             this.btnNextNo9.TabIndex = 129;
@@ -2281,7 +2282,7 @@
             // btnPrevNo9
             // 
             this.btnPrevNo9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevNo9.Location = new System.Drawing.Point(656, 523);
+            this.btnPrevNo9.Location = new System.Drawing.Point(61, 196);
             this.btnPrevNo9.Name = "btnPrevNo9";
             this.btnPrevNo9.Size = new System.Drawing.Size(84, 35);
             this.btnPrevNo9.TabIndex = 128;
@@ -2333,11 +2334,11 @@
             // 
             this.label96.AutoSize = true;
             this.label96.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label96.Location = new System.Drawing.Point(103, 131);
+            this.label96.Location = new System.Drawing.Point(86, 131);
             this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(38, 20);
+            this.label96.Size = new System.Drawing.Size(59, 20);
             this.label96.TabIndex = 120;
-            this.label96.Text = "WIT";
+            this.label96.Text = "Beauty";
             // 
             // label97
             // 
@@ -2345,14 +2346,15 @@
             this.label97.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label97.Location = new System.Drawing.Point(55, 78);
             this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(86, 20);
+            this.label97.Size = new System.Drawing.Size(90, 20);
             this.label97.TabIndex = 118;
-            this.label97.Text = "Personality";
+            this.label97.Text = "Intelligence";
+            this.label97.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label99
             // 
             this.label99.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label99.Location = new System.Drawing.Point(423, 282);
+            this.label99.Location = new System.Drawing.Point(688, 393);
             this.label99.Name = "label99";
             this.label99.Size = new System.Drawing.Size(278, 29);
             this.label99.TabIndex = 115;
@@ -2362,9 +2364,9 @@
             // pictureBox19
             // 
             this.pictureBox19.Image = global::RSI_Judging_System.Properties.Resources.No_9;
-            this.pictureBox19.Location = new System.Drawing.Point(423, 9);
+            this.pictureBox19.Location = new System.Drawing.Point(522, 6);
             this.pictureBox19.Name = "pictureBox19";
-            this.pictureBox19.Size = new System.Drawing.Size(278, 241);
+            this.pictureBox19.Size = new System.Drawing.Size(389, 358);
             this.pictureBox19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox19.TabIndex = 114;
             this.pictureBox19.TabStop = false;
@@ -2391,7 +2393,7 @@
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
             this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(854, 583);
+            this.tabPage8.Size = new System.Drawing.Size(917, 623);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "NO.8";
             this.tabPage8.UseVisualStyleBackColor = true;
@@ -2399,7 +2401,7 @@
             // pictureBox16
             // 
             this.pictureBox16.Image = global::RSI_Judging_System.Properties.Resources.Logo;
-            this.pictureBox16.Location = new System.Drawing.Point(6, 369);
+            this.pictureBox16.Location = new System.Drawing.Point(6, 409);
             this.pictureBox16.Name = "pictureBox16";
             this.pictureBox16.Size = new System.Drawing.Size(590, 208);
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2427,17 +2429,17 @@
             // label80
             // 
             this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.Location = new System.Drawing.Point(423, 258);
+            this.label80.Location = new System.Drawing.Point(699, 367);
             this.label80.Name = "label80";
             this.label80.Size = new System.Drawing.Size(278, 24);
             this.label80.TabIndex = 132;
-            this.label80.Text = "Contestant No. 8";
+            this.label80.Text = "Candidate No. 8";
             this.label80.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnSubmit8
             // 
             this.btnSubmit8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit8.Location = new System.Drawing.Point(147, 184);
+            this.btnSubmit8.Location = new System.Drawing.Point(811, 582);
             this.btnSubmit8.Name = "btnSubmit8";
             this.btnSubmit8.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit8.TabIndex = 130;
@@ -2448,7 +2450,7 @@
             // btnNextNo8
             // 
             this.btnNextNo8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextNo8.Location = new System.Drawing.Point(746, 523);
+            this.btnNextNo8.Location = new System.Drawing.Point(210, 188);
             this.btnNextNo8.Name = "btnNextNo8";
             this.btnNextNo8.Size = new System.Drawing.Size(84, 35);
             this.btnNextNo8.TabIndex = 129;
@@ -2459,7 +2461,7 @@
             // btnPrevNo8
             // 
             this.btnPrevNo8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevNo8.Location = new System.Drawing.Point(656, 523);
+            this.btnPrevNo8.Location = new System.Drawing.Point(57, 188);
             this.btnPrevNo8.Name = "btnPrevNo8";
             this.btnPrevNo8.Size = new System.Drawing.Size(84, 35);
             this.btnPrevNo8.TabIndex = 128;
@@ -2511,11 +2513,11 @@
             // 
             this.label86.AutoSize = true;
             this.label86.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label86.Location = new System.Drawing.Point(99, 134);
+            this.label86.Location = new System.Drawing.Point(82, 134);
             this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(38, 20);
+            this.label86.Size = new System.Drawing.Size(59, 20);
             this.label86.TabIndex = 120;
-            this.label86.Text = "WIT";
+            this.label86.Text = "Beauty";
             // 
             // label87
             // 
@@ -2523,14 +2525,14 @@
             this.label87.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label87.Location = new System.Drawing.Point(51, 78);
             this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(86, 20);
+            this.label87.Size = new System.Drawing.Size(90, 20);
             this.label87.TabIndex = 118;
-            this.label87.Text = "Personality";
+            this.label87.Text = "Intelligence";
             // 
             // label89
             // 
             this.label89.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label89.Location = new System.Drawing.Point(423, 282);
+            this.label89.Location = new System.Drawing.Point(643, 391);
             this.label89.Name = "label89";
             this.label89.Size = new System.Drawing.Size(278, 29);
             this.label89.TabIndex = 115;
@@ -2540,9 +2542,9 @@
             // pictureBox17
             // 
             this.pictureBox17.Image = global::RSI_Judging_System.Properties.Resources.No_8;
-            this.pictureBox17.Location = new System.Drawing.Point(423, 9);
+            this.pictureBox17.Location = new System.Drawing.Point(522, 6);
             this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(278, 241);
+            this.pictureBox17.Size = new System.Drawing.Size(389, 358);
             this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox17.TabIndex = 114;
             this.pictureBox17.TabStop = false;
@@ -2569,7 +2571,7 @@
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(854, 583);
+            this.tabPage7.Size = new System.Drawing.Size(917, 623);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "NO.7";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -2577,7 +2579,7 @@
             // pictureBox14
             // 
             this.pictureBox14.Image = global::RSI_Judging_System.Properties.Resources.Logo;
-            this.pictureBox14.Location = new System.Drawing.Point(6, 369);
+            this.pictureBox14.Location = new System.Drawing.Point(6, 409);
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(590, 208);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2605,17 +2607,17 @@
             // label70
             // 
             this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(423, 258);
+            this.label70.Location = new System.Drawing.Point(699, 369);
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(278, 24);
             this.label70.TabIndex = 113;
-            this.label70.Text = "Contestant No. 7";
+            this.label70.Text = "Candidate No. 7";
             this.label70.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnSubmit7
             // 
             this.btnSubmit7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit7.Location = new System.Drawing.Point(147, 183);
+            this.btnSubmit7.Location = new System.Drawing.Point(811, 582);
             this.btnSubmit7.Name = "btnSubmit7";
             this.btnSubmit7.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit7.TabIndex = 111;
@@ -2626,7 +2628,7 @@
             // btnNextNo7
             // 
             this.btnNextNo7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextNo7.Location = new System.Drawing.Point(746, 523);
+            this.btnNextNo7.Location = new System.Drawing.Point(210, 183);
             this.btnNextNo7.Name = "btnNextNo7";
             this.btnNextNo7.Size = new System.Drawing.Size(84, 35);
             this.btnNextNo7.TabIndex = 110;
@@ -2637,7 +2639,7 @@
             // btnPrevNo7
             // 
             this.btnPrevNo7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevNo7.Location = new System.Drawing.Point(656, 523);
+            this.btnPrevNo7.Location = new System.Drawing.Point(57, 183);
             this.btnPrevNo7.Name = "btnPrevNo7";
             this.btnPrevNo7.Size = new System.Drawing.Size(84, 35);
             this.btnPrevNo7.TabIndex = 109;
@@ -2689,11 +2691,11 @@
             // 
             this.label76.AutoSize = true;
             this.label76.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label76.Location = new System.Drawing.Point(99, 131);
+            this.label76.Location = new System.Drawing.Point(82, 131);
             this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(38, 20);
+            this.label76.Size = new System.Drawing.Size(59, 20);
             this.label76.TabIndex = 101;
-            this.label76.Text = "WIT";
+            this.label76.Text = "Beauty";
             // 
             // label77
             // 
@@ -2701,14 +2703,14 @@
             this.label77.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label77.Location = new System.Drawing.Point(51, 78);
             this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(86, 20);
+            this.label77.Size = new System.Drawing.Size(90, 20);
             this.label77.TabIndex = 99;
-            this.label77.Text = "Personality";
+            this.label77.Text = "Intelligence";
             // 
             // label79
             // 
             this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label79.Location = new System.Drawing.Point(423, 282);
+            this.label79.Location = new System.Drawing.Point(664, 393);
             this.label79.Name = "label79";
             this.label79.Size = new System.Drawing.Size(278, 29);
             this.label79.TabIndex = 96;
@@ -2718,9 +2720,9 @@
             // pictureBox15
             // 
             this.pictureBox15.Image = global::RSI_Judging_System.Properties.Resources.No_7;
-            this.pictureBox15.Location = new System.Drawing.Point(423, 9);
+            this.pictureBox15.Location = new System.Drawing.Point(522, 6);
             this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(278, 241);
+            this.pictureBox15.Size = new System.Drawing.Size(389, 358);
             this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox15.TabIndex = 95;
             this.pictureBox15.TabStop = false;
@@ -2747,7 +2749,7 @@
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(854, 583);
+            this.tabPage6.Size = new System.Drawing.Size(917, 623);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "NO.6";
             this.tabPage6.UseVisualStyleBackColor = true;
@@ -2755,7 +2757,7 @@
             // pictureBox12
             // 
             this.pictureBox12.Image = global::RSI_Judging_System.Properties.Resources.Logo;
-            this.pictureBox12.Location = new System.Drawing.Point(6, 369);
+            this.pictureBox12.Location = new System.Drawing.Point(6, 409);
             this.pictureBox12.Name = "pictureBox12";
             this.pictureBox12.Size = new System.Drawing.Size(590, 208);
             this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2783,17 +2785,17 @@
             // label60
             // 
             this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.Location = new System.Drawing.Point(423, 258);
+            this.label60.Location = new System.Drawing.Point(701, 367);
             this.label60.Name = "label60";
             this.label60.Size = new System.Drawing.Size(278, 24);
             this.label60.TabIndex = 94;
-            this.label60.Text = "Contestant No. 6";
+            this.label60.Text = "Candidate No. 6";
             this.label60.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnSubmit6
             // 
             this.btnSubmit6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit6.Location = new System.Drawing.Point(147, 182);
+            this.btnSubmit6.Location = new System.Drawing.Point(814, 582);
             this.btnSubmit6.Name = "btnSubmit6";
             this.btnSubmit6.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit6.TabIndex = 92;
@@ -2804,7 +2806,7 @@
             // btnNextNo6
             // 
             this.btnNextNo6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextNo6.Location = new System.Drawing.Point(746, 523);
+            this.btnNextNo6.Location = new System.Drawing.Point(210, 182);
             this.btnNextNo6.Name = "btnNextNo6";
             this.btnNextNo6.Size = new System.Drawing.Size(84, 35);
             this.btnNextNo6.TabIndex = 91;
@@ -2815,7 +2817,7 @@
             // btnPrevNo6
             // 
             this.btnPrevNo6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevNo6.Location = new System.Drawing.Point(656, 523);
+            this.btnPrevNo6.Location = new System.Drawing.Point(55, 182);
             this.btnPrevNo6.Name = "btnPrevNo6";
             this.btnPrevNo6.Size = new System.Drawing.Size(84, 35);
             this.btnPrevNo6.TabIndex = 90;
@@ -2867,11 +2869,11 @@
             // 
             this.label66.AutoSize = true;
             this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.Location = new System.Drawing.Point(99, 134);
+            this.label66.Location = new System.Drawing.Point(82, 134);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(38, 20);
+            this.label66.Size = new System.Drawing.Size(59, 20);
             this.label66.TabIndex = 82;
-            this.label66.Text = "WIT";
+            this.label66.Text = "Beauty";
             // 
             // label67
             // 
@@ -2879,14 +2881,14 @@
             this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label67.Location = new System.Drawing.Point(51, 78);
             this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(86, 20);
+            this.label67.Size = new System.Drawing.Size(90, 20);
             this.label67.TabIndex = 80;
-            this.label67.Text = "Personality";
+            this.label67.Text = "Intelligence";
             // 
             // label69
             // 
             this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(423, 282);
+            this.label69.Location = new System.Drawing.Point(660, 391);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(278, 29);
             this.label69.TabIndex = 77;
@@ -2896,9 +2898,9 @@
             // pictureBox13
             // 
             this.pictureBox13.Image = global::RSI_Judging_System.Properties.Resources.No_6;
-            this.pictureBox13.Location = new System.Drawing.Point(423, 9);
+            this.pictureBox13.Location = new System.Drawing.Point(522, 6);
             this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(278, 241);
+            this.pictureBox13.Size = new System.Drawing.Size(389, 358);
             this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox13.TabIndex = 76;
             this.pictureBox13.TabStop = false;
@@ -2925,7 +2927,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(854, 583);
+            this.tabPage5.Size = new System.Drawing.Size(917, 623);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "NO.5";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -2934,7 +2936,7 @@
             // pictureBox10
             // 
             this.pictureBox10.Image = global::RSI_Judging_System.Properties.Resources.Logo;
-            this.pictureBox10.Location = new System.Drawing.Point(6, 369);
+            this.pictureBox10.Location = new System.Drawing.Point(6, 409);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(590, 208);
             this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2962,17 +2964,17 @@
             // label50
             // 
             this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(423, 258);
+            this.label50.Location = new System.Drawing.Point(701, 369);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(278, 24);
             this.label50.TabIndex = 75;
-            this.label50.Text = "Contestant No. 5";
+            this.label50.Text = "Candidate No. 5";
             this.label50.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnSubmit5
             // 
             this.btnSubmit5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit5.Location = new System.Drawing.Point(147, 184);
+            this.btnSubmit5.Location = new System.Drawing.Point(814, 582);
             this.btnSubmit5.Name = "btnSubmit5";
             this.btnSubmit5.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit5.TabIndex = 73;
@@ -2983,7 +2985,7 @@
             // btnNextNo5
             // 
             this.btnNextNo5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextNo5.Location = new System.Drawing.Point(746, 523);
+            this.btnNextNo5.Location = new System.Drawing.Point(210, 184);
             this.btnNextNo5.Name = "btnNextNo5";
             this.btnNextNo5.Size = new System.Drawing.Size(84, 35);
             this.btnNextNo5.TabIndex = 72;
@@ -2994,7 +2996,7 @@
             // btnPrevNo5
             // 
             this.btnPrevNo5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevNo5.Location = new System.Drawing.Point(656, 523);
+            this.btnPrevNo5.Location = new System.Drawing.Point(57, 184);
             this.btnPrevNo5.Name = "btnPrevNo5";
             this.btnPrevNo5.Size = new System.Drawing.Size(84, 35);
             this.btnPrevNo5.TabIndex = 71;
@@ -3046,11 +3048,11 @@
             // 
             this.label56.AutoSize = true;
             this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(99, 131);
+            this.label56.Location = new System.Drawing.Point(82, 134);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(38, 20);
+            this.label56.Size = new System.Drawing.Size(59, 20);
             this.label56.TabIndex = 63;
-            this.label56.Text = "WIT";
+            this.label56.Text = "Beauty";
             // 
             // label57
             // 
@@ -3058,14 +3060,14 @@
             this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label57.Location = new System.Drawing.Point(51, 78);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(86, 20);
+            this.label57.Size = new System.Drawing.Size(90, 20);
             this.label57.TabIndex = 61;
-            this.label57.Text = "Personality";
+            this.label57.Text = "Intelligence";
             // 
             // label59
             // 
             this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(423, 282);
+            this.label59.Location = new System.Drawing.Point(667, 393);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(278, 29);
             this.label59.TabIndex = 58;
@@ -3075,9 +3077,9 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::RSI_Judging_System.Properties.Resources.No_5;
-            this.pictureBox11.Location = new System.Drawing.Point(423, 9);
+            this.pictureBox11.Location = new System.Drawing.Point(522, 6);
             this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(278, 241);
+            this.pictureBox11.Size = new System.Drawing.Size(389, 358);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox11.TabIndex = 57;
             this.pictureBox11.TabStop = false;
@@ -3104,7 +3106,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(854, 583);
+            this.tabPage4.Size = new System.Drawing.Size(917, 623);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "NO.4";
             this.tabPage4.UseVisualStyleBackColor = true;
@@ -3112,7 +3114,7 @@
             // pictureBox8
             // 
             this.pictureBox8.Image = global::RSI_Judging_System.Properties.Resources.Logo;
-            this.pictureBox8.Location = new System.Drawing.Point(6, 369);
+            this.pictureBox8.Location = new System.Drawing.Point(6, 409);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(590, 208);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3140,17 +3142,17 @@
             // label40
             // 
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(423, 258);
+            this.label40.Location = new System.Drawing.Point(699, 369);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(278, 24);
             this.label40.TabIndex = 75;
-            this.label40.Text = "Contestant No. 4";
+            this.label40.Text = "Candidate No. 4";
             this.label40.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnSubmit4
             // 
             this.btnSubmit4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit4.Location = new System.Drawing.Point(147, 182);
+            this.btnSubmit4.Location = new System.Drawing.Point(814, 582);
             this.btnSubmit4.Name = "btnSubmit4";
             this.btnSubmit4.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit4.TabIndex = 73;
@@ -3161,7 +3163,7 @@
             // btnNextNo4
             // 
             this.btnNextNo4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextNo4.Location = new System.Drawing.Point(746, 523);
+            this.btnNextNo4.Location = new System.Drawing.Point(210, 183);
             this.btnNextNo4.Name = "btnNextNo4";
             this.btnNextNo4.Size = new System.Drawing.Size(84, 35);
             this.btnNextNo4.TabIndex = 72;
@@ -3172,7 +3174,7 @@
             // btnPrevNo4
             // 
             this.btnPrevNo4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevNo4.Location = new System.Drawing.Point(656, 523);
+            this.btnPrevNo4.Location = new System.Drawing.Point(61, 183);
             this.btnPrevNo4.Name = "btnPrevNo4";
             this.btnPrevNo4.Size = new System.Drawing.Size(84, 35);
             this.btnPrevNo4.TabIndex = 71;
@@ -3224,11 +3226,11 @@
             // 
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(103, 131);
+            this.label46.Location = new System.Drawing.Point(82, 131);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(38, 20);
+            this.label46.Size = new System.Drawing.Size(59, 20);
             this.label46.TabIndex = 63;
-            this.label46.Text = "WIT";
+            this.label46.Text = "Beauty";
             // 
             // label47
             // 
@@ -3236,14 +3238,14 @@
             this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label47.Location = new System.Drawing.Point(55, 78);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(86, 20);
+            this.label47.Size = new System.Drawing.Size(90, 20);
             this.label47.TabIndex = 61;
-            this.label47.Text = "Personality";
+            this.label47.Text = "Intelligence";
             // 
             // label49
             // 
             this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(423, 282);
+            this.label49.Location = new System.Drawing.Point(672, 393);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(278, 29);
             this.label49.TabIndex = 58;
@@ -3253,9 +3255,9 @@
             // pictureBox9
             // 
             this.pictureBox9.Image = global::RSI_Judging_System.Properties.Resources.No_4;
-            this.pictureBox9.Location = new System.Drawing.Point(423, 9);
+            this.pictureBox9.Location = new System.Drawing.Point(522, 6);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(278, 241);
+            this.pictureBox9.Size = new System.Drawing.Size(389, 358);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox9.TabIndex = 57;
             this.pictureBox9.TabStop = false;
@@ -3282,7 +3284,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(854, 583);
+            this.tabPage3.Size = new System.Drawing.Size(917, 623);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "NO. 3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -3290,7 +3292,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::RSI_Judging_System.Properties.Resources.Logo;
-            this.pictureBox6.Location = new System.Drawing.Point(6, 372);
+            this.pictureBox6.Location = new System.Drawing.Point(6, 409);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(590, 208);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3318,17 +3320,17 @@
             // label30
             // 
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(423, 258);
+            this.label30.Location = new System.Drawing.Point(701, 372);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(278, 24);
             this.label30.TabIndex = 56;
-            this.label30.Text = "Contestant No. 3";
+            this.label30.Text = "Candidate No. 3";
             this.label30.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnSubmit3
             // 
             this.btnSubmit3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit3.Location = new System.Drawing.Point(147, 183);
+            this.btnSubmit3.Location = new System.Drawing.Point(814, 582);
             this.btnSubmit3.Name = "btnSubmit3";
             this.btnSubmit3.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit3.TabIndex = 54;
@@ -3339,7 +3341,7 @@
             // btnNextNo3
             // 
             this.btnNextNo3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextNo3.Location = new System.Drawing.Point(746, 523);
+            this.btnNextNo3.Location = new System.Drawing.Point(210, 194);
             this.btnNextNo3.Name = "btnNextNo3";
             this.btnNextNo3.Size = new System.Drawing.Size(84, 35);
             this.btnNextNo3.TabIndex = 53;
@@ -3350,7 +3352,7 @@
             // btnPrevNo3
             // 
             this.btnPrevNo3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevNo3.Location = new System.Drawing.Point(656, 523);
+            this.btnPrevNo3.Location = new System.Drawing.Point(57, 194);
             this.btnPrevNo3.Name = "btnPrevNo3";
             this.btnPrevNo3.Size = new System.Drawing.Size(84, 35);
             this.btnPrevNo3.TabIndex = 52;
@@ -3402,11 +3404,11 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(99, 134);
+            this.label36.Location = new System.Drawing.Point(82, 134);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(38, 20);
+            this.label36.Size = new System.Drawing.Size(59, 20);
             this.label36.TabIndex = 44;
-            this.label36.Text = "WIT";
+            this.label36.Text = "Beauty";
             // 
             // label37
             // 
@@ -3414,14 +3416,14 @@
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label37.Location = new System.Drawing.Point(51, 78);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(86, 20);
+            this.label37.Size = new System.Drawing.Size(90, 20);
             this.label37.TabIndex = 42;
-            this.label37.Text = "Personality";
+            this.label37.Text = "Intelligence";
             // 
             // label39
             // 
             this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(423, 282);
+            this.label39.Location = new System.Drawing.Point(647, 396);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(278, 29);
             this.label39.TabIndex = 39;
@@ -3431,9 +3433,9 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::RSI_Judging_System.Properties.Resources.No_3;
-            this.pictureBox7.Location = new System.Drawing.Point(423, 9);
+            this.pictureBox7.Location = new System.Drawing.Point(522, 8);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(278, 241);
+            this.pictureBox7.Size = new System.Drawing.Size(389, 358);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox7.TabIndex = 38;
             this.pictureBox7.TabStop = false;
@@ -3460,7 +3462,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(854, 583);
+            this.tabPage2.Size = new System.Drawing.Size(917, 623);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "NO.2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -3468,7 +3470,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = global::RSI_Judging_System.Properties.Resources.Logo;
-            this.pictureBox4.Location = new System.Drawing.Point(6, 369);
+            this.pictureBox4.Location = new System.Drawing.Point(6, 409);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(590, 208);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3496,17 +3498,17 @@
             // label20
             // 
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(423, 258);
+            this.label20.Location = new System.Drawing.Point(699, 368);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(278, 24);
             this.label20.TabIndex = 37;
-            this.label20.Text = "Contestant No. 2";
+            this.label20.Text = "Candidate No. 2";
             this.label20.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnSubmit2
             // 
             this.btnSubmit2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit2.Location = new System.Drawing.Point(147, 180);
+            this.btnSubmit2.Location = new System.Drawing.Point(811, 582);
             this.btnSubmit2.Name = "btnSubmit2";
             this.btnSubmit2.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit2.TabIndex = 35;
@@ -3517,7 +3519,7 @@
             // btnNextNo2
             // 
             this.btnNextNo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextNo2.Location = new System.Drawing.Point(746, 523);
+            this.btnNextNo2.Location = new System.Drawing.Point(210, 190);
             this.btnNextNo2.Name = "btnNextNo2";
             this.btnNextNo2.Size = new System.Drawing.Size(84, 35);
             this.btnNextNo2.TabIndex = 34;
@@ -3528,7 +3530,7 @@
             // btnPrevNo2
             // 
             this.btnPrevNo2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevNo2.Location = new System.Drawing.Point(656, 523);
+            this.btnPrevNo2.Location = new System.Drawing.Point(57, 190);
             this.btnPrevNo2.Name = "btnPrevNo2";
             this.btnPrevNo2.Size = new System.Drawing.Size(84, 35);
             this.btnPrevNo2.TabIndex = 33;
@@ -3580,11 +3582,11 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(99, 134);
+            this.label26.Location = new System.Drawing.Point(82, 134);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(38, 20);
+            this.label26.Size = new System.Drawing.Size(59, 20);
             this.label26.TabIndex = 25;
-            this.label26.Text = "WIT";
+            this.label26.Text = "Beauty";
             // 
             // label27
             // 
@@ -3592,14 +3594,14 @@
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.Location = new System.Drawing.Point(51, 78);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(86, 20);
+            this.label27.Size = new System.Drawing.Size(90, 20);
             this.label27.TabIndex = 23;
-            this.label27.Text = "Personality";
+            this.label27.Text = "Intelligence";
             // 
             // label29
             // 
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(423, 282);
+            this.label29.Location = new System.Drawing.Point(657, 392);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(278, 29);
             this.label29.TabIndex = 20;
@@ -3609,9 +3611,9 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::RSI_Judging_System.Properties.Resources.No_2;
-            this.pictureBox5.Location = new System.Drawing.Point(423, 9);
+            this.pictureBox5.Location = new System.Drawing.Point(522, 6);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(278, 241);
+            this.pictureBox5.Size = new System.Drawing.Size(389, 358);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 19;
             this.pictureBox5.TabStop = false;
@@ -3638,7 +3640,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(854, 583);
+            this.tabPage1.Size = new System.Drawing.Size(917, 623);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "NO.1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -3665,16 +3667,16 @@
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(483, 264);
+            this.label19.Location = new System.Drawing.Point(757, 367);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(148, 24);
+            this.label19.Size = new System.Drawing.Size(145, 24);
             this.label19.TabIndex = 18;
-            this.label19.Text = "Contestant No. 1";
+            this.label19.Text = "Candidate No. 1";
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::RSI_Judging_System.Properties.Resources.Logo;
-            this.pictureBox3.Location = new System.Drawing.Point(3, 359);
+            this.pictureBox3.Location = new System.Drawing.Point(6, 409);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(590, 208);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -3684,7 +3686,7 @@
             // btnSubmit1
             // 
             this.btnSubmit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubmit1.Location = new System.Drawing.Point(147, 190);
+            this.btnSubmit1.Location = new System.Drawing.Point(811, 582);
             this.btnSubmit1.Name = "btnSubmit1";
             this.btnSubmit1.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit1.TabIndex = 16;
@@ -3695,7 +3697,7 @@
             // btnNextNo1
             // 
             this.btnNextNo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextNo1.Location = new System.Drawing.Point(746, 529);
+            this.btnNextNo1.Location = new System.Drawing.Point(209, 191);
             this.btnNextNo1.Name = "btnNextNo1";
             this.btnNextNo1.Size = new System.Drawing.Size(84, 35);
             this.btnNextNo1.TabIndex = 15;
@@ -3707,7 +3709,7 @@
             // 
             this.btnPrevNo1.Enabled = false;
             this.btnPrevNo1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrevNo1.Location = new System.Drawing.Point(656, 529);
+            this.btnPrevNo1.Location = new System.Drawing.Point(77, 191);
             this.btnPrevNo1.Name = "btnPrevNo1";
             this.btnPrevNo1.Size = new System.Drawing.Size(84, 35);
             this.btnPrevNo1.TabIndex = 14;
@@ -3758,11 +3760,11 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(99, 140);
+            this.label12.Location = new System.Drawing.Point(73, 140);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(38, 20);
+            this.label12.Size = new System.Drawing.Size(59, 20);
             this.label12.TabIndex = 6;
-            this.label12.Text = "WIT";
+            this.label12.Text = "Beauty";
             // 
             // label11
             // 
@@ -3770,15 +3772,15 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(51, 84);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(86, 20);
+            this.label11.Size = new System.Drawing.Size(90, 20);
             this.label11.TabIndex = 4;
-            this.label11.Text = "Personality";
+            this.label11.Text = "Intelligence";
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.Location = new System.Drawing.Point(458, 288);
+            this.lblName.Location = new System.Drawing.Point(685, 391);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(217, 29);
             this.lblName.TabIndex = 1;
@@ -3787,9 +3789,9 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::RSI_Judging_System.Properties.Resources.No_1;
-            this.pictureBox2.Location = new System.Drawing.Point(423, 15);
+            this.pictureBox2.Location = new System.Drawing.Point(513, 6);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(278, 241);
+            this.pictureBox2.Size = new System.Drawing.Size(389, 358);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -3818,23 +3820,34 @@
             this.tabControl1.Controls.Add(this.tabPage17);
             this.tabControl1.Controls.Add(this.tabPage18);
             this.tabControl1.Controls.Add(this.tabPage19);
-            this.tabControl1.Location = new System.Drawing.Point(16, 33);
+            this.tabControl1.Location = new System.Drawing.Point(15, 33);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(862, 609);
+            this.tabControl1.Size = new System.Drawing.Size(925, 649);
             this.tabControl1.TabIndex = 6;
             this.tabControl1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tabControl1_KeyPress);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(834, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(107, 20);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "For Ranking";
             // 
             // TopFiveWinners
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(890, 653);
+            this.ClientSize = new System.Drawing.Size(953, 693);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblJudgeName);
             this.Controls.Add(this.tabControl1);
             this.Name = "TopFiveWinners";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TopFiveWinners";
+            this.Text = "For Ranking";
             this.tabPage19.ResumeLayout(false);
             this.tabPage19.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
@@ -4225,5 +4238,6 @@
         private System.Windows.Forms.PictureBox pictureBox34;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox37;
+        private System.Windows.Forms.Label label2;
     }
 }

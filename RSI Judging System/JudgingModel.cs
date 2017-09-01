@@ -10,6 +10,7 @@ namespace RSI_Judging_System
     {
     }
 
+
     public class Top5Model
     {
         public string contestantNo { get; set; }
@@ -422,5 +423,7 @@ namespace RSI_Judging_System
                 return (total1 + total2 + total3 + total4 + total5 + total6 + total7) / 7;
             }
         }
+
+        public decimal? TotalScoreLinq { get; set; }
     }
 }

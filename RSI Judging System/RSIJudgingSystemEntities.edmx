@@ -22,6 +22,62 @@
           <Property Name="Name" Type="varchar" MaxLength="400" />
           <Property Name="Username" Type="varchar" MaxLength="100" />
         </EntityType>
+        <EntityType Name="RankingJudge1">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="RankingJudge2">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="RankingJudge3">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="RankingJudge4">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="RankingJudge5">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="RankingJudge6">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="RankingJudge7">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+        </EntityType>
         <EntityType Name="Top10Judge1">
           <Key>
             <PropertyRef Name="ContestantNo" />
@@ -87,63 +143,77 @@
         </EntityType>
         <EntityType Name="Top5Judge1">
           <Key>
-            <PropertyRef Name="ContestantNo" />
+            <PropertyRef Name="CandidateNo" />
           </Key>
-          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
-          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="CandidateNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Intelligence" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Beauty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Poise" Type="decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="Top5Judge2">
           <Key>
-            <PropertyRef Name="ContestantNo" />
+            <PropertyRef Name="CandidateNo" />
           </Key>
-          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
-          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="CandidateNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Intelligence" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Beauty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Poise" Type="decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="Top5Judge3">
           <Key>
-            <PropertyRef Name="ContestantNo" />
+            <PropertyRef Name="CandidateNo" />
           </Key>
-          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
-          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="CandidateNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Intelligence" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Beauty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Poise" Type="decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="Top5Judge4">
           <Key>
-            <PropertyRef Name="ContestantNo" />
+            <PropertyRef Name="CandidateNo" />
           </Key>
-          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
-          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="CandidateNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Intelligence" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Beauty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Poise" Type="decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="Top5Judge5">
           <Key>
-            <PropertyRef Name="ContestantNo" />
+            <PropertyRef Name="CandidateNo" />
           </Key>
-          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
-          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="CandidateNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Intelligence" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Beauty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Poise" Type="decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="Top5Judge6">
           <Key>
-            <PropertyRef Name="ContestantNo" />
+            <PropertyRef Name="CandidateNo" />
           </Key>
-          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
-          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="CandidateNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Intelligence" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Beauty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Poise" Type="decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="Top5Judge7">
           <Key>
-            <PropertyRef Name="ContestantNo" />
+            <PropertyRef Name="CandidateNo" />
           </Key>
-          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="Personality" Type="decimal" Precision="18" Scale="2" />
-          <Property Name="Wit" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="CandidateNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Intelligence" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Beauty" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="Poise" Type="decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityContainer Name="RSIJudgingSystemModelStoreContainer">
           <EntitySet Name="ContestantProfile" EntityType="Self.ContestantProfile" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="JudgeProfile" EntityType="Self.JudgeProfile" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RankingJudge1" EntityType="Self.RankingJudge1" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RankingJudge2" EntityType="Self.RankingJudge2" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RankingJudge3" EntityType="Self.RankingJudge3" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RankingJudge4" EntityType="Self.RankingJudge4" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RankingJudge5" EntityType="Self.RankingJudge5" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RankingJudge6" EntityType="Self.RankingJudge6" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RankingJudge7" EntityType="Self.RankingJudge7" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Top10Judge1" EntityType="Self.Top10Judge1" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Top10Judge2" EntityType="Self.Top10Judge2" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Top10Judge3" EntityType="Self.Top10Judge3" Schema="dbo" store:Type="Tables" />
@@ -166,6 +236,13 @@
         <EntityContainer Name="RSIJudgingSystemEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="ContestantProfile" EntityType="RSIJudgingSystemModel.ContestantProfile" />
           <EntitySet Name="JudgeProfile" EntityType="RSIJudgingSystemModel.JudgeProfile" />
+          <EntitySet Name="RankingJudge1" EntityType="RSIJudgingSystemModel.RankingJudge1" />
+          <EntitySet Name="RankingJudge2" EntityType="RSIJudgingSystemModel.RankingJudge2" />
+          <EntitySet Name="RankingJudge3" EntityType="RSIJudgingSystemModel.RankingJudge3" />
+          <EntitySet Name="RankingJudge4" EntityType="RSIJudgingSystemModel.RankingJudge4" />
+          <EntitySet Name="RankingJudge5" EntityType="RSIJudgingSystemModel.RankingJudge5" />
+          <EntitySet Name="RankingJudge6" EntityType="RSIJudgingSystemModel.RankingJudge6" />
+          <EntitySet Name="RankingJudge7" EntityType="RSIJudgingSystemModel.RankingJudge7" />
           <EntitySet Name="Top10Judge1" EntityType="RSIJudgingSystemModel.Top10Judge1" />
           <EntitySet Name="Top10Judge2" EntityType="RSIJudgingSystemModel.Top10Judge2" />
           <EntitySet Name="Top10Judge3" EntityType="RSIJudgingSystemModel.Top10Judge3" />
@@ -197,6 +274,62 @@
           <Property Name="JudgeNo" Type="String" Nullable="false" MaxLength="3" FixedLength="false" Unicode="false" />
           <Property Name="Name" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
           <Property Name="Username" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="RankingJudge1">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="RankingJudge2">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="RankingJudge3">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="RankingJudge4">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="RankingJudge5">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="RankingJudge6">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="RankingJudge7">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="Top10Judge1">
           <Key>
@@ -263,59 +396,66 @@
         </EntityType>
         <EntityType Name="Top5Judge1">
           <Key>
-            <PropertyRef Name="ContestantNo" />
+            <PropertyRef Name="CandidateNo" />
           </Key>
-          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
-          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="CandidateNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Intelligence" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Beauty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Poise" Type="Decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="Top5Judge2">
           <Key>
-            <PropertyRef Name="ContestantNo" />
+            <PropertyRef Name="CandidateNo" />
           </Key>
-          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
-          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="CandidateNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Intelligence" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Beauty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Poise" Type="Decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="Top5Judge3">
           <Key>
-            <PropertyRef Name="ContestantNo" />
+            <PropertyRef Name="CandidateNo" />
           </Key>
-          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
-          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="CandidateNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Intelligence" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Beauty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Poise" Type="Decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="Top5Judge4">
           <Key>
-            <PropertyRef Name="ContestantNo" />
+            <PropertyRef Name="CandidateNo" />
           </Key>
-          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
-          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="CandidateNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Intelligence" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Beauty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Poise" Type="Decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="Top5Judge5">
           <Key>
-            <PropertyRef Name="ContestantNo" />
+            <PropertyRef Name="CandidateNo" />
           </Key>
-          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
-          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="CandidateNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Intelligence" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Beauty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Poise" Type="Decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="Top5Judge6">
           <Key>
-            <PropertyRef Name="ContestantNo" />
+            <PropertyRef Name="CandidateNo" />
           </Key>
-          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
-          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="CandidateNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Intelligence" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Beauty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Poise" Type="Decimal" Precision="18" Scale="2" />
         </EntityType>
         <EntityType Name="Top5Judge7">
           <Key>
-            <PropertyRef Name="ContestantNo" />
+            <PropertyRef Name="CandidateNo" />
           </Key>
-          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Personality" Type="Decimal" Precision="18" Scale="2" />
-          <Property Name="Wit" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="CandidateNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Intelligence" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Beauty" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="Poise" Type="Decimal" Precision="18" Scale="2" />
         </EntityType>
         </Schema>
     </edmx:ConceptualModels>
@@ -339,6 +479,69 @@
                 <ScalarProperty Name="Username" ColumnName="Username" />
                 <ScalarProperty Name="Name" ColumnName="Name" />
                 <ScalarProperty Name="JudgeNo" ColumnName="JudgeNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RankingJudge1">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.RankingJudge1">
+              <MappingFragment StoreEntitySet="RankingJudge1">
+                <ScalarProperty Name="Wit" ColumnName="Wit" />
+                <ScalarProperty Name="Personality" ColumnName="Personality" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RankingJudge2">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.RankingJudge2">
+              <MappingFragment StoreEntitySet="RankingJudge2">
+                <ScalarProperty Name="Wit" ColumnName="Wit" />
+                <ScalarProperty Name="Personality" ColumnName="Personality" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RankingJudge3">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.RankingJudge3">
+              <MappingFragment StoreEntitySet="RankingJudge3">
+                <ScalarProperty Name="Wit" ColumnName="Wit" />
+                <ScalarProperty Name="Personality" ColumnName="Personality" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RankingJudge4">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.RankingJudge4">
+              <MappingFragment StoreEntitySet="RankingJudge4">
+                <ScalarProperty Name="Wit" ColumnName="Wit" />
+                <ScalarProperty Name="Personality" ColumnName="Personality" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RankingJudge5">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.RankingJudge5">
+              <MappingFragment StoreEntitySet="RankingJudge5">
+                <ScalarProperty Name="Wit" ColumnName="Wit" />
+                <ScalarProperty Name="Personality" ColumnName="Personality" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RankingJudge6">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.RankingJudge6">
+              <MappingFragment StoreEntitySet="RankingJudge6">
+                <ScalarProperty Name="Wit" ColumnName="Wit" />
+                <ScalarProperty Name="Personality" ColumnName="Personality" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RankingJudge7">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.RankingJudge7">
+              <MappingFragment StoreEntitySet="RankingJudge7">
+                <ScalarProperty Name="Wit" ColumnName="Wit" />
+                <ScalarProperty Name="Personality" ColumnName="Personality" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -415,63 +618,70 @@
           <EntitySetMapping Name="Top5Judge1">
             <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top5Judge1">
               <MappingFragment StoreEntitySet="Top5Judge1">
-                <ScalarProperty Name="Wit" ColumnName="Wit" />
-                <ScalarProperty Name="Personality" ColumnName="Personality" />
-                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+                <ScalarProperty Name="Poise" ColumnName="Poise" />
+                <ScalarProperty Name="Beauty" ColumnName="Beauty" />
+                <ScalarProperty Name="Intelligence" ColumnName="Intelligence" />
+                <ScalarProperty Name="CandidateNo" ColumnName="CandidateNo" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Top5Judge2">
             <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top5Judge2">
               <MappingFragment StoreEntitySet="Top5Judge2">
-                <ScalarProperty Name="Wit" ColumnName="Wit" />
-                <ScalarProperty Name="Personality" ColumnName="Personality" />
-                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+                <ScalarProperty Name="Poise" ColumnName="Poise" />
+                <ScalarProperty Name="Beauty" ColumnName="Beauty" />
+                <ScalarProperty Name="Intelligence" ColumnName="Intelligence" />
+                <ScalarProperty Name="CandidateNo" ColumnName="CandidateNo" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Top5Judge3">
             <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top5Judge3">
               <MappingFragment StoreEntitySet="Top5Judge3">
-                <ScalarProperty Name="Wit" ColumnName="Wit" />
-                <ScalarProperty Name="Personality" ColumnName="Personality" />
-                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+                <ScalarProperty Name="Poise" ColumnName="Poise" />
+                <ScalarProperty Name="Beauty" ColumnName="Beauty" />
+                <ScalarProperty Name="Intelligence" ColumnName="Intelligence" />
+                <ScalarProperty Name="CandidateNo" ColumnName="CandidateNo" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Top5Judge4">
             <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top5Judge4">
               <MappingFragment StoreEntitySet="Top5Judge4">
-                <ScalarProperty Name="Wit" ColumnName="Wit" />
-                <ScalarProperty Name="Personality" ColumnName="Personality" />
-                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+                <ScalarProperty Name="Poise" ColumnName="Poise" />
+                <ScalarProperty Name="Beauty" ColumnName="Beauty" />
+                <ScalarProperty Name="Intelligence" ColumnName="Intelligence" />
+                <ScalarProperty Name="CandidateNo" ColumnName="CandidateNo" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Top5Judge5">
             <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top5Judge5">
               <MappingFragment StoreEntitySet="Top5Judge5">
-                <ScalarProperty Name="Wit" ColumnName="Wit" />
-                <ScalarProperty Name="Personality" ColumnName="Personality" />
-                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+                <ScalarProperty Name="Poise" ColumnName="Poise" />
+                <ScalarProperty Name="Beauty" ColumnName="Beauty" />
+                <ScalarProperty Name="Intelligence" ColumnName="Intelligence" />
+                <ScalarProperty Name="CandidateNo" ColumnName="CandidateNo" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Top5Judge6">
             <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top5Judge6">
               <MappingFragment StoreEntitySet="Top5Judge6">
-                <ScalarProperty Name="Wit" ColumnName="Wit" />
-                <ScalarProperty Name="Personality" ColumnName="Personality" />
-                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+                <ScalarProperty Name="Poise" ColumnName="Poise" />
+                <ScalarProperty Name="Beauty" ColumnName="Beauty" />
+                <ScalarProperty Name="Intelligence" ColumnName="Intelligence" />
+                <ScalarProperty Name="CandidateNo" ColumnName="CandidateNo" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Top5Judge7">
             <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top5Judge7">
               <MappingFragment StoreEntitySet="Top5Judge7">
-                <ScalarProperty Name="Wit" ColumnName="Wit" />
-                <ScalarProperty Name="Personality" ColumnName="Personality" />
-                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+                <ScalarProperty Name="Poise" ColumnName="Poise" />
+                <ScalarProperty Name="Beauty" ColumnName="Beauty" />
+                <ScalarProperty Name="Intelligence" ColumnName="Intelligence" />
+                <ScalarProperty Name="CandidateNo" ColumnName="CandidateNo" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

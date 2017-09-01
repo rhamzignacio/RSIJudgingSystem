@@ -110,7 +110,6 @@ namespace RSI_Judging_System
         }
 
         private void RemoveTab(string no)
-
         {
             if (no == "1")
                 tabControl1.TabPages.Remove(tabPage1);
@@ -212,7 +211,7 @@ namespace RSI_Judging_System
             }
             else
             {
-                DatabaseFunctions.SaveTop5(txtBoxPersonality1.Text, txtBoxWIT1.Text, judgeProfile.JudgeNo, "1",
+                DatabaseFunctions.SaveRanking(txtBoxPersonality1.Text, txtBoxWIT1.Text, judgeProfile.JudgeNo, "1",
                     out errorMessage);
 
                 if(errorMessage !="")
@@ -282,7 +281,7 @@ namespace RSI_Judging_System
             }
             else
             {
-                DatabaseFunctions.SaveTop5(txtBoxPersonality2.Text, txtBoxWIT2.Text, judgeProfile.JudgeNo, "2",
+                DatabaseFunctions.SaveRanking(txtBoxPersonality2.Text, txtBoxWIT2.Text, judgeProfile.JudgeNo, "2",
                     out errorMessage);
 
                 if (errorMessage != "")
@@ -342,7 +341,7 @@ namespace RSI_Judging_System
             }
             else
             {
-                DatabaseFunctions.SaveTop5(txtBoxPersonality3.Text, txtBoxWIT3.Text, judgeProfile.JudgeNo, "3",
+                DatabaseFunctions.SaveRanking(txtBoxPersonality3.Text, txtBoxWIT3.Text, judgeProfile.JudgeNo, "3",
                     out errorMessage);
 
                 if (errorMessage != "")
@@ -402,7 +401,7 @@ namespace RSI_Judging_System
             }
             else
             {
-                DatabaseFunctions.SaveTop5(txtBoxPersonality4.Text, txtBoxWIT4.Text, judgeProfile.JudgeNo, "4",
+                DatabaseFunctions.SaveRanking(txtBoxPersonality4.Text, txtBoxWIT4.Text, judgeProfile.JudgeNo, "4",
                     out errorMessage);
 
                 if (errorMessage != "")
@@ -462,7 +461,7 @@ namespace RSI_Judging_System
             }
             else
             {
-                DatabaseFunctions.SaveTop5(txtBoxPersonality5.Text, txtBoxWIT5.Text, judgeProfile.JudgeNo, "5",
+                DatabaseFunctions.SaveRanking(txtBoxPersonality5.Text, txtBoxWIT5.Text, judgeProfile.JudgeNo, "5",
                     out errorMessage);
 
                 if (errorMessage != "")
@@ -522,7 +521,7 @@ namespace RSI_Judging_System
             }
             else
             {
-                DatabaseFunctions.SaveTop5(txtPersonality6.Text, txtBoxWIT6.Text, judgeProfile.JudgeNo, "6",
+                DatabaseFunctions.SaveRanking(txtPersonality6.Text, txtBoxWIT6.Text, judgeProfile.JudgeNo, "6",
                     out errorMessage);
 
                 if (errorMessage != "")
@@ -572,7 +571,7 @@ namespace RSI_Judging_System
             }
             else
             {
-                DatabaseFunctions.SaveTop5(txtBoxPersonality7.Text, txtBoxWIT7.Text, judgeProfile.JudgeNo, "7",
+                DatabaseFunctions.SaveRanking(txtBoxPersonality7.Text, txtBoxWIT7.Text, judgeProfile.JudgeNo, "7",
                     out errorMessage);
 
                 if (errorMessage != "")
@@ -642,7 +641,7 @@ namespace RSI_Judging_System
             }
             else
             {
-                DatabaseFunctions.SaveTop5(txtBoxPersonality8.Text, txtBoxWIT8.Text, judgeProfile.JudgeNo, "8",
+                DatabaseFunctions.SaveRanking(txtBoxPersonality8.Text, txtBoxWIT8.Text, judgeProfile.JudgeNo, "8",
                     out errorMessage);
 
                 if (errorMessage != "")
@@ -702,7 +701,7 @@ namespace RSI_Judging_System
             }
             else
             {
-                DatabaseFunctions.SaveTop5(txtBoxPersonality9.Text, txtBoxWIT9.Text, judgeProfile.JudgeNo, "9",
+                DatabaseFunctions.SaveRanking(txtBoxPersonality9.Text, txtBoxWIT9.Text, judgeProfile.JudgeNo, "9",
                     out errorMessage);
 
                 if (errorMessage != "")
@@ -762,7 +761,7 @@ namespace RSI_Judging_System
             }
             else
             {
-                DatabaseFunctions.SaveTop5(txtBoxPersonality10.Text, txtBoxWIT10.Text, judgeProfile.JudgeNo, "10",
+                DatabaseFunctions.SaveRanking(txtBoxPersonality10.Text, txtBoxWIT10.Text, judgeProfile.JudgeNo, "10",
                     out errorMessage);
 
                 if (errorMessage != "")
@@ -822,7 +821,7 @@ namespace RSI_Judging_System
             }
             else
             {
-                DatabaseFunctions.SaveTop5(txtBoxPersonality11.Text, txtBoxWIT11.Text, judgeProfile.JudgeNo, "11",
+                DatabaseFunctions.SaveRanking(txtBoxPersonality11.Text, txtBoxWIT11.Text, judgeProfile.JudgeNo, "11",
                     out errorMessage);
 
                 if (errorMessage != "")
@@ -882,7 +881,7 @@ namespace RSI_Judging_System
             }
             else
             {
-                DatabaseFunctions.SaveTop5(txtBoxPersonality12.Text, txtBoxWIT12.Text, judgeProfile.JudgeNo, "12",
+                DatabaseFunctions.SaveRanking(txtBoxPersonality12.Text, txtBoxWIT12.Text, judgeProfile.JudgeNo, "12",
                     out errorMessage);
 
                 if (errorMessage != "")
@@ -942,7 +941,7 @@ namespace RSI_Judging_System
             }
             else
             {
-                DatabaseFunctions.SaveTop5(txtBoxPersonality13.Text, txtBoxWIT13.Text, judgeProfile.JudgeNo, "13",
+                DatabaseFunctions.SaveRanking(txtBoxPersonality13.Text, txtBoxWIT13.Text, judgeProfile.JudgeNo, "13",
                     out errorMessage);
 
                 if (errorMessage != "")
@@ -1002,7 +1001,7 @@ namespace RSI_Judging_System
             }
             else
             {
-                DatabaseFunctions.SaveTop5(txtBoxPersonality14.Text, txtBoxWIT14.Text, judgeProfile.JudgeNo, "14",
+                DatabaseFunctions.SaveRanking(txtBoxPersonality14.Text, txtBoxWIT14.Text, judgeProfile.JudgeNo, "14",
                     out errorMessage);
 
                 if (errorMessage != "")
@@ -1062,7 +1061,7 @@ namespace RSI_Judging_System
             }
             else
             {
-                DatabaseFunctions.SaveTop5(txtBoxPersonality15.Text, txtBoxWIT15.Text, judgeProfile.JudgeNo, "15",
+                DatabaseFunctions.SaveRanking(txtBoxPersonality15.Text, txtBoxWIT15.Text, judgeProfile.JudgeNo, "15",
                     out errorMessage);
 
                 if (errorMessage != "")
@@ -1126,7 +1125,7 @@ namespace RSI_Judging_System
             }
             else
             {
-                DatabaseFunctions.SaveTop5(txtBoxPersonality16.Text, txtBoxWIT16.Text, judgeProfile.JudgeNo, "16",
+                DatabaseFunctions.SaveRanking(txtBoxPersonality16.Text, txtBoxWIT16.Text, judgeProfile.JudgeNo, "16",
                     out errorMessage);
 
                 if (errorMessage != "")
@@ -1186,7 +1185,7 @@ namespace RSI_Judging_System
             }
             else
             {
-                DatabaseFunctions.SaveTop5(txtBoxPersonality17.Text, txtBoxWIT1.Text, judgeProfile.JudgeNo, "17",
+                DatabaseFunctions.SaveRanking(txtBoxPersonality17.Text, txtBoxWIT1.Text, judgeProfile.JudgeNo, "17",
                     out errorMessage);
 
                 if (errorMessage != "")
@@ -1251,7 +1250,7 @@ namespace RSI_Judging_System
             }
             else
             {
-                DatabaseFunctions.SaveTop5(txtBoxPersonality19.Text, txtBoxWIT19.Text, judgeProfile.JudgeNo, "19",
+                DatabaseFunctions.SaveRanking(txtBoxPersonality19.Text, txtBoxWIT19.Text, judgeProfile.JudgeNo, "19",
                     out errorMessage);
 
                 if (errorMessage != "")
@@ -1311,7 +1310,7 @@ namespace RSI_Judging_System
             }
             else
             {
-                DatabaseFunctions.SaveTop5(txtBoxPersonality20.Text, txtBoxWIT20.Text, judgeProfile.JudgeNo, "20",
+                DatabaseFunctions.SaveRanking(txtBoxPersonality20.Text, txtBoxWIT20.Text, judgeProfile.JudgeNo, "20",
                     out errorMessage);
 
                 if (errorMessage != "")
