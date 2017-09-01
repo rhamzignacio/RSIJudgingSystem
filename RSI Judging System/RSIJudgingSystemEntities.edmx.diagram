@@ -21,13 +21,16 @@
         <EntityTypeShape EntityType="RSIJudgingSystemModel.Top10Judge5" Width="1.5" PointX="8.75" PointY="3.75" />
         <EntityTypeShape EntityType="RSIJudgingSystemModel.Top10Judge6" Width="1.5" PointX="8.75" PointY="6.75" />
         <EntityTypeShape EntityType="RSIJudgingSystemModel.Top10Judge7" Width="1.5" PointX="0.75" PointY="9.75" />
-        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge1" Width="1.5" PointX="3.375" PointY="9.75" />
-        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge2" Width="1.5" PointX="5.375" PointY="9.75" />
-        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge3" Width="1.5" PointX="7.375" PointY="9.75" />
-        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge4" Width="1.5" PointX="9.375" PointY="9.75" />
-        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge5" Width="1.5" PointX="11.375" PointY="0.75" />
-        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge6" Width="1.5" PointX="11.375" PointY="3.75" />
-        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge7" Width="1.5" PointX="11.375" PointY="6.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge1" Width="1.5" PointX="2.75" PointY="9.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge2" Width="1.5" PointX="4.75" PointY="9.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge3" Width="1.5" PointX="6.75" PointY="9.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge4" Width="1.5" PointX="8.75" PointY="9.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge5" Width="1.5" PointX="10.75" PointY="0.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge6" Width="1.5" PointX="10.75" PointY="3.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Judge7" Width="1.5" PointX="10.75" PointY="6.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.RankingWiner" Width="1.5" PointX="11.75" PointY="9.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top10Winners" Width="1.5" PointX="0.75" PointY="12.75" />
+        <EntityTypeShape EntityType="RSIJudgingSystemModel.Top5Winners" Width="1.5" PointX="2.75" PointY="12.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -13,6 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
     <PublishUrl>C:\Users\Royce\Documents\JudgingSystem\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -21,12 +22,13 @@
     <UpdateInterval>7</UpdateInterval>
     <UpdateIntervalUnits>Days</UpdateIntervalUnits>
     <UpdatePeriodically>false</UpdatePeriodically>
-    <UpdateRequired>false</UpdateRequired>
+    <UpdateRequired>true</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <ProductName>RSI Judging System</ProductName>
     <PublisherName>RSI Development Solutions</PublisherName>
+    <MinimumRequiredVersion>5.0.0.0</MinimumRequiredVersion>
     <ApplicationRevision>0</ApplicationRevision>
-    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <ApplicationVersion>5.0.0.0</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -41,6 +43,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -50,6 +53,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <SignManifests>true</SignManifests>
@@ -137,6 +141,9 @@
     <Compile Include="RankingJudge7.cs">
       <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="RankingWiner.cs">
+      <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
+    </Compile>
     <Compile Include="RSIJudgingSystemEntities.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -173,6 +180,9 @@
     <Compile Include="Top10Judge7.cs">
       <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
     </Compile>
+    <Compile Include="Top10Winners.cs">
+      <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
+    </Compile>
     <Compile Include="Top5Judge1.cs">
       <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
     </Compile>
@@ -192,6 +202,9 @@
       <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="Top5Judge7.cs">
+      <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Top5Winners.cs">
       <DependentUpon>RSIJudgingSystemEntities.tt</DependentUpon>
     </Compile>
     <Compile Include="TopFiveWinners.cs">

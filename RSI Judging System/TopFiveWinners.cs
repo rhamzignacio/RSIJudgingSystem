@@ -29,83 +29,72 @@ namespace RSI_Judging_System
         {
             using (var db = new RSIJudgingSystemEntities())
             {
-                var contestant = db.ContestantProfile.OrderByDescending(r => r.PanelInterview).ToList();
 
-                List<Top5Model> top10List = new List<Top5Model>();
+                //var query1 = from c in db.ContestantProfile
+                //             join j in db.Top10Winners on c.ContestantNo equals j.ContestantNo
+                //            //join fj1 in db.Top10Judge1 on c.ContestantNo equals fj1.ContestantNo
+                //            //join fj2 in db.Top10Judge2 on c.ContestantNo equals fj2.ContestantNo
+                //            //join fj3 in db.Top10Judge3 on c.ContestantNo equals fj3.ContestantNo
+                //            //join fj4 in db.Top10Judge4 on c.ContestantNo equals fj4.ContestantNo
+                //            //join fj5 in db.Top10Judge5 on c.ContestantNo equals fj5.ContestantNo
+                //            //join fj6 in db.Top10Judge6 on c.ContestantNo equals fj6.ContestantNo
+                //            //join fj7 in db.Top10Judge7 on c.ContestantNo equals fj7.ContestanceNo
+                //            select new Top5Model
+                //            {
+                //                contestantNo = c.ContestantNo,
+                //                TotalScoreLinq = j.FinalScore
+                //            };
 
-                for (int x = 0; x < contestant.Count; x++)
+                //var top10List1 = query1.OrderByDescending(r => r.TotalScoreLinq).ToList();
+
+                //for (int x = 0; x < top10List1.Count; x++)
+                //{
+                //    if (x >= 10)
+                //        RemoveTab(top10List1[x].contestantNo);
+                //}
+
+                var query = from c in db.ContestantProfile
+                            join j in db.Top5Winners on c.ContestantNo equals j.ContestantNo
+                            //join fj1 in db.Top10Judge1 on c.ContestantNo equals fj1.ContestantNo
+                            //join fj2 in db.Top10Judge2 on c.ContestantNo equals fj2.ContestantNo
+                            //join fj3 in db.Top10Judge3 on c.ContestantNo equals fj3.ContestantNo
+                            //join fj4 in db.Top10Judge4 on c.ContestantNo equals fj4.ContestantNo
+                            //join fj5 in db.Top10Judge5 on c.ContestantNo equals fj5.ContestantNo
+                            //join fj6 in db.Top10Judge6 on c.ContestantNo equals fj6.ContestantNo
+                            //join fj7 in db.Top10Judge7 on c.ContestantNo equals fj7.ContestanceNo
+                            select new Top5Model
+                            {
+                                contestantNo = c.ContestantNo,
+                                panelInterview = c.PanelInterview,
+                                TotalScoreLinq = j.FinalScore
+                                //TotalScoreLinq = j.TotalScore1 + j.TotalScore2 +
+                                //j.TotalScore3 + j.TotalScore4 + j.TotalScore5 +
+                                //j.TotalScore6 + j.TotalScore7
+                            };
+                
+
+                var temp = query.OrderByDescending(r => r.TotalScoreLinq).Take(5).ToList();
+
+                List<int> tempInt = new List<int>();
+
+                temp.ForEach(x =>
                 {
-                    if (x >= 10)
-                    {
-                        RemoveTab(contestant[x].ContestantNo);
-                    }
-                    else
-                    {
-                        var contesNo = contestant[x].ContestantNo;
+                    tempInt.Add(int.Parse(x.contestantNo));
+                });
 
-                        var query = from c in db.ContestantProfile
-                                    join j1 in db.Top10Judge1 on c.ContestantNo equals j1.ContestantNo into q1
-                                    from fj1 in q1.DefaultIfEmpty()
-                                    join j2 in db.Top10Judge2 on c.ContestantNo equals j2.ContestantNo into q2
-                                    from fj2 in q2.DefaultIfEmpty()
-                                    join j3 in db.Top10Judge3 on c.ContestantNo equals j3.ContestantNo into q3
-                                    from fj3 in q3.DefaultIfEmpty()
-                                    join j4 in db.Top10Judge4 on c.ContestantNo equals j4.ContestantNo into q4
-                                    from fj4 in q4.DefaultIfEmpty()
-                                    join j5 in db.Top10Judge5 on c.ContestantNo equals j5.ContestantNo into q5
-                                    from fj5 in q5.DefaultIfEmpty()
-                                    join j6 in db.Top10Judge6 on c.ContestantNo equals j6.ContestantNo into q6
-                                    from fj6 in q6.DefaultIfEmpty()
-                                    join j7 in db.Top10Judge7 on c.ContestantNo equals j7.ContestanceNo into q7
-                                    from fj7 in q6.DefaultIfEmpty()
-                                    where c.ContestantNo == contesNo
-                                    select new Top5Model
-                                    {
-                                        contestantNo = c.ContestantNo,
-                                        panelInterview = c.PanelInterview,
-
-                                        beauty1 = fj1.Beauty,
-                                        intelligence1 = fj1.Intelligence,
-                                        delivery1 = fj1.Delivery,
-
-                                        beauty2 = fj2.Beauty,
-                                        intelligence2 = fj2.Intelligence,
-                                        delivery2 = fj2.Delivery,
-
-                                        beauty3 = fj3.Beauty,
-                                        intelligence3 = fj3.Intelligence,
-                                        delivery3 = fj3.Delivery,
-
-                                        beauty4 = fj4.Beauty,
-                                        intelligence4 = fj4.Intelligence,
-                                        delivery4 = fj4.Delivery,
-
-                                        beauty5 = fj5.Beauty,
-                                        intelligence5 = fj5.Intelligence,
-                                        delivery5 = fj5.Delivery,
-
-                                        beauty6 = fj6.Beauty,
-                                        intelligence6 = fj6.Intelligence,
-                                        delivery6 = fj6.Delivery,
-
-                                        beauty7 = fj7.Beauty,
-                                        intelligence7 = fj7.Intelligence,
-                                        delivery7 = fj7.Delivery
-                                    };
-
-                        top10List.Add(query.SingleOrDefault());
-                    }
+                for(int x = 1; x <= 20; x++)
+                {
+                    if (!tempInt.Contains(x))
+                        RemoveTab(x.ToString());
                 }
 
-                var temp = top10List.OrderByDescending(r => r.TotalScore).ToList();
-
-                for(int x = 0; x < temp.Count; x++)
-                {
-                    if (x >= 5)
-                    {
-                        RemoveTab(temp[x].contestantNo);
-                    }
-                }
+                //for(int x = 0; x < temp.Count; x++)
+                //{
+                //    if (x >= 5)
+                //    {
+                //        RemoveTab(temp[x].contestantNo);
+                //    }
+                //}
             }
         }
 
@@ -113,40 +102,58 @@ namespace RSI_Judging_System
         {
             if (no == "1")
                 tabControl1.TabPages.Remove(tabPage1);
+
             else if (no == "2")
                 tabControl1.TabPages.Remove(tabPage2);
+
             else if (no == "3")
                 tabControl1.TabPages.Remove(tabPage3);
+
             else if (no == "4")
                 tabControl1.TabPages.Remove(tabPage4);
+
             else if (no == "5")
                 tabControl1.TabPages.Remove(tabPage5);
+
             else if (no == "6")
                 tabControl1.TabPages.Remove(tabPage6);
+
             else if (no == "7")
                 tabControl1.TabPages.Remove(tabPage7);
+
             else if (no == "8")
                 tabControl1.TabPages.Remove(tabPage8);
+
             else if (no == "9")
                 tabControl1.TabPages.Remove(tabPage9);
+
             else if (no == "10")
                 tabControl1.TabPages.Remove(tabPage10);
+
             else if (no == "11")
                 tabControl1.TabPages.Remove(tabPage11);
+
             else if (no == "12")
                 tabControl1.TabPages.Remove(tabPage12);
+
             else if (no == "13")
                 tabControl1.TabPages.Remove(tabPage13);
+
             else if (no == "14")
                 tabControl1.TabPages.Remove(tabPage14);
+
             else if (no == "15")
                 tabControl1.TabPages.Remove(tabPage15);
+
             else if (no == "16")
                 tabControl1.TabPages.Remove(tabPage16);
+
             else if (no == "17")
                 tabControl1.TabPages.Remove(tabPage17);
+
             else if (no == "19")
                 tabControl1.TabPages.Remove(tabPage18);
+
             else if (no == "20")
                 tabControl1.TabPages.Remove(tabPage19);
         }

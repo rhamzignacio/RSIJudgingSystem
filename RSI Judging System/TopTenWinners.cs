@@ -1856,5 +1856,10 @@ namespace RSI_Judging_System
         {
 
         }
+
+        private void tabPage16_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

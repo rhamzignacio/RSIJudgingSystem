@@ -48,5 +48,8 @@ namespace RSI_Judging_System
         public virtual DbSet<Top5Judge5> Top5Judge5 { get; set; }
         public virtual DbSet<Top5Judge6> Top5Judge6 { get; set; }
         public virtual DbSet<Top5Judge7> Top5Judge7 { get; set; }
+        public virtual DbSet<RankingWiner> RankingWiner { get; set; }
+        public virtual DbSet<Top10Winners> Top10Winners { get; set; }
+        public virtual DbSet<Top5Winners> Top5Winners { get; set; }
     }
 }

@@ -204,6 +204,60 @@
           <Property Name="Beauty" Type="decimal" Precision="18" Scale="2" />
           <Property Name="Poise" Type="decimal" Precision="18" Scale="2" />
         </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'RSIJudgingSystem.dbo.RankingWiner' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="RankingWiner">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="400" />
+          <Property Name="Location" Type="varchar" MaxLength="150" />
+          <Property Name="TotalScore1" Type="decimal" Precision="19" Scale="2" />
+          <Property Name="TotalScore2" Type="decimal" Precision="19" Scale="2" />
+          <Property Name="TotalScore3" Type="decimal" Precision="19" Scale="2" />
+          <Property Name="TotalScore4" Type="decimal" Precision="19" Scale="2" />
+          <Property Name="TotalScore5" Type="decimal" Precision="19" Scale="2" />
+          <Property Name="TotalScore6" Type="decimal" Precision="19" Scale="2" />
+          <Property Name="TotalScore7" Type="decimal" Precision="19" Scale="2" />
+          <Property Name="FinalScore" Type="decimal" Precision="29" Scale="6" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'RSIJudgingSystem.dbo.Top10Winners' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Top10Winners">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="400" />
+          <Property Name="Location" Type="varchar" MaxLength="150" />
+          <Property Name="TotalScore1" Type="decimal" Precision="28" Scale="6" />
+          <Property Name="TotalScore2" Type="decimal" Precision="28" Scale="6" />
+          <Property Name="TotalScore3" Type="decimal" Precision="28" Scale="6" />
+          <Property Name="TotalScore4" Type="decimal" Precision="28" Scale="6" />
+          <Property Name="TotalScore5" Type="decimal" Precision="28" Scale="6" />
+          <Property Name="TotalScore6" Type="decimal" Precision="28" Scale="6" />
+          <Property Name="TotalScore7" Type="decimal" Precision="28" Scale="6" />
+          <Property Name="FinalScore" Type="decimal" Precision="36" Scale="8" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'RSIJudgingSystem.dbo.Top5Winners' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="Top5Winners">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Name" Type="varchar" MaxLength="400" />
+          <Property Name="Location" Type="varchar" MaxLength="150" />
+          <Property Name="TotalScore1" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="TotalScore2" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="TotalScore3" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="TotalScore4" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="TotalScore5" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="TotalScore6" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="TotalScore7" Type="decimal" Precision="20" Scale="2" />
+          <Property Name="FinalScore" Type="decimal" Precision="30" Scale="6" />
+        </EntityType>
         <EntityContainer Name="RSIJudgingSystemModelStoreContainer">
           <EntitySet Name="ContestantProfile" EntityType="Self.ContestantProfile" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="JudgeProfile" EntityType="Self.JudgeProfile" Schema="dbo" store:Type="Tables" />
@@ -228,6 +282,51 @@
           <EntitySet Name="Top5Judge5" EntityType="Self.Top5Judge5" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Top5Judge6" EntityType="Self.Top5Judge6" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Top5Judge7" EntityType="Self.Top5Judge7" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="RankingWiner" EntityType="Self.RankingWiner" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [RankingWiner].[ContestantNo] AS [ContestantNo], 
+    [RankingWiner].[Name] AS [Name], 
+    [RankingWiner].[Location] AS [Location], 
+    [RankingWiner].[TotalScore1] AS [TotalScore1], 
+    [RankingWiner].[TotalScore2] AS [TotalScore2], 
+    [RankingWiner].[TotalScore3] AS [TotalScore3], 
+    [RankingWiner].[TotalScore4] AS [TotalScore4], 
+    [RankingWiner].[TotalScore5] AS [TotalScore5], 
+    [RankingWiner].[TotalScore6] AS [TotalScore6], 
+    [RankingWiner].[TotalScore7] AS [TotalScore7], 
+    [RankingWiner].[FinalScore] AS [FinalScore]
+    FROM [dbo].[RankingWiner] AS [RankingWiner]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Top10Winners" EntityType="Self.Top10Winners" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Top10Winners].[ContestantNo] AS [ContestantNo], 
+    [Top10Winners].[Name] AS [Name], 
+    [Top10Winners].[Location] AS [Location], 
+    [Top10Winners].[TotalScore1] AS [TotalScore1], 
+    [Top10Winners].[TotalScore2] AS [TotalScore2], 
+    [Top10Winners].[TotalScore3] AS [TotalScore3], 
+    [Top10Winners].[TotalScore4] AS [TotalScore4], 
+    [Top10Winners].[TotalScore5] AS [TotalScore5], 
+    [Top10Winners].[TotalScore6] AS [TotalScore6], 
+    [Top10Winners].[TotalScore7] AS [TotalScore7], 
+    [Top10Winners].[FinalScore] AS [FinalScore]
+    FROM [dbo].[Top10Winners] AS [Top10Winners]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Top5Winners" EntityType="Self.Top5Winners" store:Type="Views" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Top5Winners].[ContestantNo] AS [ContestantNo], 
+    [Top5Winners].[Name] AS [Name], 
+    [Top5Winners].[Location] AS [Location], 
+    [Top5Winners].[TotalScore1] AS [TotalScore1], 
+    [Top5Winners].[TotalScore2] AS [TotalScore2], 
+    [Top5Winners].[TotalScore3] AS [TotalScore3], 
+    [Top5Winners].[TotalScore4] AS [TotalScore4], 
+    [Top5Winners].[TotalScore5] AS [TotalScore5], 
+    [Top5Winners].[TotalScore6] AS [TotalScore6], 
+    [Top5Winners].[TotalScore7] AS [TotalScore7], 
+    [Top5Winners].[FinalScore] AS [FinalScore]
+    FROM [dbo].[Top5Winners] AS [Top5Winners]</DefiningQuery>
+          </EntitySet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -257,6 +356,9 @@
           <EntitySet Name="Top5Judge5" EntityType="RSIJudgingSystemModel.Top5Judge5" />
           <EntitySet Name="Top5Judge6" EntityType="RSIJudgingSystemModel.Top5Judge6" />
           <EntitySet Name="Top5Judge7" EntityType="RSIJudgingSystemModel.Top5Judge7" />
+          <EntitySet Name="RankingWiner" EntityType="RSIJudgingSystemModel.RankingWiner" />
+          <EntitySet Name="Top10Winners" EntityType="RSIJudgingSystemModel.Top10Winners" />
+          <EntitySet Name="Top5Winners" EntityType="RSIJudgingSystemModel.Top5Winners" />
         </EntityContainer>
         <EntityType Name="ContestantProfile">
           <Key>
@@ -456,6 +558,54 @@
           <Property Name="Intelligence" Type="Decimal" Precision="18" Scale="2" />
           <Property Name="Beauty" Type="Decimal" Precision="18" Scale="2" />
           <Property Name="Poise" Type="Decimal" Precision="18" Scale="2" />
+        </EntityType>
+        <EntityType Name="RankingWiner">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Name" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="Location" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="TotalScore1" Type="Decimal" Precision="19" Scale="2" />
+          <Property Name="TotalScore2" Type="Decimal" Precision="19" Scale="2" />
+          <Property Name="TotalScore3" Type="Decimal" Precision="19" Scale="2" />
+          <Property Name="TotalScore4" Type="Decimal" Precision="19" Scale="2" />
+          <Property Name="TotalScore5" Type="Decimal" Precision="19" Scale="2" />
+          <Property Name="TotalScore6" Type="Decimal" Precision="19" Scale="2" />
+          <Property Name="TotalScore7" Type="Decimal" Precision="19" Scale="2" />
+          <Property Name="FinalScore" Type="Decimal" Precision="29" Scale="6" />
+        </EntityType>
+        <EntityType Name="Top10Winners">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Name" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="Location" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="TotalScore1" Type="Decimal" Precision="28" Scale="6" />
+          <Property Name="TotalScore2" Type="Decimal" Precision="28" Scale="6" />
+          <Property Name="TotalScore3" Type="Decimal" Precision="28" Scale="6" />
+          <Property Name="TotalScore4" Type="Decimal" Precision="28" Scale="6" />
+          <Property Name="TotalScore5" Type="Decimal" Precision="28" Scale="6" />
+          <Property Name="TotalScore6" Type="Decimal" Precision="28" Scale="6" />
+          <Property Name="TotalScore7" Type="Decimal" Precision="28" Scale="6" />
+          <Property Name="FinalScore" Type="Decimal" Precision="36" Scale="8" />
+        </EntityType>
+        <EntityType Name="Top5Winners">
+          <Key>
+            <PropertyRef Name="ContestantNo" />
+          </Key>
+          <Property Name="ContestantNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Name" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+          <Property Name="Location" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="TotalScore1" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="TotalScore2" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="TotalScore3" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="TotalScore4" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="TotalScore5" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="TotalScore6" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="TotalScore7" Type="Decimal" Precision="20" Scale="2" />
+          <Property Name="FinalScore" Type="Decimal" Precision="30" Scale="6" />
         </EntityType>
         </Schema>
     </edmx:ConceptualModels>
@@ -682,6 +832,57 @@
                 <ScalarProperty Name="Beauty" ColumnName="Beauty" />
                 <ScalarProperty Name="Intelligence" ColumnName="Intelligence" />
                 <ScalarProperty Name="CandidateNo" ColumnName="CandidateNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="RankingWiner">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.RankingWiner">
+              <MappingFragment StoreEntitySet="RankingWiner">
+                <ScalarProperty Name="FinalScore" ColumnName="FinalScore" />
+                <ScalarProperty Name="TotalScore7" ColumnName="TotalScore7" />
+                <ScalarProperty Name="TotalScore6" ColumnName="TotalScore6" />
+                <ScalarProperty Name="TotalScore5" ColumnName="TotalScore5" />
+                <ScalarProperty Name="TotalScore4" ColumnName="TotalScore4" />
+                <ScalarProperty Name="TotalScore3" ColumnName="TotalScore3" />
+                <ScalarProperty Name="TotalScore2" ColumnName="TotalScore2" />
+                <ScalarProperty Name="TotalScore1" ColumnName="TotalScore1" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Top10Winners">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top10Winners">
+              <MappingFragment StoreEntitySet="Top10Winners">
+                <ScalarProperty Name="FinalScore" ColumnName="FinalScore" />
+                <ScalarProperty Name="TotalScore7" ColumnName="TotalScore7" />
+                <ScalarProperty Name="TotalScore6" ColumnName="TotalScore6" />
+                <ScalarProperty Name="TotalScore5" ColumnName="TotalScore5" />
+                <ScalarProperty Name="TotalScore4" ColumnName="TotalScore4" />
+                <ScalarProperty Name="TotalScore3" ColumnName="TotalScore3" />
+                <ScalarProperty Name="TotalScore2" ColumnName="TotalScore2" />
+                <ScalarProperty Name="TotalScore1" ColumnName="TotalScore1" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Top5Winners">
+            <EntityTypeMapping TypeName="RSIJudgingSystemModel.Top5Winners">
+              <MappingFragment StoreEntitySet="Top5Winners">
+                <ScalarProperty Name="FinalScore" ColumnName="FinalScore" />
+                <ScalarProperty Name="TotalScore7" ColumnName="TotalScore7" />
+                <ScalarProperty Name="TotalScore6" ColumnName="TotalScore6" />
+                <ScalarProperty Name="TotalScore5" ColumnName="TotalScore5" />
+                <ScalarProperty Name="TotalScore4" ColumnName="TotalScore4" />
+                <ScalarProperty Name="TotalScore3" ColumnName="TotalScore3" />
+                <ScalarProperty Name="TotalScore2" ColumnName="TotalScore2" />
+                <ScalarProperty Name="TotalScore1" ColumnName="TotalScore1" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ContestantNo" ColumnName="ContestantNo" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

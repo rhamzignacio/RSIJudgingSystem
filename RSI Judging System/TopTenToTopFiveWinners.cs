@@ -30,20 +30,13 @@ namespace RSI_Judging_System
             {
 
                 var query = from c in db.ContestantProfile
-                            join j1 in db.Top10Judge1 on c.ContestantNo equals j1.ContestantNo into q1
-                            from fj1 in q1.DefaultIfEmpty()
-                            join j2 in db.Top10Judge2 on c.ContestantNo equals j2.ContestantNo into q2
-                            from fj2 in q2.DefaultIfEmpty()
-                            join j3 in db.Top10Judge3 on c.ContestantNo equals j3.ContestantNo into q3
-                            from fj3 in q3.DefaultIfEmpty()
-                            join j4 in db.Top10Judge4 on c.ContestantNo equals j4.ContestantNo into q4
-                            from fj4 in q4.DefaultIfEmpty()
-                            join j5 in db.Top10Judge5 on c.ContestantNo equals j5.ContestantNo into q5
-                            from fj5 in q5.DefaultIfEmpty()
-                            join j6 in db.Top10Judge6 on c.ContestantNo equals j6.ContestantNo into q6
-                            from fj6 in q6.DefaultIfEmpty()
-                            join j7 in db.Top10Judge7 on c.ContestantNo equals j7.ContestanceNo into q7
-                            from fj7 in q6.DefaultIfEmpty()
+                            join fj1 in db.Top10Judge1 on c.ContestantNo equals fj1.ContestantNo
+                            join fj2 in db.Top10Judge2 on c.ContestantNo equals fj2.ContestantNo 
+                            join fj3 in db.Top10Judge3 on c.ContestantNo equals fj3.ContestantNo
+                            join fj4 in db.Top10Judge4 on c.ContestantNo equals fj4.ContestantNo
+                            join fj5 in db.Top10Judge5 on c.ContestantNo equals fj5.ContestantNo 
+                            join fj6 in db.Top10Judge6 on c.ContestantNo equals fj6.ContestantNo 
+                            join fj7 in db.Top10Judge7 on c.ContestantNo equals fj7.ContestanceNo
                             select new Top5Model
                             {
                                 contestantNo = c.ContestantNo,
@@ -84,7 +77,7 @@ namespace RSI_Judging_System
                                 (fj4.Beauty + fj4.Intelligence + fj4.Delivery) +
                                 (fj5.Beauty + fj5.Intelligence + fj5.Delivery) +
                                 (fj6.Beauty + fj6.Intelligence + fj6.Delivery) +
-                                (fj7.Beauty + fj7.Intelligence + fj7.Delivery)) / 7
+                                (fj7.Beauty + fj7.Intelligence + fj7.Delivery))
                             };
 
                 var top10List = query.OrderByDescending(r=>r.TotalScoreLinq).ToList();
@@ -1453,7 +1446,7 @@ namespace RSI_Judging_System
             else
             {
                 DatabaseFunctions.SaveTop5(txtBoxBeauty16.Text, txtBoxIntelligence16.Text, 
-                    txtBoxDelivery16.Text, judgeProfile.JudgeNo, "11", out errorMessage);
+                    txtBoxDelivery16.Text, judgeProfile.JudgeNo, "16", out errorMessage);
 
                 if (errorMessage != "")
                 {
