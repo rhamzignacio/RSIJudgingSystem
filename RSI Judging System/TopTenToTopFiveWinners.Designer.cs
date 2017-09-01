@@ -620,6 +620,7 @@
             this.btnNextNo1.TabIndex = 15;
             this.btnNextNo1.Text = "Next";
             this.btnNextNo1.UseVisualStyleBackColor = true;
+            this.btnNextNo1.Click += new System.EventHandler(this.btnNextNo1_Click);
             // 
             // btnPrevNo1
             // 
@@ -837,6 +838,7 @@
             this.btnNextNo2.TabIndex = 34;
             this.btnNextNo2.Text = "Next";
             this.btnNextNo2.UseVisualStyleBackColor = true;
+            this.btnNextNo2.Click += new System.EventHandler(this.btnNextNo2_Click);
             // 
             // btnPrevNo2
             // 
@@ -847,6 +849,7 @@
             this.btnPrevNo2.TabIndex = 33;
             this.btnPrevNo2.Text = "Prev";
             this.btnPrevNo2.UseVisualStyleBackColor = true;
+            this.btnPrevNo2.Click += new System.EventHandler(this.btnPrevNo2_Click);
             // 
             // label21
             // 
@@ -1056,6 +1059,7 @@
             this.btnNextNo3.TabIndex = 53;
             this.btnNextNo3.Text = "Next";
             this.btnNextNo3.UseVisualStyleBackColor = true;
+            this.btnNextNo3.Click += new System.EventHandler(this.btnNextNo3_Click);
             // 
             // btnPrevNo3
             // 
@@ -1066,6 +1070,7 @@
             this.btnPrevNo3.TabIndex = 52;
             this.btnPrevNo3.Text = "Prev";
             this.btnPrevNo3.UseVisualStyleBackColor = true;
+            this.btnPrevNo3.Click += new System.EventHandler(this.btnPrevNo3_Click);
             // 
             // label31
             // 
@@ -1275,6 +1280,7 @@
             this.btnNextNo4.TabIndex = 72;
             this.btnNextNo4.Text = "Next";
             this.btnNextNo4.UseVisualStyleBackColor = true;
+            this.btnNextNo4.Click += new System.EventHandler(this.btnNextNo4_Click);
             // 
             // btnPrevNo4
             // 
@@ -1285,6 +1291,7 @@
             this.btnPrevNo4.TabIndex = 71;
             this.btnPrevNo4.Text = "Prev";
             this.btnPrevNo4.UseVisualStyleBackColor = true;
+            this.btnPrevNo4.Click += new System.EventHandler(this.btnPrevNo4_Click);
             // 
             // label41
             // 
@@ -1494,6 +1501,7 @@
             this.btnNextNo5.TabIndex = 72;
             this.btnNextNo5.Text = "Next";
             this.btnNextNo5.UseVisualStyleBackColor = true;
+            this.btnNextNo5.Click += new System.EventHandler(this.btnNextNo5_Click);
             // 
             // btnPrevNo5
             // 
@@ -1504,6 +1512,7 @@
             this.btnPrevNo5.TabIndex = 71;
             this.btnPrevNo5.Text = "Prev";
             this.btnPrevNo5.UseVisualStyleBackColor = true;
+            this.btnPrevNo5.Click += new System.EventHandler(this.btnPrevNo5_Click);
             // 
             // label51
             // 
@@ -1598,7 +1607,7 @@
             // label59
             // 
             this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(667, 391);
+            this.label59.Location = new System.Drawing.Point(662, 391);
             this.label59.Name = "label59";
             this.label59.Size = new System.Drawing.Size(278, 29);
             this.label59.TabIndex = 58;
@@ -1713,6 +1722,7 @@
             this.btnNextNo6.TabIndex = 91;
             this.btnNextNo6.Text = "Next";
             this.btnNextNo6.UseVisualStyleBackColor = true;
+            this.btnNextNo6.Click += new System.EventHandler(this.btnNextNo6_Click);
             // 
             // btnPrevNo6
             // 
@@ -1723,6 +1733,7 @@
             this.btnPrevNo6.TabIndex = 90;
             this.btnPrevNo6.Text = "Prev";
             this.btnPrevNo6.UseVisualStyleBackColor = true;
+            this.btnPrevNo6.Click += new System.EventHandler(this.btnPrevNo6_Click);
             // 
             // label61
             // 
@@ -1932,6 +1943,7 @@
             this.btnNextNo7.TabIndex = 110;
             this.btnNextNo7.Text = "Next";
             this.btnNextNo7.UseVisualStyleBackColor = true;
+            this.btnNextNo7.Click += new System.EventHandler(this.btnNextNo7_Click);
             // 
             // btnPrevNo7
             // 
@@ -1942,6 +1954,7 @@
             this.btnPrevNo7.TabIndex = 109;
             this.btnPrevNo7.Text = "Prev";
             this.btnPrevNo7.UseVisualStyleBackColor = true;
+            this.btnPrevNo7.Click += new System.EventHandler(this.btnPrevNo7_Click);
             // 
             // label71
             // 
@@ -2151,6 +2164,7 @@
             this.btnNextNo8.TabIndex = 129;
             this.btnNextNo8.Text = "Next";
             this.btnNextNo8.UseVisualStyleBackColor = true;
+            this.btnNextNo8.Click += new System.EventHandler(this.btnNextNo8_Click);
             // 
             // btnPrevNo8
             // 
@@ -2161,6 +2175,7 @@
             this.btnPrevNo8.TabIndex = 128;
             this.btnPrevNo8.Text = "Prev";
             this.btnPrevNo8.UseVisualStyleBackColor = true;
+            this.btnPrevNo8.Click += new System.EventHandler(this.btnPrevNo8_Click);
             // 
             // label81
             // 
@@ -2370,6 +2385,7 @@
             this.btnNextNo9.TabIndex = 129;
             this.btnNextNo9.Text = "Next";
             this.btnNextNo9.UseVisualStyleBackColor = true;
+            this.btnNextNo9.Click += new System.EventHandler(this.btnNextNo9_Click);
             // 
             // btnPrevNo9
             // 
@@ -2380,6 +2396,7 @@
             this.btnPrevNo9.TabIndex = 128;
             this.btnPrevNo9.Text = "Prev";
             this.btnPrevNo9.UseVisualStyleBackColor = true;
+            this.btnPrevNo9.Click += new System.EventHandler(this.btnPrevNo9_Click);
             // 
             // label91
             // 
@@ -2589,6 +2606,7 @@
             this.btnNextNo10.TabIndex = 129;
             this.btnNextNo10.Text = "Next";
             this.btnNextNo10.UseVisualStyleBackColor = true;
+            this.btnNextNo10.Click += new System.EventHandler(this.btnNextNo10_Click);
             // 
             // btnPrevNo10
             // 
@@ -2599,6 +2617,7 @@
             this.btnPrevNo10.TabIndex = 128;
             this.btnPrevNo10.Text = "Prev";
             this.btnPrevNo10.UseVisualStyleBackColor = true;
+            this.btnPrevNo10.Click += new System.EventHandler(this.btnPrevNo10_Click);
             // 
             // label101
             // 
@@ -2740,6 +2759,7 @@
             this.tabPage11.TabIndex = 10;
             this.tabPage11.Text = "NO.11";
             this.tabPage11.UseVisualStyleBackColor = true;
+            this.tabPage11.Click += new System.EventHandler(this.tabPage11_Click);
             // 
             // pictureBox20
             // 
@@ -2797,6 +2817,7 @@
             this.btnSubmit11.TabIndex = 130;
             this.btnSubmit11.Text = "Submit";
             this.btnSubmit11.UseVisualStyleBackColor = true;
+            this.btnSubmit11.Click += new System.EventHandler(this.btnSubmit11_Click);
             // 
             // btnNextNo11
             // 
@@ -2807,6 +2828,7 @@
             this.btnNextNo11.TabIndex = 129;
             this.btnNextNo11.Text = "Next";
             this.btnNextNo11.UseVisualStyleBackColor = true;
+            this.btnNextNo11.Click += new System.EventHandler(this.btnNextNo11_Click);
             // 
             // btnPrevNo11
             // 
@@ -2817,6 +2839,7 @@
             this.btnPrevNo11.TabIndex = 128;
             this.btnPrevNo11.Text = "Prev";
             this.btnPrevNo11.UseVisualStyleBackColor = true;
+            this.btnPrevNo11.Click += new System.EventHandler(this.btnPrevNo11_Click);
             // 
             // label111
             // 
@@ -2856,6 +2879,7 @@
             this.txtBoxDelivery11.Name = "txtBoxDelivery11";
             this.txtBoxDelivery11.Size = new System.Drawing.Size(100, 26);
             this.txtBoxDelivery11.TabIndex = 123;
+            this.txtBoxDelivery11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxDelivery11_KeyPress);
             // 
             // label115
             // 
@@ -2875,6 +2899,7 @@
             this.txtBoxIntelligence11.Name = "txtBoxIntelligence11";
             this.txtBoxIntelligence11.Size = new System.Drawing.Size(100, 26);
             this.txtBoxIntelligence11.TabIndex = 121;
+            this.txtBoxIntelligence11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxIntelligence11_KeyPress);
             // 
             // label116
             // 
@@ -2894,6 +2919,7 @@
             this.txtBoxBeauty11.Name = "txtBoxBeauty11";
             this.txtBoxBeauty11.Size = new System.Drawing.Size(100, 26);
             this.txtBoxBeauty11.TabIndex = 119;
+            this.txtBoxBeauty11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxBeauty11_KeyPress);
             // 
             // label117
             // 
@@ -3012,6 +3038,7 @@
             this.btnSubmit12.TabIndex = 130;
             this.btnSubmit12.Text = "Submit";
             this.btnSubmit12.UseVisualStyleBackColor = true;
+            this.btnSubmit12.Click += new System.EventHandler(this.btnSubmit12_Click);
             // 
             // btnNext12
             // 
@@ -3022,6 +3049,7 @@
             this.btnNext12.TabIndex = 129;
             this.btnNext12.Text = "Next";
             this.btnNext12.UseVisualStyleBackColor = true;
+            this.btnNext12.Click += new System.EventHandler(this.btnNext12_Click);
             // 
             // btnPrevNo12
             // 
@@ -3032,6 +3060,7 @@
             this.btnPrevNo12.TabIndex = 128;
             this.btnPrevNo12.Text = "Prev";
             this.btnPrevNo12.UseVisualStyleBackColor = true;
+            this.btnPrevNo12.Click += new System.EventHandler(this.btnPrevNo12_Click);
             // 
             // label121
             // 
@@ -3071,6 +3100,7 @@
             this.txtBoxDelivery12.Name = "txtBoxDelivery12";
             this.txtBoxDelivery12.Size = new System.Drawing.Size(100, 26);
             this.txtBoxDelivery12.TabIndex = 123;
+            this.txtBoxDelivery12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxDelivery12_KeyPress);
             // 
             // label125
             // 
@@ -3090,6 +3120,7 @@
             this.txtBoxIntelligence12.Name = "txtBoxIntelligence12";
             this.txtBoxIntelligence12.Size = new System.Drawing.Size(100, 26);
             this.txtBoxIntelligence12.TabIndex = 121;
+            this.txtBoxIntelligence12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxIntelligence12_KeyPress);
             // 
             // label126
             // 
@@ -3109,6 +3140,7 @@
             this.txtBoxBeauty12.Name = "txtBoxBeauty12";
             this.txtBoxBeauty12.Size = new System.Drawing.Size(100, 26);
             this.txtBoxBeauty12.TabIndex = 119;
+            this.txtBoxBeauty12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxBeauty12_KeyPress);
             // 
             // label127
             // 
@@ -3227,6 +3259,7 @@
             this.btnSubmit13.TabIndex = 149;
             this.btnSubmit13.Text = "Submit";
             this.btnSubmit13.UseVisualStyleBackColor = true;
+            this.btnSubmit13.Click += new System.EventHandler(this.btnSubmit13_Click);
             // 
             // btnNextNo13
             // 
@@ -3237,6 +3270,7 @@
             this.btnNextNo13.TabIndex = 148;
             this.btnNextNo13.Text = "Next";
             this.btnNextNo13.UseVisualStyleBackColor = true;
+            this.btnNextNo13.Click += new System.EventHandler(this.btnNextNo13_Click);
             // 
             // btnPrevNo13
             // 
@@ -3247,6 +3281,7 @@
             this.btnPrevNo13.TabIndex = 147;
             this.btnPrevNo13.Text = "Prev";
             this.btnPrevNo13.UseVisualStyleBackColor = true;
+            this.btnPrevNo13.Click += new System.EventHandler(this.btnPrevNo13_Click);
             // 
             // label131
             // 
@@ -3286,6 +3321,7 @@
             this.txtBoxDelivery13.Name = "txtBoxDelivery13";
             this.txtBoxDelivery13.Size = new System.Drawing.Size(100, 26);
             this.txtBoxDelivery13.TabIndex = 142;
+            this.txtBoxDelivery13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxDelivery13_KeyPress);
             // 
             // label135
             // 
@@ -3305,6 +3341,7 @@
             this.txtBoxIntelligence13.Name = "txtBoxIntelligence13";
             this.txtBoxIntelligence13.Size = new System.Drawing.Size(100, 26);
             this.txtBoxIntelligence13.TabIndex = 140;
+            this.txtBoxIntelligence13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxIntelligence13_KeyPress);
             // 
             // label136
             // 
@@ -3324,6 +3361,7 @@
             this.txtBoxBeauty13.Name = "txtBoxBeauty13";
             this.txtBoxBeauty13.Size = new System.Drawing.Size(100, 26);
             this.txtBoxBeauty13.TabIndex = 138;
+            this.txtBoxBeauty13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxBeauty13_KeyPress);
             // 
             // label137
             // 
@@ -3442,6 +3480,7 @@
             this.btnSubmit14.TabIndex = 149;
             this.btnSubmit14.Text = "Submit";
             this.btnSubmit14.UseVisualStyleBackColor = true;
+            this.btnSubmit14.Click += new System.EventHandler(this.btnSubmit14_Click);
             // 
             // btnNextNo14
             // 
@@ -3452,6 +3491,7 @@
             this.btnNextNo14.TabIndex = 148;
             this.btnNextNo14.Text = "Next";
             this.btnNextNo14.UseVisualStyleBackColor = true;
+            this.btnNextNo14.Click += new System.EventHandler(this.btnNextNo14_Click);
             // 
             // btnPrevNo14
             // 
@@ -3462,6 +3502,7 @@
             this.btnPrevNo14.TabIndex = 147;
             this.btnPrevNo14.Text = "Prev";
             this.btnPrevNo14.UseVisualStyleBackColor = true;
+            this.btnPrevNo14.Click += new System.EventHandler(this.btnPrevNo14_Click);
             // 
             // label141
             // 
@@ -3501,6 +3542,7 @@
             this.txtBoxDelivery14.Name = "txtBoxDelivery14";
             this.txtBoxDelivery14.Size = new System.Drawing.Size(100, 26);
             this.txtBoxDelivery14.TabIndex = 142;
+            this.txtBoxDelivery14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxDelivery14_KeyPress);
             // 
             // label145
             // 
@@ -3520,6 +3562,7 @@
             this.txtBoxIntelligence14.Name = "txtBoxIntelligence14";
             this.txtBoxIntelligence14.Size = new System.Drawing.Size(100, 26);
             this.txtBoxIntelligence14.TabIndex = 140;
+            this.txtBoxIntelligence14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxIntelligence14_KeyPress);
             // 
             // label146
             // 
@@ -3539,6 +3582,7 @@
             this.txtBoxBeauty14.Name = "txtBoxBeauty14";
             this.txtBoxBeauty14.Size = new System.Drawing.Size(100, 26);
             this.txtBoxBeauty14.TabIndex = 138;
+            this.txtBoxBeauty14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxBeauty14_KeyPress);
             // 
             // label147
             // 
@@ -3657,6 +3701,7 @@
             this.btnSubmit15.TabIndex = 149;
             this.btnSubmit15.Text = "Submit";
             this.btnSubmit15.UseVisualStyleBackColor = true;
+            this.btnSubmit15.Click += new System.EventHandler(this.btnSubmit15_Click);
             // 
             // btnNextNo15
             // 
@@ -3667,6 +3712,7 @@
             this.btnNextNo15.TabIndex = 148;
             this.btnNextNo15.Text = "Next";
             this.btnNextNo15.UseVisualStyleBackColor = true;
+            this.btnNextNo15.Click += new System.EventHandler(this.btnNextNo15_Click);
             // 
             // btnPrevNo15
             // 
@@ -3677,6 +3723,7 @@
             this.btnPrevNo15.TabIndex = 147;
             this.btnPrevNo15.Text = "Prev";
             this.btnPrevNo15.UseVisualStyleBackColor = true;
+            this.btnPrevNo15.Click += new System.EventHandler(this.btnPrevNo15_Click);
             // 
             // label151
             // 
@@ -3716,6 +3763,7 @@
             this.txtBoxDelivery15.Name = "txtBoxDelivery15";
             this.txtBoxDelivery15.Size = new System.Drawing.Size(100, 26);
             this.txtBoxDelivery15.TabIndex = 142;
+            this.txtBoxDelivery15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxDelivery15_KeyPress);
             // 
             // label155
             // 
@@ -3735,6 +3783,7 @@
             this.txtBoxIntelligence15.Name = "txtBoxIntelligence15";
             this.txtBoxIntelligence15.Size = new System.Drawing.Size(100, 26);
             this.txtBoxIntelligence15.TabIndex = 140;
+            this.txtBoxIntelligence15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxIntelligence15_KeyPress);
             // 
             // label156
             // 
@@ -3754,6 +3803,7 @@
             this.txtBoxBeauty15.Name = "txtBoxBeauty15";
             this.txtBoxBeauty15.Size = new System.Drawing.Size(100, 26);
             this.txtBoxBeauty15.TabIndex = 138;
+            this.txtBoxBeauty15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxBeauty15_KeyPress);
             // 
             // label157
             // 
@@ -3872,6 +3922,7 @@
             this.btnSubmit16.TabIndex = 149;
             this.btnSubmit16.Text = "Submit";
             this.btnSubmit16.UseVisualStyleBackColor = true;
+            this.btnSubmit16.Click += new System.EventHandler(this.btnSubmit16_Click);
             // 
             // btnNextNo16
             // 
@@ -3882,6 +3933,7 @@
             this.btnNextNo16.TabIndex = 148;
             this.btnNextNo16.Text = "Next";
             this.btnNextNo16.UseVisualStyleBackColor = true;
+            this.btnNextNo16.Click += new System.EventHandler(this.btnNextNo16_Click);
             // 
             // btnPrevNo16
             // 
@@ -3892,6 +3944,7 @@
             this.btnPrevNo16.TabIndex = 147;
             this.btnPrevNo16.Text = "Prev";
             this.btnPrevNo16.UseVisualStyleBackColor = true;
+            this.btnPrevNo16.Click += new System.EventHandler(this.btnPrevNo16_Click);
             // 
             // label161
             // 
@@ -3931,6 +3984,7 @@
             this.txtBoxDelivery16.Name = "txtBoxDelivery16";
             this.txtBoxDelivery16.Size = new System.Drawing.Size(100, 26);
             this.txtBoxDelivery16.TabIndex = 142;
+            this.txtBoxDelivery16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxDelivery16_KeyPress);
             // 
             // label165
             // 
@@ -3950,6 +4004,7 @@
             this.txtBoxIntelligence16.Name = "txtBoxIntelligence16";
             this.txtBoxIntelligence16.Size = new System.Drawing.Size(100, 26);
             this.txtBoxIntelligence16.TabIndex = 140;
+            this.txtBoxIntelligence16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxIntelligence16_KeyPress);
             // 
             // label166
             // 
@@ -3969,6 +4024,7 @@
             this.txtBoxBeauty16.Name = "txtBoxBeauty16";
             this.txtBoxBeauty16.Size = new System.Drawing.Size(100, 26);
             this.txtBoxBeauty16.TabIndex = 138;
+            this.txtBoxBeauty16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxBeauty16_KeyPress);
             // 
             // label167
             // 
@@ -4087,6 +4143,7 @@
             this.btnSubmit17.TabIndex = 149;
             this.btnSubmit17.Text = "Submit";
             this.btnSubmit17.UseVisualStyleBackColor = true;
+            this.btnSubmit17.Click += new System.EventHandler(this.btnSubmit17_Click);
             // 
             // btnNextNo17
             // 
@@ -4097,6 +4154,7 @@
             this.btnNextNo17.TabIndex = 148;
             this.btnNextNo17.Text = "Next";
             this.btnNextNo17.UseVisualStyleBackColor = true;
+            this.btnNextNo17.Click += new System.EventHandler(this.btnNextNo17_Click);
             // 
             // btnPrevNo17
             // 
@@ -4107,6 +4165,7 @@
             this.btnPrevNo17.TabIndex = 147;
             this.btnPrevNo17.Text = "Prev";
             this.btnPrevNo17.UseVisualStyleBackColor = true;
+            this.btnPrevNo17.Click += new System.EventHandler(this.btnPrevNo17_Click);
             // 
             // label171
             // 
@@ -4146,6 +4205,7 @@
             this.txtBoxDelivery17.Name = "txtBoxDelivery17";
             this.txtBoxDelivery17.Size = new System.Drawing.Size(100, 26);
             this.txtBoxDelivery17.TabIndex = 142;
+            this.txtBoxDelivery17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxDelivery17_KeyPress);
             // 
             // label175
             // 
@@ -4165,6 +4225,7 @@
             this.txtBoxIntelligence17.Name = "txtBoxIntelligence17";
             this.txtBoxIntelligence17.Size = new System.Drawing.Size(100, 26);
             this.txtBoxIntelligence17.TabIndex = 140;
+            this.txtBoxIntelligence17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxIntelligence17_KeyPress);
             // 
             // label176
             // 
@@ -4184,6 +4245,7 @@
             this.txtBoxBeauty17.Name = "txtBoxBeauty17";
             this.txtBoxBeauty17.Size = new System.Drawing.Size(100, 26);
             this.txtBoxBeauty17.TabIndex = 138;
+            this.txtBoxBeauty17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxBeauty17_KeyPress);
             // 
             // label177
             // 
@@ -4306,6 +4368,7 @@
             this.btnSubmit19.TabIndex = 149;
             this.btnSubmit19.Text = "Submit";
             this.btnSubmit19.UseVisualStyleBackColor = true;
+            this.btnSubmit19.Click += new System.EventHandler(this.btnSubmit19_Click);
             // 
             // btnNextNo19
             // 
@@ -4316,6 +4379,7 @@
             this.btnNextNo19.TabIndex = 148;
             this.btnNextNo19.Text = "Next";
             this.btnNextNo19.UseVisualStyleBackColor = true;
+            this.btnNextNo19.Click += new System.EventHandler(this.btnNextNo19_Click);
             // 
             // btnPrevNo19
             // 
@@ -4326,6 +4390,7 @@
             this.btnPrevNo19.TabIndex = 147;
             this.btnPrevNo19.Text = "Prev";
             this.btnPrevNo19.UseVisualStyleBackColor = true;
+            this.btnPrevNo19.Click += new System.EventHandler(this.btnPrevNo19_Click);
             // 
             // label2
             // 
@@ -4365,6 +4430,7 @@
             this.txtBoxDelivery19.Name = "txtBoxDelivery19";
             this.txtBoxDelivery19.Size = new System.Drawing.Size(100, 26);
             this.txtBoxDelivery19.TabIndex = 142;
+            this.txtBoxDelivery19.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxDelivery19_KeyPress);
             // 
             // label6
             // 
@@ -4384,6 +4450,7 @@
             this.txtBoxIntelligence19.Name = "txtBoxIntelligence19";
             this.txtBoxIntelligence19.Size = new System.Drawing.Size(100, 26);
             this.txtBoxIntelligence19.TabIndex = 140;
+            this.txtBoxIntelligence19.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxIntelligence19_KeyPress);
             // 
             // label7
             // 
@@ -4403,6 +4470,7 @@
             this.txtBoxBeauty19.Name = "txtBoxBeauty19";
             this.txtBoxBeauty19.Size = new System.Drawing.Size(100, 26);
             this.txtBoxBeauty19.TabIndex = 138;
+            this.txtBoxBeauty19.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBoxBeauty19_KeyPress);
             // 
             // label8
             // 
@@ -4525,6 +4593,7 @@
             // 
             // btnNext20
             // 
+            this.btnNext20.Enabled = false;
             this.btnNext20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNext20.Location = new System.Drawing.Point(210, 247);
             this.btnNext20.Name = "btnNext20";
@@ -4542,6 +4611,7 @@
             this.btnPrevNo20.TabIndex = 147;
             this.btnPrevNo20.Text = "Prev";
             this.btnPrevNo20.UseVisualStyleBackColor = true;
+            this.btnPrevNo20.Click += new System.EventHandler(this.btnPrevNo20_Click);
             // 
             // label182
             // 

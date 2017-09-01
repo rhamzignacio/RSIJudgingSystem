@@ -20,6 +20,8 @@ namespace RSI_Judging_System
             GetTop10();
 
             judgeProfile = _judgeProfile;
+
+            lblJudgeName.Text = judgeProfile.Name;
         }
 
         private void GetTop10()
@@ -292,7 +294,7 @@ namespace RSI_Judging_System
                     MessageBox.Show("Scores successfully submitted");
 
                     txtBoxDeliveryNo1.Enabled = txtBoxIntelligenceNo1.Enabled
-                        = txtBoxBeautyNo1.Enabled = btnSubmit2.Enabled = false;
+                        = txtBoxBeautyNo1.Enabled = btnSubmit1.Enabled = false;
                 }
             }
         }
@@ -997,6 +999,815 @@ namespace RSI_Judging_System
                 }
             }
 
+        }
+
+        private void txtBoxBeauty11_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void txtBoxIntelligence11_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void txtBoxDelivery11_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void btnSubmit11_Click(object sender, EventArgs e)
+        {
+            string errorMessage = "";
+
+            if (txtBoxBeauty11.Text == "")
+                errorMessage += "\n- Score for Beauty is required";
+            else
+            {
+                if (double.Parse(txtBoxBeauty11.Text) > 50)
+                {
+                    errorMessage += "\n- Only 1 - 50 score are allowed in Beauty";
+
+                    txtBoxBeauty11.Text = "";
+                }
+            }
+
+            if (txtBoxIntelligence11.Text == "")
+                errorMessage += "\n- Score for Intelligence is required";
+            else
+            {
+                if (double.Parse(txtBoxIntelligence11.Text) > 30)
+                {
+                    errorMessage += "\n- Only 1 - 30 score are allowed in intelligence";
+
+                    txtBoxIntelligence11.Text = "";
+                }
+            }
+
+            if (txtBoxDelivery11.Text == "")
+                errorMessage += "\n- Score for Poise is required";
+            else
+            {
+                if (double.Parse(txtBoxDelivery11.Text) > 20)
+                {
+                    errorMessage += "\n- Only 1 - 20 score are allowed in poise";
+
+                    txtBoxDelivery11.Text = "";
+                }
+            }
+
+            if (errorMessage != "")
+            {
+                MessageBox.Show(errorMessage, "Error");
+            }
+            else
+            {
+                DatabaseFunctions.SaveTop5(txtBoxBeauty11.Text, txtBoxIntelligence11.Text, 
+                    txtBoxDelivery11.Text, judgeProfile.JudgeNo, "11", out errorMessage);
+
+                if (errorMessage != "")
+                {
+                    MessageBox.Show(errorMessage, "Error");
+                }
+                else
+                {
+                    MessageBox.Show("Scores successfully submitted");
+
+                    txtBoxDelivery11.Enabled = txtBoxIntelligence11.Enabled
+                        = txtBoxBeauty11.Enabled = btnSubmit11.Enabled = false;
+                }
+            }
+        }
+
+        private void txtBoxBeauty12_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void txtBoxIntelligence12_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void txtBoxDelivery12_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void btnSubmit12_Click(object sender, EventArgs e)
+        {
+            string errorMessage = "";
+
+            if (txtBoxBeauty12.Text == "")
+                errorMessage += "\n- Score for Beauty is required";
+            else
+            {
+                if (double.Parse(txtBoxBeauty12.Text) > 50)
+                {
+                    errorMessage += "\n- Only 1 - 50 score are allowed in Beauty";
+
+                    txtBoxBeauty12.Text = "";
+                }
+            }
+
+            if (txtBoxIntelligence12.Text == "")
+                errorMessage += "\n- Score for Intelligence is required";
+            else
+            {
+                if (double.Parse(txtBoxIntelligence12.Text) > 30)
+                {
+                    errorMessage += "\n- Only 1 - 30 score are allowed in intelligence";
+
+                    txtBoxIntelligence12.Text = "";
+                }
+            }
+
+            if (txtBoxDelivery12.Text == "")
+                errorMessage += "\n- Score for Poise is required";
+            else
+            {
+                if (double.Parse(txtBoxDelivery12.Text) > 20)
+                {
+                    errorMessage += "\n- Only 1 - 20 score are allowed in poise";
+
+                    txtBoxDelivery12.Text = "";
+                }
+            }
+
+            if (errorMessage != "")
+            {
+                MessageBox.Show(errorMessage, "Error");
+            }
+            else
+            {
+                DatabaseFunctions.SaveTop5(txtBoxBeauty12.Text, txtBoxIntelligence12.Text,
+                    txtBoxDelivery12.Text, judgeProfile.JudgeNo, "12", out errorMessage);
+
+                if (errorMessage != "")
+                {
+                    MessageBox.Show(errorMessage, "Error");
+                }
+                else
+                {
+                    MessageBox.Show("Scores successfully submitted");
+
+                    txtBoxDelivery12.Enabled = txtBoxIntelligence12.Enabled
+                        = txtBoxBeauty12.Enabled = btnSubmit12.Enabled = false;
+                }
+            }
+        }
+
+        private void txtBoxBeauty13_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void txtBoxIntelligence13_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void txtBoxDelivery13_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void btnSubmit13_Click(object sender, EventArgs e)
+        {
+            string errorMessage = "";
+
+            if (txtBoxBeauty13.Text == "")
+                errorMessage += "\n- Score for Beauty is required";
+            else
+            {
+                if (double.Parse(txtBoxBeauty13.Text) > 50)
+                {
+                    errorMessage += "\n- Only 1 - 50 score are allowed in Beauty";
+
+                    txtBoxBeauty13.Text = "";
+                }
+            }
+
+            if (txtBoxIntelligence13.Text == "")
+                errorMessage += "\n- Score for Intelligence is required";
+            else
+            {
+                if (double.Parse(txtBoxIntelligence13.Text) > 30)
+                {
+                    errorMessage += "\n- Only 1 - 30 score are allowed in intelligence";
+
+                    txtBoxIntelligence13.Text = "";
+                }
+            }
+
+            if (txtBoxDelivery13.Text == "")
+                errorMessage += "\n- Score for Poise is required";
+            else
+            {
+                if (double.Parse(txtBoxDelivery13.Text) > 20)
+                {
+                    errorMessage += "\n- Only 1 - 20 score are allowed in poise";
+
+                    txtBoxDelivery13.Text = "";
+                }
+            }
+
+            if (errorMessage != "")
+            {
+                MessageBox.Show(errorMessage, "Error");
+            }
+            else
+            {
+                DatabaseFunctions.SaveTop5(txtBoxBeauty13.Text, txtBoxIntelligence13.Text,
+                    txtBoxDelivery13.Text, judgeProfile.JudgeNo, "13", out errorMessage);
+
+                if (errorMessage != "")
+                {
+                    MessageBox.Show(errorMessage, "Error");
+                }
+                else
+                {
+                    MessageBox.Show("Scores successfully submitted");
+
+                    txtBoxDelivery13.Enabled = txtBoxIntelligence13.Enabled
+                        = txtBoxBeauty13.Enabled = btnSubmit13.Enabled = false;
+                }
+            }
+        }
+
+        private void txtBoxBeauty14_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void txtBoxIntelligence14_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void txtBoxDelivery14_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void btnSubmit14_Click(object sender, EventArgs e)
+        {
+            string errorMessage = "";
+
+            if (txtBoxBeauty14.Text == "")
+                errorMessage += "\n- Score for Beauty is required";
+            else
+            {
+                if (double.Parse(txtBoxBeauty14.Text) > 50)
+                {
+                    errorMessage += "\n- Only 1 - 50 score are allowed in Beauty";
+
+                    txtBoxBeauty14.Text = "";
+                }
+            }
+
+            if (txtBoxIntelligence14.Text == "")
+                errorMessage += "\n- Score for Intelligence is required";
+            else
+            {
+                if (double.Parse(txtBoxIntelligence14.Text) > 30)
+                {
+                    errorMessage += "\n- Only 1 - 30 score are allowed in intelligence";
+
+                    txtBoxIntelligence14.Text = "";
+                }
+            }
+
+            if (txtBoxDelivery14.Text == "")
+                errorMessage += "\n- Score for Poise is required";
+            else
+            {
+                if (double.Parse(txtBoxDelivery14.Text) > 20)
+                {
+                    errorMessage += "\n- Only 1 - 20 score are allowed in poise";
+
+                    txtBoxDelivery14.Text = "";
+                }
+            }
+
+            if (errorMessage != "")
+            {
+                MessageBox.Show(errorMessage, "Error");
+            }
+            else
+            {
+                DatabaseFunctions.SaveTop5(txtBoxBeauty14.Text, txtBoxIntelligence14.Text,
+                    txtBoxDelivery14.Text, judgeProfile.JudgeNo, "14", out errorMessage);
+
+                if (errorMessage != "")
+                {
+                    MessageBox.Show(errorMessage, "Error");
+                }
+                else
+                {
+                    MessageBox.Show("Scores successfully submitted");
+
+                    txtBoxDelivery14.Enabled = txtBoxIntelligence14.Enabled
+                        = txtBoxBeauty14.Enabled = btnSubmit14.Enabled = false;
+                }
+            }
+        }
+
+        private void txtBoxBeauty15_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void txtBoxIntelligence15_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void txtBoxDelivery15_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void btnSubmit15_Click(object sender, EventArgs e)
+        {
+            string errorMessage = "";
+
+            if (txtBoxBeauty15.Text == "")
+                errorMessage += "\n- Score for Beauty is required";
+            else
+            {
+                if (double.Parse(txtBoxBeauty15.Text) > 50)
+                {
+                    errorMessage += "\n- Only 1 - 50 score are allowed in Beauty";
+
+                    txtBoxBeauty15.Text = "";
+                }
+            }
+
+            if (txtBoxIntelligence15.Text == "")
+                errorMessage += "\n- Score for Intelligence is required";
+            else
+            {
+                if (double.Parse(txtBoxIntelligence15.Text) > 30)
+                {
+                    errorMessage += "\n- Only 1 - 30 score are allowed in intelligence";
+
+                    txtBoxIntelligence15.Text = "";
+                }
+            }
+
+            if (txtBoxDelivery15.Text == "")
+                errorMessage += "\n- Score for Poise is required";
+            else
+            {
+                if (double.Parse(txtBoxDelivery15.Text) > 20)
+                {
+                    errorMessage += "\n- Only 1 - 20 score are allowed in poise";
+
+                    txtBoxDelivery15.Text = "";
+                }
+            }
+
+            if (errorMessage != "")
+            {
+                MessageBox.Show(errorMessage, "Error");
+            }
+            else
+            {
+                DatabaseFunctions.SaveTop5(txtBoxBeauty15.Text, txtBoxIntelligence15.Text,
+                    txtBoxDelivery15.Text, judgeProfile.JudgeNo, "15", out errorMessage);
+
+                if (errorMessage != "")
+                {
+                    MessageBox.Show(errorMessage, "Error");
+                }
+                else
+                {
+                    MessageBox.Show("Scores successfully submitted");
+
+                    txtBoxDelivery15.Enabled = txtBoxIntelligence15.Enabled
+                        = txtBoxBeauty15.Enabled = btnSubmit15.Enabled = false;
+                }
+            }
+        }
+
+        private void txtBoxBeauty16_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void txtBoxIntelligence16_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void txtBoxDelivery16_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void btnSubmit16_Click(object sender, EventArgs e)
+        {
+                        string errorMessage = "";
+
+            if (txtBoxBeauty16.Text == "")
+                errorMessage += "\n- Score for Beauty is required";
+            else
+            {
+                if (double.Parse(txtBoxBeauty16.Text) > 50)
+                {
+                    errorMessage += "\n- Only 1 - 50 score are allowed in Beauty";
+
+                    txtBoxBeauty16.Text = "";
+                }
+            }
+
+            if (txtBoxIntelligence16.Text == "")
+                errorMessage += "\n- Score for Intelligence is required";
+            else
+            {
+                if (double.Parse(txtBoxIntelligence16.Text) > 30)
+                {
+                    errorMessage += "\n- Only 1 - 30 score are allowed in intelligence";
+
+                    txtBoxIntelligence16.Text = "";
+                }
+            }
+
+            if (txtBoxDelivery16.Text == "")
+                errorMessage += "\n- Score for Poise is required";
+            else
+            {
+                if (double.Parse(txtBoxDelivery16.Text) > 20)
+                {
+                    errorMessage += "\n- Only 1 - 20 score are allowed in poise";
+
+                    txtBoxDelivery16.Text = "";
+                }
+            }
+
+            if (errorMessage != "")
+            {
+                MessageBox.Show(errorMessage, "Error");
+            }
+            else
+            {
+                DatabaseFunctions.SaveTop5(txtBoxBeauty16.Text, txtBoxIntelligence16.Text, 
+                    txtBoxDelivery16.Text, judgeProfile.JudgeNo, "11", out errorMessage);
+
+                if (errorMessage != "")
+                {
+                    MessageBox.Show(errorMessage, "Error");
+                }
+                else
+                {
+                    MessageBox.Show("Scores successfully submitted");
+
+                    txtBoxDelivery16.Enabled = txtBoxIntelligence16.Enabled
+                        = txtBoxBeauty16.Enabled = btnSubmit16.Enabled = false;
+                }
+            }
+        }
+
+        private void txtBoxBeauty17_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void txtBoxIntelligence17_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void txtBoxDelivery17_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void btnSubmit17_Click(object sender, EventArgs e)
+        {
+            string errorMessage = "";
+
+            if (txtBoxBeauty17.Text == "")
+                errorMessage += "\n- Score for Beauty is required";
+            else
+            {
+                if (double.Parse(txtBoxBeauty17.Text) > 50)
+                {
+                    errorMessage += "\n- Only 1 - 50 score are allowed in Beauty";
+
+                    txtBoxBeauty17.Text = "";
+                }
+            }
+
+            if (txtBoxIntelligence17.Text == "")
+                errorMessage += "\n- Score for Intelligence is required";
+            else
+            {
+                if (double.Parse(txtBoxIntelligence17.Text) > 30)
+                {
+                    errorMessage += "\n- Only 1 - 30 score are allowed in intelligence";
+
+                    txtBoxIntelligence17.Text = "";
+                }
+            }
+
+            if (txtBoxDelivery17.Text == "")
+                errorMessage += "\n- Score for Poise is required";
+            else
+            {
+                if (double.Parse(txtBoxDelivery17.Text) > 20)
+                {
+                    errorMessage += "\n- Only 1 - 20 score are allowed in poise";
+
+                    txtBoxDelivery17.Text = "";
+                }
+            }
+
+            if (errorMessage != "")
+            {
+                MessageBox.Show(errorMessage, "Error");
+            }
+            else
+            {
+                DatabaseFunctions.SaveTop5(txtBoxBeauty17.Text, txtBoxIntelligence17.Text,
+                    txtBoxDelivery17.Text, judgeProfile.JudgeNo, "17", out errorMessage);
+
+                if (errorMessage != "")
+                {
+                    MessageBox.Show(errorMessage, "Error");
+                }
+                else
+                {
+                    MessageBox.Show("Scores successfully submitted");
+
+                    txtBoxDelivery17.Enabled = txtBoxIntelligence17.Enabled
+                        = txtBoxBeauty17.Enabled = btnSubmit17.Enabled = false;
+                }
+            }
+        }
+
+        private void txtBoxBeauty19_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void txtBoxIntelligence19_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void txtBoxDelivery19_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = TextBoxDigitOnly(sender, e);
+        }
+
+        private void btnSubmit19_Click(object sender, EventArgs e)
+        {
+            string errorMessage = "";
+
+            if (txtBoxBeauty19.Text == "")
+                errorMessage += "\n- Score for Beauty is required";
+            else
+            {
+                if (double.Parse(txtBoxBeauty19.Text) > 50)
+                {
+                    errorMessage += "\n- Only 1 - 50 score are allowed in Beauty";
+
+                    txtBoxBeauty19.Text = "";
+                }
+            }
+
+            if (txtBoxIntelligence19.Text == "")
+                errorMessage += "\n- Score for Intelligence is required";
+            else
+            {
+                if (double.Parse(txtBoxIntelligence19.Text) > 30)
+                {
+                    errorMessage += "\n- Only 1 - 30 score are allowed in intelligence";
+
+                    txtBoxIntelligence19.Text = "";
+                }
+            }
+
+            if (txtBoxDelivery19.Text == "")
+                errorMessage += "\n- Score for Poise is required";
+            else
+            {
+                if (double.Parse(txtBoxDelivery19.Text) > 20)
+                {
+                    errorMessage += "\n- Only 1 - 20 score are allowed in poise";
+
+                    txtBoxDelivery19.Text = "";
+                }
+            }
+
+            if (errorMessage != "")
+            {
+                MessageBox.Show(errorMessage, "Error");
+            }
+            else
+            {
+                DatabaseFunctions.SaveTop5(txtBoxBeauty19.Text, txtBoxIntelligence19.Text,
+                    txtBoxDelivery19.Text, judgeProfile.JudgeNo, "19", out errorMessage);
+
+                if (errorMessage != "")
+                {
+                    MessageBox.Show(errorMessage, "Error");
+                }
+                else
+                {
+                    MessageBox.Show("Scores successfully submitted");
+
+                    txtBoxDelivery19.Enabled = txtBoxIntelligence19.Enabled
+                        = txtBoxBeauty19.Enabled = btnSubmit19.Enabled = false;
+                }
+            }
+        }
+
+        private void btnNextNo1_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex + 1;
+        }
+
+        private void btnPrevNo2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex - 1;
+        }
+
+        private void btnNextNo2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex + 1;
+        }
+
+        private void btnPrevNo3_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex - 1;
+        }
+
+        private void btnNextNo3_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex + 1;
+        }
+
+        private void btnPrevNo4_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex - 1;
+        }
+
+        private void btnNextNo4_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex + 1;
+        }
+
+        private void btnPrevNo5_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex - 1;
+        }
+
+        private void btnNextNo5_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex + 1;
+        }
+
+        private void btnPrevNo6_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex - 1;
+        }
+
+        private void btnNextNo6_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex + 1;
+        }
+
+        private void btnPrevNo7_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex - 1;
+        }
+
+        private void btnNextNo7_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex + 1;
+        }
+
+        private void btnPrevNo8_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex - 1;
+        }
+
+        private void btnNextNo8_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex + 1;
+        }
+
+        private void btnPrevNo9_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex - 1;
+        }
+
+        private void btnNextNo9_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex + 1;
+        }
+
+        private void btnPrevNo10_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex - 1;
+        }
+
+        private void btnNextNo10_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex + 1;
+        }
+
+        private void tabPage11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPrevNo11_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex - 1;
+        }
+
+        private void btnNextNo11_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex + 1;
+        }
+
+        private void btnPrevNo12_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex - 1;
+        }
+
+        private void btnNext12_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex + 1;
+        }
+
+        private void btnPrevNo13_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex - 1;
+        }
+
+        private void btnNextNo13_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex + 1;
+        }
+
+        private void btnPrevNo14_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex - 1;
+        }
+
+        private void btnNextNo14_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex + 1;
+        }
+
+        private void btnPrevNo15_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex - 1;
+        }
+
+        private void btnNextNo15_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex + 1;
+        }
+
+        private void btnPrevNo16_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex - 1;
+        }
+
+        private void btnNextNo16_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex + 1;
+        }
+
+        private void btnPrevNo17_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex - 1;
+        }
+
+        private void btnNextNo17_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex + 1;
+        }
+
+        private void btnPrevNo19_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex - 1;
+        }
+
+        private void btnNextNo19_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex + 1;
+        }
+
+        private void btnPrevNo20_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = tabControl1.SelectedIndex - 1;
         }
     }
 }
