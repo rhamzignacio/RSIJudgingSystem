@@ -1809,5 +1809,10 @@ namespace RSI_Judging_System
         {
             tabControl1.SelectedIndex = tabControl1.SelectedIndex - 1;
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
