@@ -1851,5 +1851,10 @@ namespace RSI_Judging_System
         {
 
         }
+
+        private void pictureBox18_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
