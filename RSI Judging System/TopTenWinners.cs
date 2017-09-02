@@ -24,6 +24,7 @@ namespace RSI_Judging_System
             judgeProfile = _judgeProfile;
 
             GetTop10();
+
         }
 
         private void GetTop10()
@@ -434,6 +435,8 @@ namespace RSI_Judging_System
 
                     txtBoxBeautyNo1.Enabled = txtBoxDeliveryNo1.Enabled = txtBoxIntelligenceNo1.Enabled =
                         btnSubmit1.Enabled = false;
+
+
                 }
             }
         }

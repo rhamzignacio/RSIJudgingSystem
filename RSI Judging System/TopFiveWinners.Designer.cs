@@ -400,7 +400,7 @@
             // 
             this.lblJudgeName.AutoSize = true;
             this.lblJudgeName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJudgeName.Location = new System.Drawing.Point(12, 10);
+            this.lblJudgeName.Location = new System.Drawing.Point(746, 9);
             this.lblJudgeName.Name = "lblJudgeName";
             this.lblJudgeName.Size = new System.Drawing.Size(218, 20);
             this.lblJudgeName.TabIndex = 7;
@@ -428,7 +428,7 @@
             this.tabPage19.Location = new System.Drawing.Point(4, 22);
             this.tabPage19.Name = "tabPage19";
             this.tabPage19.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage19.Size = new System.Drawing.Size(917, 623);
+            this.tabPage19.Size = new System.Drawing.Size(940, 651);
             this.tabPage19.TabIndex = 18;
             this.tabPage19.Text = "NO.20";
             this.tabPage19.UseVisualStyleBackColor = true;
@@ -473,13 +473,14 @@
             // 
             // btnSubmit20
             // 
+            this.btnSubmit20.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit20.Location = new System.Drawing.Point(811, 582);
             this.btnSubmit20.Name = "btnSubmit20";
             this.btnSubmit20.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit20.TabIndex = 149;
             this.btnSubmit20.Text = "Submit";
-            this.btnSubmit20.UseVisualStyleBackColor = true;
+            this.btnSubmit20.UseVisualStyleBackColor = false;
             this.btnSubmit20.Click += new System.EventHandler(this.btnSubmit20_Click);
             // 
             // btnNext20
@@ -655,13 +656,14 @@
             // 
             // btnSubmit19
             // 
+            this.btnSubmit19.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit19.Location = new System.Drawing.Point(811, 582);
             this.btnSubmit19.Name = "btnSubmit19";
             this.btnSubmit19.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit19.TabIndex = 149;
             this.btnSubmit19.Text = "Submit";
-            this.btnSubmit19.UseVisualStyleBackColor = true;
+            this.btnSubmit19.UseVisualStyleBackColor = false;
             this.btnSubmit19.Click += new System.EventHandler(this.btnSubmit19_Click);
             // 
             // btnNextNo19
@@ -833,13 +835,14 @@
             // 
             // btnSubmit17
             // 
+            this.btnSubmit17.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit17.Location = new System.Drawing.Point(814, 582);
             this.btnSubmit17.Name = "btnSubmit17";
             this.btnSubmit17.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit17.TabIndex = 149;
             this.btnSubmit17.Text = "Submit";
-            this.btnSubmit17.UseVisualStyleBackColor = true;
+            this.btnSubmit17.UseVisualStyleBackColor = false;
             this.btnSubmit17.Click += new System.EventHandler(this.btnSubmit17_Click);
             // 
             // btnNextNo17
@@ -1012,13 +1015,14 @@
             // 
             // btnSubmit16
             // 
+            this.btnSubmit16.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit16.Location = new System.Drawing.Point(814, 582);
             this.btnSubmit16.Name = "btnSubmit16";
             this.btnSubmit16.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit16.TabIndex = 149;
             this.btnSubmit16.Text = "Submit";
-            this.btnSubmit16.UseVisualStyleBackColor = true;
+            this.btnSubmit16.UseVisualStyleBackColor = false;
             this.btnSubmit16.Click += new System.EventHandler(this.btnSubmit16_Click);
             // 
             // btnNextNo16
@@ -1191,13 +1195,14 @@
             // 
             // btnSubmit15
             // 
+            this.btnSubmit15.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit15.Location = new System.Drawing.Point(811, 582);
             this.btnSubmit15.Name = "btnSubmit15";
             this.btnSubmit15.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit15.TabIndex = 149;
             this.btnSubmit15.Text = "Submit";
-            this.btnSubmit15.UseVisualStyleBackColor = true;
+            this.btnSubmit15.UseVisualStyleBackColor = false;
             this.btnSubmit15.Click += new System.EventHandler(this.btnSubmit15_Click);
             // 
             // btnNextNo15
@@ -1369,13 +1374,14 @@
             // 
             // btnSubmit14
             // 
+            this.btnSubmit14.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit14.Location = new System.Drawing.Point(811, 585);
             this.btnSubmit14.Name = "btnSubmit14";
             this.btnSubmit14.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit14.TabIndex = 149;
             this.btnSubmit14.Text = "Submit";
-            this.btnSubmit14.UseVisualStyleBackColor = true;
+            this.btnSubmit14.UseVisualStyleBackColor = false;
             this.btnSubmit14.Click += new System.EventHandler(this.btnSubmit14_Click);
             // 
             // btnNextNo14
@@ -1547,13 +1553,14 @@
             // 
             // btnSubmit13
             // 
+            this.btnSubmit13.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit13.Location = new System.Drawing.Point(814, 582);
             this.btnSubmit13.Name = "btnSubmit13";
             this.btnSubmit13.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit13.TabIndex = 149;
             this.btnSubmit13.Text = "Submit";
-            this.btnSubmit13.UseVisualStyleBackColor = true;
+            this.btnSubmit13.UseVisualStyleBackColor = false;
             this.btnSubmit13.Click += new System.EventHandler(this.btnSubmit13_Click);
             // 
             // btnNextNo13
@@ -1725,13 +1732,14 @@
             // 
             // btnSubmit12
             // 
+            this.btnSubmit12.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit12.Location = new System.Drawing.Point(811, 582);
             this.btnSubmit12.Name = "btnSubmit12";
             this.btnSubmit12.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit12.TabIndex = 130;
             this.btnSubmit12.Text = "Submit";
-            this.btnSubmit12.UseVisualStyleBackColor = true;
+            this.btnSubmit12.UseVisualStyleBackColor = false;
             this.btnSubmit12.Click += new System.EventHandler(this.btnSubmit12_Click);
             // 
             // btnNext12
@@ -1903,13 +1911,14 @@
             // 
             // btnSubmit11
             // 
+            this.btnSubmit11.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit11.Location = new System.Drawing.Point(811, 582);
             this.btnSubmit11.Name = "btnSubmit11";
             this.btnSubmit11.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit11.TabIndex = 130;
             this.btnSubmit11.Text = "Submit";
-            this.btnSubmit11.UseVisualStyleBackColor = true;
+            this.btnSubmit11.UseVisualStyleBackColor = false;
             this.btnSubmit11.Click += new System.EventHandler(this.btnSubmit11_Click);
             // 
             // btnNextNo11
@@ -2081,13 +2090,14 @@
             // 
             // btnSubmit10
             // 
+            this.btnSubmit10.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit10.Location = new System.Drawing.Point(814, 582);
             this.btnSubmit10.Name = "btnSubmit10";
             this.btnSubmit10.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit10.TabIndex = 130;
             this.btnSubmit10.Text = "Submit";
-            this.btnSubmit10.UseVisualStyleBackColor = true;
+            this.btnSubmit10.UseVisualStyleBackColor = false;
             this.btnSubmit10.Click += new System.EventHandler(this.btnSubmit10_Click);
             // 
             // btnNextNo10
@@ -2259,13 +2269,14 @@
             // 
             // btnSubmit9
             // 
+            this.btnSubmit9.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit9.Location = new System.Drawing.Point(811, 582);
             this.btnSubmit9.Name = "btnSubmit9";
             this.btnSubmit9.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit9.TabIndex = 130;
             this.btnSubmit9.Text = "Submit";
-            this.btnSubmit9.UseVisualStyleBackColor = true;
+            this.btnSubmit9.UseVisualStyleBackColor = false;
             this.btnSubmit9.Click += new System.EventHandler(this.btnSubmit9_Click);
             // 
             // btnNextNo9
@@ -2438,13 +2449,14 @@
             // 
             // btnSubmit8
             // 
+            this.btnSubmit8.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit8.Location = new System.Drawing.Point(811, 582);
             this.btnSubmit8.Name = "btnSubmit8";
             this.btnSubmit8.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit8.TabIndex = 130;
             this.btnSubmit8.Text = "Submit";
-            this.btnSubmit8.UseVisualStyleBackColor = true;
+            this.btnSubmit8.UseVisualStyleBackColor = false;
             this.btnSubmit8.Click += new System.EventHandler(this.btnSubmit8_Click);
             // 
             // btnNextNo8
@@ -2616,13 +2628,14 @@
             // 
             // btnSubmit7
             // 
+            this.btnSubmit7.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit7.Location = new System.Drawing.Point(811, 582);
             this.btnSubmit7.Name = "btnSubmit7";
             this.btnSubmit7.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit7.TabIndex = 111;
             this.btnSubmit7.Text = "Submit";
-            this.btnSubmit7.UseVisualStyleBackColor = true;
+            this.btnSubmit7.UseVisualStyleBackColor = false;
             this.btnSubmit7.Click += new System.EventHandler(this.btnSubmit7_Click);
             // 
             // btnNextNo7
@@ -2794,13 +2807,14 @@
             // 
             // btnSubmit6
             // 
+            this.btnSubmit6.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit6.Location = new System.Drawing.Point(814, 582);
             this.btnSubmit6.Name = "btnSubmit6";
             this.btnSubmit6.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit6.TabIndex = 92;
             this.btnSubmit6.Text = "Submit";
-            this.btnSubmit6.UseVisualStyleBackColor = true;
+            this.btnSubmit6.UseVisualStyleBackColor = false;
             this.btnSubmit6.Click += new System.EventHandler(this.btnSubmit6_Click);
             // 
             // btnNextNo6
@@ -2973,13 +2987,14 @@
             // 
             // btnSubmit5
             // 
+            this.btnSubmit5.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit5.Location = new System.Drawing.Point(814, 582);
             this.btnSubmit5.Name = "btnSubmit5";
             this.btnSubmit5.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit5.TabIndex = 73;
             this.btnSubmit5.Text = "Submit";
-            this.btnSubmit5.UseVisualStyleBackColor = true;
+            this.btnSubmit5.UseVisualStyleBackColor = false;
             this.btnSubmit5.Click += new System.EventHandler(this.btnSubmit5_Click);
             // 
             // btnNextNo5
@@ -3151,13 +3166,14 @@
             // 
             // btnSubmit4
             // 
+            this.btnSubmit4.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit4.Location = new System.Drawing.Point(814, 582);
             this.btnSubmit4.Name = "btnSubmit4";
             this.btnSubmit4.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit4.TabIndex = 73;
             this.btnSubmit4.Text = "Submit";
-            this.btnSubmit4.UseVisualStyleBackColor = true;
+            this.btnSubmit4.UseVisualStyleBackColor = false;
             this.btnSubmit4.Click += new System.EventHandler(this.btnSubmit4_Click);
             // 
             // btnNextNo4
@@ -3329,13 +3345,14 @@
             // 
             // btnSubmit3
             // 
+            this.btnSubmit3.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit3.Location = new System.Drawing.Point(814, 582);
             this.btnSubmit3.Name = "btnSubmit3";
             this.btnSubmit3.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit3.TabIndex = 54;
             this.btnSubmit3.Text = "Submit";
-            this.btnSubmit3.UseVisualStyleBackColor = true;
+            this.btnSubmit3.UseVisualStyleBackColor = false;
             this.btnSubmit3.Click += new System.EventHandler(this.btnSubmit3_Click);
             // 
             // btnNextNo3
@@ -3507,13 +3524,14 @@
             // 
             // btnSubmit2
             // 
+            this.btnSubmit2.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit2.Location = new System.Drawing.Point(811, 582);
             this.btnSubmit2.Name = "btnSubmit2";
             this.btnSubmit2.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit2.TabIndex = 35;
             this.btnSubmit2.Text = "Submit";
-            this.btnSubmit2.UseVisualStyleBackColor = true;
+            this.btnSubmit2.UseVisualStyleBackColor = false;
             this.btnSubmit2.Click += new System.EventHandler(this.btnSubmit2_Click);
             // 
             // btnNextNo2
@@ -3685,13 +3703,14 @@
             // 
             // btnSubmit1
             // 
+            this.btnSubmit1.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnSubmit1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSubmit1.Location = new System.Drawing.Point(811, 582);
             this.btnSubmit1.Name = "btnSubmit1";
             this.btnSubmit1.Size = new System.Drawing.Size(100, 35);
             this.btnSubmit1.TabIndex = 16;
             this.btnSubmit1.Text = "Submit";
-            this.btnSubmit1.UseVisualStyleBackColor = true;
+            this.btnSubmit1.UseVisualStyleBackColor = false;
             this.btnSubmit1.Click += new System.EventHandler(this.btnSubmit1_Click);
             // 
             // btnNextNo1
@@ -3823,17 +3842,17 @@
             this.tabControl1.Location = new System.Drawing.Point(15, 33);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(925, 649);
+            this.tabControl1.Size = new System.Drawing.Size(948, 677);
             this.tabControl1.TabIndex = 6;
             this.tabControl1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tabControl1_KeyPress);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(834, 10);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(18, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 20);
+            this.label2.Size = new System.Drawing.Size(124, 24);
             this.label2.TabIndex = 8;
             this.label2.Text = "For Ranking";
             // 
@@ -3841,13 +3860,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(953, 693);
+            this.ClientSize = new System.Drawing.Size(976, 721);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblJudgeName);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TopFiveWinners";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "For Ranking";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.tabPage19.ResumeLayout(false);
             this.tabPage19.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox37)).EndInit();
